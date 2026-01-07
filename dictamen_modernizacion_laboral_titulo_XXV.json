@@ -1,0 +1,17 @@
+[
+  {
+    "dictamen_articulo": "192",
+    "encabezado": "ARTÍCULO 192- Sustitúyese, a partir del primer día del mes inmediato",
+    "accion": "sustitúyese",
+    "ley_numero": null,
+    "destino_articulo": "192",
+    "destino_inciso": null,
+    "destino_articulo_padre": null,
+    "texto_nuevo": "d) con el importe de los intereses, recargos, multas y toda otra sanción\npecuniaria que se aplique en virtud de las disposiciones de la presente\nley.",
+    "texto_nuevo_lineas": [
+      "d) con el importe de los intereses, recargos, multas y toda otra sanción",
+      "pecuniaria que se aplique en virtud de las disposiciones de la presente",
+      "ley."
+    ]
+  }
+]

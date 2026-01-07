@@ -42,6 +42,9 @@ HEADER_RE = re.compile(
 # Encabezados estructurales típicos que delimitan bloques
 STRUCT_RE = re.compile(r"^\s*(T[ÍI]TULO|CAP[ÍI]TULO|SECCI[ÓO]N|ANEXO)\b", re.IGNORECASE)
 
+# Patrón para detectar títulos con número (TÍTULO I, TÍTULO II, etc.)
+TITULO_RE = re.compile(r"^\s*T[ÍI]TULO\s+([IVXLCDM]+|[0-9]+)\b", re.IGNORECASE)
+
 # Verbos operativos típicos del dictamen (operaciones legislativas)
 OP_VERBS = [
     "sustitúyese", "sustituyese",
@@ -278,31 +281,76 @@ def extract_article_number_from_texto_nuevo(texto_nuevo: str) -> Optional[str]:
 # Parser principal
 # ----------------------------
 
-def parse_dictamen(lines: List[str]) -> List[Operation]:
-    ops: List[Operation] = []
+def parse_dictamen(lines: List[str]) -> Dict[str, List[Operation]]:
+    """
+    Parsea el dictamen y agrupa las operaciones por título.
+    Retorna un diccionario donde las claves son los números de título (I, II, etc.)
+    y los valores son listas de operaciones.
+    """
+    titulos_ops: Dict[str, List[Operation]] = {}
+    current_titulo: Optional[str] = None
     i = 0
 
     current: Optional[Operation] = None
     capturing_new_text = False
     new_text_lines: List[str] = []
+    
+    def get_current_ops() -> List[Operation]:
+        """Obtiene la lista de operaciones del título actual, creándola si no existe."""
+        nonlocal current_titulo
+        if current_titulo is None:
+            current_titulo = "SIN_TITULO"
+        if current_titulo not in titulos_ops:
+            titulos_ops[current_titulo] = []
+        return titulos_ops[current_titulo]
 
     while i < len(lines):
         line = lines[i]
 
-        # Delimitadores fuertes: encabezados estructurales
+        # Detectar inicio de nuevo título
+        titulo_match = TITULO_RE.match(line)
+        if titulo_match:
+            # Si hay una operación en curso, cerrarla antes de cambiar de título
+            if current:
+                if capturing_new_text:
+                    current.texto_nuevo_lineas = new_text_lines[:] if new_text_lines else None
+                    current.texto_nuevo = "\n".join(new_text_lines).strip() if new_text_lines else None
+                    if current.texto_nuevo:
+                        extracted_article = extract_article_number_from_texto_nuevo(current.texto_nuevo)
+                        if extracted_article:
+                            current.destino_articulo = extracted_article
+                # Agregar al título actual
+                get_current_ops().append(current)
+                current = None
+                capturing_new_text = False
+                new_text_lines = []
+            
+            # Iniciar nuevo título
+            current_titulo = titulo_match.group(1).strip()
+            # Inicializar la lista para el nuevo título
+            if current_titulo not in titulos_ops:
+                titulos_ops[current_titulo] = []
+            
+            i += 1
+            continue
+
+        # Delimitadores fuertes: encabezados estructurales (excepto títulos que ya manejamos)
         if STRUCT_RE.match(line) and current and capturing_new_text:
-            # cerrar captura
-            current.texto_nuevo_lineas = new_text_lines[:] if new_text_lines else None
-            current.texto_nuevo = "\n".join(new_text_lines).strip() if new_text_lines else None
-            # Extraer destino_articulo desde texto_nuevo si está disponible
-            if current.texto_nuevo:
-                extracted_article = extract_article_number_from_texto_nuevo(current.texto_nuevo)
-                if extracted_article:
-                    current.destino_articulo = extracted_article
-            ops.append(current)
-            current = None
-            capturing_new_text = False
-            new_text_lines = []
+            # Si es un título, ya lo manejamos arriba
+            if not TITULO_RE.match(line):
+                # cerrar captura
+                current.texto_nuevo_lineas = new_text_lines[:] if new_text_lines else None
+                current.texto_nuevo = "\n".join(new_text_lines).strip() if new_text_lines else None
+                # Extraer destino_articulo desde texto_nuevo si está disponible
+                if current.texto_nuevo:
+                    extracted_article = extract_article_number_from_texto_nuevo(current.texto_nuevo)
+                    if extracted_article:
+                        current.destino_articulo = extracted_article
+                # Agregar al título actual
+                get_current_ops().append(current)
+                current = None
+                capturing_new_text = False
+                new_text_lines = []
             # no consumimos el struct; simplemente avanzamos
             i += 1
             continue
@@ -323,7 +371,8 @@ def parse_dictamen(lines: List[str]) -> List[Operation]:
                             extracted_article = extract_article_number_from_texto_nuevo(current.texto_nuevo)
                             if extracted_article:
                                 current.destino_articulo = extracted_article
-                    ops.append(current)
+                    # Agregar al título actual
+                    get_current_ops().append(current)
 
                 # Iniciar nueva operación
                 m = HEADER_RE.match(line)
@@ -390,9 +439,10 @@ def parse_dictamen(lines: List[str]) -> List[Operation]:
                 extracted_article = extract_article_number_from_texto_nuevo(current.texto_nuevo)
                 if extracted_article:
                     current.destino_articulo = extracted_article
-        ops.append(current)
+        # Agregar al título actual
+        get_current_ops().append(current)
 
-    return ops
+    return titulos_ops
 
 
 # ----------------------------
@@ -402,27 +452,35 @@ def parse_dictamen(lines: List[str]) -> List[Operation]:
 def main() -> None:
     ap = argparse.ArgumentParser(description="Parsea dictámenes y extrae operaciones + texto nuevo desde un PDF.")
     ap.add_argument("pdf", help="Ruta al PDF del dictamen.")
-    ap.add_argument("-o", "--output", default="dictamen_parseado.json", help="Ruta del JSON de salida.")
+    ap.add_argument("-o", "--output", default="dictamen_parseado", help="Prefijo para los archivos JSON de salida (se generará uno por título).")
     ap.add_argument("--pretty", action="store_true", help="JSON con indentación.")
     args = ap.parse_args()
 
     raw = extract_lines_from_pdf(args.pdf)
     lines = normalize_lines(raw)
-    ops = parse_dictamen(lines)
+    titulos_ops = parse_dictamen(lines)
 
-    payload: List[Dict[str, Any]] = [asdict(op) for op in ops]
+    # Generar un archivo JSON por cada título
+    total_ops = 0
+    for titulo_num, ops in titulos_ops.items():
+        payload: List[Dict[str, Any]] = [asdict(op) for op in ops]
+        
+        # Nombre del archivo basado en el título
+        output_file = f"{args.output}_titulo_{titulo_num}.json"
+        
+        with open(output_file, "w", encoding="utf-8") as f:
+            if args.pretty:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+            else:
+                json.dump(payload, f, ensure_ascii=False)
+        
+        with_text = sum(1 for x in payload if x.get("texto_nuevo"))
+        print(f"Título {titulo_num}: {len(payload)} operaciones ({with_text} con texto nuevo) -> {output_file}")
+        total_ops += len(payload)
 
-    with open(args.output, "w", encoding="utf-8") as f:
-        if args.pretty:
-            json.dump(payload, f, ensure_ascii=False, indent=2)
-        else:
-            json.dump(payload, f, ensure_ascii=False)
-
-    # Resumen mínimo por stdout
-    print(f"Operaciones encontradas: {len(payload)}")
-    with_text = sum(1 for x in payload if x.get("texto_nuevo"))
-    print(f"Con texto nuevo capturado: {with_text}")
-    print(f"Salida: {args.output}")
+    # Resumen general
+    print(f"\nTotal de títulos encontrados: {len(titulos_ops)}")
+    print(f"Total de operaciones: {total_ops}")
 
 
 if __name__ == "__main__":

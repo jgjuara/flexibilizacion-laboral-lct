@@ -1,0 +1,28 @@
+[
+  {
+    "dictamen_articulo": "97",
+    "encabezado": "ARTÍCULO 97- Sustitúyese el artículo 3° de la Ley N° 11.544 y sus",
+    "accion": "sustitúyese",
+    "ley_numero": "11.544",
+    "destino_articulo": "3",
+    "destino_inciso": null,
+    "destino_articulo_padre": null,
+    "texto_nuevo": "ARTÍCULO 3°- En las explotaciones comprendidas en el artículo 1°, se\nadmiten las siguientes excepciones:\na) cuando se trate de empleos de dirección o de vigilancia;\nb) cuando los trabajos se efectúen por equipos, la duración del\ntrabajo podrá ser prolongada más allá de las OCHO (8) horas por día y\nde CUARENTA Y OCHO (48) semanales;\nc) en caso de accidente ocurrido o inminente, o en caso de trabajo\nde urgencia a efectuarse en las máquinas, herramientas o instalaciones,\no en caso de fuerza mayor, pero tan sólo en la medida necesaria para\nevitar que un inconveniente serio ocurra en la marcha regular del\nestablecimiento y únicamente cuando el trabajo no pueda ser efectuado\ndurante la jornada normal, debiendo comunicarse el hecho de inmediato\na las autoridades encargadas de velar por el cumplimiento de la\npresente ley.",
+    "texto_nuevo_lineas": [
+      "ARTÍCULO 3°- En las explotaciones comprendidas en el artículo 1°, se",
+      "admiten las siguientes excepciones:",
+      "a) cuando se trate de empleos de dirección o de vigilancia;",
+      "b) cuando los trabajos se efectúen por equipos, la duración del",
+      "trabajo podrá ser prolongada más allá de las OCHO (8) horas por día y",
+      "de CUARENTA Y OCHO (48) semanales;",
+      "c) en caso de accidente ocurrido o inminente, o en caso de trabajo",
+      "de urgencia a efectuarse en las máquinas, herramientas o instalaciones,",
+      "o en caso de fuerza mayor, pero tan sólo en la medida necesaria para",
+      "evitar que un inconveniente serio ocurra en la marcha regular del",
+      "establecimiento y únicamente cuando el trabajo no pueda ser efectuado",
+      "durante la jornada normal, debiendo comunicarse el hecho de inmediato",
+      "a las autoridades encargadas de velar por el cumplimiento de la",
+      "presente ley."
+    ]
+  }
+]

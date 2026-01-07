@@ -23,7 +23,7 @@ async function init() {
     try {
         const [leyResponse, dictamenResponse] = await Promise.all([
             fetch('ley_contrato_trabajo_oficial_completa.json'),
-            fetch('dictamen_modernizacion_laboral_parsed.json')
+            fetch('dictamen_modernizacion_laboral_titulo_I.json')
         ]);
 
         leyData = await leyResponse.json();

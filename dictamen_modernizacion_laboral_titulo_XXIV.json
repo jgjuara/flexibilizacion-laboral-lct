@@ -1,0 +1,78 @@
+[
+  {
+    "dictamen_articulo": "185",
+    "encabezado": "ARTÍCULO 185- Incorpórase, con efectos a partir del primer día del mes",
+    "accion": "incorpórase",
+    "ley_numero": null,
+    "destino_articulo": "185",
+    "destino_inciso": null,
+    "destino_articulo_padre": null,
+    "texto_nuevo": null,
+    "texto_nuevo_lineas": null
+  },
+  {
+    "dictamen_articulo": "186",
+    "encabezado": "ARTÍCULO 186- Sustitúyese el undécimo párrafo del artículo 25 de la",
+    "accion": "sustitúyese",
+    "ley_numero": null,
+    "destino_articulo": "186",
+    "destino_inciso": null,
+    "destino_articulo_padre": null,
+    "texto_nuevo": "Los quebrantos generados en los ejercicios fiscales que se inicien a\npartir del 1° de enero de 2025, inclusive, se actualizarán teniendo en\ncuenta la variación del Índice de Precios al Consumidor Nivel General\n(IPC) que suministre el INSTITUTO NACIONAL DE ESTADÍSTICA Y\nCENSOS, organismo desconcentrado actuante en el ámbito del\nMINISTERIO DE ECONOMÍA, operada entre el mes de cierre del\nejercicio fiscal en que se originaron y el mes de cierre del ejercicio fiscal\nque se liquida, sin que resulte de aplicación lo dispuesto en el primer\npárrafo del artículo 93 de esta ley.",
+    "texto_nuevo_lineas": [
+      "Los quebrantos generados en los ejercicios fiscales que se inicien a",
+      "partir del 1° de enero de 2025, inclusive, se actualizarán teniendo en",
+      "cuenta la variación del Índice de Precios al Consumidor Nivel General",
+      "(IPC) que suministre el INSTITUTO NACIONAL DE ESTADÍSTICA Y",
+      "CENSOS, organismo desconcentrado actuante en el ámbito del",
+      "MINISTERIO DE ECONOMÍA, operada entre el mes de cierre del",
+      "ejercicio fiscal en que se originaron y el mes de cierre del ejercicio fiscal",
+      "que se liquida, sin que resulte de aplicación lo dispuesto en el primer",
+      "párrafo del artículo 93 de esta ley."
+    ]
+  },
+  {
+    "dictamen_articulo": "187",
+    "encabezado": "ARTÍCULO 187- Sustitúyese, con efectos para los años fiscales que se",
+    "accion": "sustitúyese",
+    "ley_numero": null,
+    "destino_articulo": "187",
+    "destino_inciso": null,
+    "destino_articulo_padre": null,
+    "texto_nuevo": null,
+    "texto_nuevo_lineas": null
+  },
+  {
+    "dictamen_articulo": "188",
+    "encabezado": "ARTÍCULO 188- Sustitúyese el inciso n) del artículo 26 de la Ley de",
+    "accion": "sustitúyese",
+    "ley_numero": null,
+    "destino_articulo": null,
+    "destino_inciso": "n)",
+    "destino_articulo_padre": "26",
+    "texto_nuevo": "n) El valor locativo de la casa habitación y, con efectos para los\nejercicios o años fiscales que se inicien a partir del 1° de enero de 2026,\nlas ganancias derivadas del alquiler de inmuebles con destino a\ncasa-habitación a las que no les resultará de aplicación lo previsto en el\ninciso k) del artículo 85.\nAsimismo, también se encuentra exento el resultado derivado de la\nenajenación de inmuebles y de la transferencia de derechos sobre\ninmuebles, alcanzados por las disposiciones del artículo 99 de esta ley,\nque se enajenen o transfieran a partir del 1° de enero de 2026, en los\ntérminos que al respecto establezca la Reglamentación.",
+    "texto_nuevo_lineas": [
+      "n) El valor locativo de la casa habitación y, con efectos para los",
+      "ejercicios o años fiscales que se inicien a partir del 1° de enero de 2026,",
+      "las ganancias derivadas del alquiler de inmuebles con destino a",
+      "casa-habitación a las que no les resultará de aplicación lo previsto en el",
+      "inciso k) del artículo 85.",
+      "Asimismo, también se encuentra exento el resultado derivado de la",
+      "enajenación de inmuebles y de la transferencia de derechos sobre",
+      "inmuebles, alcanzados por las disposiciones del artículo 99 de esta ley,",
+      "que se enajenen o transfieran a partir del 1° de enero de 2026, en los",
+      "términos que al respecto establezca la Reglamentación."
+    ]
+  },
+  {
+    "dictamen_articulo": "189",
+    "encabezado": "ARTÍCULO 189- Incorpórase, con efectos para los ejercicios fiscales",
+    "accion": "incorpórase",
+    "ley_numero": null,
+    "destino_articulo": "189",
+    "destino_inciso": null,
+    "destino_articulo_padre": null,
+    "texto_nuevo": null,
+    "texto_nuevo_lineas": null
+  }
+]

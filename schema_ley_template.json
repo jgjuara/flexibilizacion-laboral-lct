@@ -1,0 +1,381 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schema-ley-template.json",
+  "title": "Schema Template para Leyes y Normativas",
+  "description": "Template JSON Schema basado en la estructura de ley_contrato_trabajo_oficial_completa.json",
+  "type": "object",
+  "required": ["ley"],
+  "properties": {
+    "ley": {
+      "type": "object",
+      "required": ["nombre", "numero", "tipo", "fecha"],
+      "properties": {
+        "nombre": {
+          "type": "string",
+          "description": "Nombre completo de la ley"
+        },
+        "numero": {
+          "type": "string",
+          "description": "Número de la ley"
+        },
+        "tipo": {
+          "type": "object",
+          "required": ["codigo", "texto"],
+          "properties": {
+            "codigo": {
+              "type": "string",
+              "description": "Código abreviado del tipo de norma"
+            },
+            "texto": {
+              "type": "string",
+              "description": "Descripción completa del tipo de norma"
+            }
+          }
+        },
+        "fecha": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "description": "Fecha de sanción en formato YYYY-MM-DD"
+        },
+        "texto_ordenado": {
+          "type": "string",
+          "description": "Texto ordenado o decreto que ordena la ley"
+        },
+        "estado": {
+          "type": "string",
+          "description": "Estado de vigencia de la ley"
+        },
+        "jurisdiccion": {
+          "type": "object",
+          "properties": {
+            "codigo": {
+              "type": "string"
+            },
+            "descripcion": {
+              "type": "string"
+            },
+            "capital": {
+              "type": "string"
+            },
+            "id-pais": {
+              "type": "integer"
+            }
+          }
+        },
+        "publicacion": {
+          "type": "object",
+          "properties": {
+            "publicacion-decodificada": {
+              "type": "object",
+              "properties": {
+                "organismo": {
+                  "type": "string",
+                  "description": "Organismo de publicación (ej: Boletín Oficial)"
+                },
+                "fecha": {
+                  "type": "string",
+                  "description": "Fecha de publicación"
+                }
+              }
+            }
+          }
+        },
+        "lugar_sancion": {
+          "type": "string",
+          "description": "Lugar donde se sancionó la ley"
+        },
+        "identificacion_coloquial": {
+          "type": "object",
+          "properties": {
+            "identificacion-coloquial": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "metadatos": {
+          "type": "object",
+          "properties": {
+            "uuid": {
+              "type": "string",
+              "description": "Identificador único universal"
+            },
+            "document_content_type": {
+              "type": "string",
+              "description": "Tipo de contenido del documento"
+            },
+            "timestamp": {
+              "type": "integer",
+              "description": "Timestamp de creación/modificación"
+            },
+            "friendly_url": {
+              "type": "object",
+              "properties": {
+                "subdomain": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            },
+            "id_infojus": {
+              "type": "string",
+              "description": "Identificador del sistema Infojus"
+            },
+            "fecha_umod": {
+              "type": "integer",
+              "description": "Fecha de última modificación en formato YYYYMMDDHHMMSS"
+            }
+          }
+        },
+        "decretos_reglamentarios": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["cr", "id", "ref"],
+            "properties": {
+              "cr": {
+                "type": "string",
+                "description": "Texto descriptivo del decreto reglamentario"
+              },
+              "id": {
+                "type": "string",
+                "description": "Identificador único del decreto"
+              },
+              "ref": {
+                "type": "string",
+                "description": "Referencia normativa completa"
+              }
+            }
+          }
+        },
+        "generalidades": {
+          "type": "object",
+          "properties": {
+            "informacion-vinculada": {
+              "type": ["integer", "number"],
+              "description": "Información vinculada (puede ser número muy grande)"
+            },
+            "observaciones-generales": {
+              "type": "string",
+              "description": "Observaciones generales sobre la ley"
+            },
+            "reglamentado-por": {
+              "type": "object",
+              "properties": {
+                "referencia-normativa": {
+                  "type": "object",
+                  "properties": {
+                    "cr": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "ref": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "descriptores": {
+          "type": "object",
+          "properties": {
+            "descriptor": {
+              "type": "object",
+              "properties": {
+                "elegido": {
+                  "type": "object",
+                  "properties": {
+                    "termino": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "preferido": {
+                  "type": "object",
+                  "properties": {
+                    "termino": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "sinonimos": {
+                  "type": "object",
+                  "properties": {
+                    "termino": {
+                      "type": ["string", "array"],
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "suggest": {
+              "type": "object",
+              "properties": {
+                "termino": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "sumario": {
+          "type": "object",
+          "properties": {
+            "sumario": {
+              "type": "string",
+              "description": "Sumario o resumen de la ley"
+            }
+          }
+        },
+        "titulos": {
+          "type": "array",
+          "description": "Array de títulos que componen la ley",
+          "items": {
+            "type": "object",
+            "required": ["numero", "nombre"],
+            "properties": {
+              "numero": {
+                "type": "string",
+                "description": "Número del título (puede ser romano o numérico)"
+              },
+              "nombre": {
+                "type": "string",
+                "description": "Nombre del título"
+              },
+              "articulos": {
+                "type": "array",
+                "description": "Artículos directos del título (si no hay capítulos)",
+                "items": {
+                  "$ref": "#/definitions/articulo"
+                }
+              },
+              "capitulos": {
+                "type": "array",
+                "description": "Capítulos que contiene el título",
+                "items": {
+                  "type": "object",
+                  "required": ["numero", "nombre"],
+                  "properties": {
+                    "numero": {
+                      "type": "string",
+                      "description": "Número del capítulo"
+                    },
+                    "nombre": {
+                      "type": "string",
+                      "description": "Nombre del capítulo"
+                    },
+                    "articulos": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/articulo"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "articulo": {
+      "type": "object",
+      "required": ["numero", "titulo", "texto"],
+      "properties": {
+        "numero": {
+          "type": "string",
+          "description": "Número del artículo (puede incluir variantes como '132 002' para artículos bis)"
+        },
+        "titulo": {
+          "type": "string",
+          "description": "Título o encabezado del artículo"
+        },
+        "texto": {
+          "type": "string",
+          "description": "Texto completo del artículo"
+        },
+        "incisos": {
+          "type": "array",
+          "description": "Incisos del artículo (opcional)",
+          "items": {
+            "type": "object",
+            "required": ["letra", "texto"],
+            "properties": {
+              "letra": {
+                "type": "string",
+                "description": "Letra del inciso (a, b, c, etc.)"
+              },
+              "texto": {
+                "type": "string",
+                "description": "Texto del inciso"
+              }
+            }
+          }
+        },
+        "modificado_por": {
+          "type": "array",
+          "description": "Referencias a normas que modificaron este artículo",
+          "items": {
+            "$ref": "#/definitions/referencia_normativa"
+          }
+        },
+        "observado_por": {
+          "type": "array",
+          "description": "Referencias a normas que observaron este artículo",
+          "items": {
+            "$ref": "#/definitions/referencia_normativa"
+          }
+        },
+        "antecedentes": {
+          "type": "array",
+          "description": "Referencias a normas antecedentes de este artículo",
+          "items": {
+            "$ref": "#/definitions/referencia_normativa"
+          }
+        },
+        "referencias_normativas": {
+          "type": "array",
+          "description": "Otras referencias normativas relacionadas",
+          "items": {
+            "$ref": "#/definitions/referencia_normativa"
+          }
+        }
+      }
+    },
+    "referencia_normativa": {
+      "type": "object",
+      "required": ["id", "ref"],
+      "properties": {
+        "cr": {
+          "type": ["string", "null"],
+          "description": "Texto descriptivo de la referencia (puede ser null)"
+        },
+        "id": {
+          "type": "string",
+          "description": "Identificador único de la referencia"
+        },
+        "ref": {
+          "type": "string",
+          "description": "Referencia normativa completa en formato estándar"
+        }
+      }
+    }
+  }
+}
+

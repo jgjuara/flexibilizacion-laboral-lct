@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley de Contrato de Trabajo - Comparador de Cambios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ley de Contrato de Trabajo</h1>
+        <p class="subtitle">Explorador de la ley actual y cambios propuestos</p>
+    </header>
+
+    <nav class="main-nav">
+        <button class="nav-btn active" data-view="ley">Ley Actual</button>
+        <button class="nav-btn" data-view="cambios">Cambios Propuestos</button>
+        <button class="nav-btn" data-view="comparar">Comparar</button>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar artículo por número...">
+        <button id="search-btn">Buscar</button>
+    </div>
+
+    <main>
+        <div id="ley-view" class="view active">
+            <div class="sidebar">
+                <h2>Navegación</h2>
+                <div id="ley-navigation"></div>
+            </div>
+            <div class="content">
+                <div id="ley-content">
+                    <p class="placeholder">Seleccione un artículo de la navegación para ver su contenido.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cambios-view" class="view">
+            <div class="content-full">
+                <h2>Cambios Propuestos en el Dictamen</h2>
+                <div id="cambios-list"></div>
+            </div>
+        </div>
+
+        <div id="comparar-view" class="view">
+            <div class="content-full">
+                <h2>Comparación de Artículos</h2>
+                <div class="comparison-container">
+                    <div class="comparison-panel">
+                        <h3>Texto Actual</h3>
+                        <div id="comparison-actual"></div>
+                    </div>
+                    <div class="comparison-panel">
+                        <h3>Texto Propuesto</h3>
+                        <div id="comparison-propuesto"></div>
+                    </div>
+                </div>
+                <div id="comparison-info" class="comparison-info"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Datos basados en la Ley 20.744 y el Dictamen de Modernización Laboral</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

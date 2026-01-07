@@ -1,0 +1,18 @@
+[project]
+name = "lct"
+version = "1.0.0"
+description = "Herramientas para procesar y consultar la Ley de Contrato de Trabajo en formato JSON estructurado"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+pdf = [
+    "pdfplumber>=0.9.0",
+    "pymupdf>=1.23.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+

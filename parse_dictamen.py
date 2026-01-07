@@ -248,6 +248,32 @@ def parse_action_and_target(header_text: str) -> Dict[str, Optional[str]]:
     return out
 
 
+def extract_article_number_from_texto_nuevo(texto_nuevo: str) -> Optional[str]:
+    """
+    Extrae el número de artículo desde el inicio de texto_nuevo.
+    
+    Patrones esperados:
+    - "ARTÍCULO 2°-"
+    - "ARTÍCULO 4°-"
+    - "ARTÍCULO 11-"
+    - "ARTÍCULO 11 bis-"
+    
+    Esta es la fuente de verdad para destino_articulo, ya que el texto_nuevo
+    siempre contiene el artículo correcto que se está modificando.
+    """
+    if not texto_nuevo:
+        return None
+    
+    # Patrón para extraer número de artículo (puede incluir bis, ter, quater, etc.)
+    pattern = r"ART[ÍI]CULO\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?-"
+    match = re.search(pattern, texto_nuevo, re.IGNORECASE)
+    
+    if match:
+        return match.group(1).strip()
+    
+    return None
+
+
 # ----------------------------
 # Parser principal
 # ----------------------------
@@ -268,6 +294,11 @@ def parse_dictamen(lines: List[str]) -> List[Operation]:
             # cerrar captura
             current.texto_nuevo_lineas = new_text_lines[:] if new_text_lines else None
             current.texto_nuevo = "\n".join(new_text_lines).strip() if new_text_lines else None
+            # Extraer destino_articulo desde texto_nuevo si está disponible
+            if current.texto_nuevo:
+                extracted_article = extract_article_number_from_texto_nuevo(current.texto_nuevo)
+                if extracted_article:
+                    current.destino_articulo = extracted_article
             ops.append(current)
             current = None
             capturing_new_text = False
@@ -287,6 +318,11 @@ def parse_dictamen(lines: List[str]) -> List[Operation]:
                     if capturing_new_text:
                         current.texto_nuevo_lineas = new_text_lines[:] if new_text_lines else None
                         current.texto_nuevo = "\n".join(new_text_lines).strip() if new_text_lines else None
+                        # Extraer destino_articulo desde texto_nuevo si está disponible
+                        if current.texto_nuevo:
+                            extracted_article = extract_article_number_from_texto_nuevo(current.texto_nuevo)
+                            if extracted_article:
+                                current.destino_articulo = extracted_article
                     ops.append(current)
 
                 # Iniciar nueva operación
@@ -349,6 +385,11 @@ def parse_dictamen(lines: List[str]) -> List[Operation]:
         if capturing_new_text:
             current.texto_nuevo_lineas = new_text_lines[:] if new_text_lines else None
             current.texto_nuevo = "\n".join(new_text_lines).strip() if new_text_lines else None
+            # Extraer destino_articulo desde texto_nuevo si está disponible
+            if current.texto_nuevo:
+                extracted_article = extract_article_number_from_texto_nuevo(current.texto_nuevo)
+                if extracted_article:
+                    current.destino_articulo = extracted_article
         ops.append(current)
 
     return ops

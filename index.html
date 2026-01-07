@@ -16,6 +16,7 @@
         <button class="nav-btn active" data-view="ley">Ley Actual</button>
         <button class="nav-btn" data-view="cambios">Cambios Propuestos</button>
         <button class="nav-btn" data-view="comparar">Comparar</button>
+        <button class="nav-btn" data-view="split">Vista Split</button>
     </nav>
 
     <div class="search-container">
@@ -57,6 +58,22 @@
                     </div>
                 </div>
                 <div id="comparison-info" class="comparison-info"></div>
+            </div>
+        </div>
+
+        <div id="split-view" class="view">
+            <div class="split-container">
+                <div class="split-header">
+                    <div class="split-header-left">
+                        <h2>Ley Actual</h2>
+                    </div>
+                    <div class="split-header-right">
+                        <h2>Dictamen Propuesto</h2>
+                    </div>
+                </div>
+                <div class="split-content" id="split-content">
+                    <p class="placeholder">Cargando artículos...</p>
+                </div>
             </div>
         </div>
     </main>

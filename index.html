@@ -5,75 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ley de Contrato de Trabajo - Comparador de Cambios</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
     <header>
         <h1>Ley de Contrato de Trabajo</h1>
-        <p class="subtitle">Explorador de la ley actual y cambios propuestos</p>
+        <p class="subtitle">Comparación: Ley Actual vs Dictamen Propuesto</p>
+        <button id="export-pdf-btn" class="export-btn">Exportar a PDF</button>
     </header>
 
-    <nav class="main-nav">
-        <button class="nav-btn active" data-view="ley">Ley Actual</button>
-        <button class="nav-btn" data-view="cambios">Cambios Propuestos</button>
-        <button class="nav-btn" data-view="comparar">Comparar</button>
-        <button class="nav-btn" data-view="split">Vista Split</button>
-    </nav>
+    <main class="main-split-layout">
+        <aside class="toc-sidebar">
+            <h2>Índice de Artículos</h2>
+            <div id="toc-container"></div>
+        </aside>
 
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Buscar artículo por número...">
-        <button id="search-btn">Buscar</button>
-    </div>
-
-    <main>
-        <div id="ley-view" class="view active">
-            <div class="sidebar">
-                <h2>Navegación</h2>
-                <div id="ley-navigation"></div>
-            </div>
-            <div class="content">
-                <div id="ley-content">
-                    <p class="placeholder">Seleccione un artículo de la navegación para ver su contenido.</p>
+        <div class="split-container" id="split-container">
+            <div class="split-header">
+                <div class="split-header-left">
+                    <h2>Ley Actual</h2>
+                </div>
+                <div class="split-header-right">
+                    <h2>Dictamen Propuesto</h2>
                 </div>
             </div>
-        </div>
-
-        <div id="cambios-view" class="view">
-            <div class="content-full">
-                <h2>Cambios Propuestos en el Dictamen</h2>
-                <div id="cambios-list"></div>
-            </div>
-        </div>
-
-        <div id="comparar-view" class="view">
-            <div class="content-full">
-                <h2>Comparación de Artículos</h2>
-                <div class="comparison-container">
-                    <div class="comparison-panel">
-                        <h3>Texto Actual</h3>
-                        <div id="comparison-actual"></div>
-                    </div>
-                    <div class="comparison-panel">
-                        <h3>Texto Propuesto</h3>
-                        <div id="comparison-propuesto"></div>
-                    </div>
-                </div>
-                <div id="comparison-info" class="comparison-info"></div>
-            </div>
-        </div>
-
-        <div id="split-view" class="view">
-            <div class="split-container">
-                <div class="split-header">
-                    <div class="split-header-left">
-                        <h2>Ley Actual</h2>
-                    </div>
-                    <div class="split-header-right">
-                        <h2>Dictamen Propuesto</h2>
-                    </div>
-                </div>
-                <div class="split-content" id="split-content">
-                    <p class="placeholder">Cargando artículos...</p>
-                </div>
+            <div class="split-content" id="split-content">
+                <p class="placeholder">Cargando artículos...</p>
             </div>
         </div>
     </main>

@@ -17,6 +17,7 @@ header {
     padding: 2rem;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 header h1 {
@@ -27,6 +28,34 @@ header h1 {
 .subtitle {
     opacity: 0.9;
     font-size: 1rem;
+}
+
+.export-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: #667eea;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.export-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .export-btn {
+        position: static;
+        margin-top: 1rem;
+    }
 }
 
 .main-nav {
@@ -92,9 +121,28 @@ header h1 {
 }
 
 main {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 2rem auto;
     padding: 0 1rem;
+}
+
+.main-split-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+    max-width: 1600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+@media (max-width: 1024px) {
+    .main-split-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .toc-sidebar {
+        order: 2;
+    }
 }
 
 .view {
@@ -117,19 +165,60 @@ main {
     }
 }
 
-.sidebar {
+.toc-sidebar {
     background: white;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    max-height: calc(100vh - 300px);
+    max-height: calc(100vh - 200px);
     overflow-y: auto;
+    position: sticky;
+    top: 2rem;
+    scroll-behavior: smooth;
 }
 
-.sidebar h2 {
+.toc-sidebar h2 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+.toc-item {
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    color: #555;
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.toc-item:hover {
+    background: #f0f0f0;
+    transform: translateX(4px);
+}
+
+.toc-item.active {
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+}
+
+.toc-item.has-change::before {
+    content: "●";
+    color: #e74c3c;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+.toc-item.has-change.active::before {
+    color: white;
 }
 
 .nav-item {
@@ -396,8 +485,12 @@ footer {
 }
 
 .split-content {
-    max-height: calc(100vh - 300px);
+    max-height: calc(100vh - 200px);
     overflow-y: auto;
+}
+
+.split-article-row[id] {
+    scroll-margin-top: 100px;
 }
 
 .split-section-header {

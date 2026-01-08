@@ -7,6 +7,7 @@
     "destino_articulo": "4",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 4º- Las normas originadas en las convenciones colectivas\nque sean homologadas por la SECRETARÍA DE TRABAJO, EMPLEO\nY SEGURIDAD SOCIAL, del MINISTERIO DE CAPITAL\nHUMANO en su carácter de Autoridad de Aplicación, regirán respecto\nde todos los trabajadores de la actividad, o de la región, o de la\ncategoría dentro del ámbito a que estas convenciones se refieran;\ncuando se trate de un acuerdo destinado a ser aplicado a más de un\nempleador, alcanzarán a todos los comprendidos en sus particulares\námbitos. Todo ello sin perjuicio de que los trabajadores y los\nempleadores invistan o no el carácter de afiliados a las respectivas\nasociaciones signatarias.\nSerá presupuesto esencial para acceder a la homologación, que la\nconvención no contenga cláusulas violatorias de normas de orden\npúblico o que afecten el interés general.\nLos Convenios Colectivos de Trabajo de empresa o de grupo de\nempresas, deberán observar las condiciones establecidas en el párrafo\nprecedente y serán presentados ante la Autoridad de Aplicación para su\nregistro, publicación y depósito, conforme a lo previsto en el artículo 5º\nde esta Ley.\nSin perjuicio de ello, estos convenios podrán ser homologados a pedido\nde parte.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 4º- Las normas originadas en las convenciones colectivas",
@@ -40,6 +41,7 @@
     "destino_articulo": "6",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 6°- Una convención colectiva de trabajo, cuyo término\nestuviere vencido, solamente mantendrá subsistentes las normas\nreferidas a las condiciones y beneficios individuales directos del trabajo\ny los beneficios otorgados para el trabajador establecidas en virtud de\nellas (cláusulas normativas) y hasta tanto entre en vigencia una nueva\nconvención colectiva o exista un acuerdo de partes que la prorrogue. El\nresto de las cláusulas (obligacionales) mantendrán su vigencia sólo por\nacuerdo de partes.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 6°- Una convención colectiva de trabajo, cuyo término",
@@ -60,6 +62,7 @@
     "destino_articulo": "7",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 7º- Las disposiciones de las convenciones colectivas\ndeberán ajustarse a las normas legales que rigen las instituciones del\nderecho del trabajo, a menos que las cláusulas de la convención\nrelacionadas con cada una de esas instituciones resultaran más\nfavorables a los trabajadores, conforme las pautas del artículo 9° de la\nLey de Contrato de Trabajo N° 20.744 (t.o. 1976) y sus modificaciones y\nsiempre que no afectaren disposiciones dictadas en protección del\ninterés general.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 7º- Las disposiciones de las convenciones colectivas",
@@ -77,9 +80,10 @@
     "encabezado": "ARTÍCULO 128- Incorpórase como artículo 9° bis a la Ley N° 14.250",
     "accion": "incorpórase",
     "ley_numero": "14.250",
-    "destino_articulo": "128",
+    "destino_articulo": "9",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 9° bis. – Los aportes o contribuciones patronales especiales\nprevistos en las Convenciones Colectivas de Trabajo, cualquiera sea su\ndenominación u objeto, a cámaras, asociaciones o agrupaciones de\nempleadores, tendrán carácter estrictamente voluntario por parte del\nempleador, sin que pueda imponerse su obligatoriedad mediante\ncláusulas convencionales.\nLas vigentes, cualquiera sea el convenio colectivo, tampoco resultan\nobligatorias para los empleadores que no sean socios o asociados a las\nasociaciones o cámaras beneficiarias de estos créditos.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 9° bis. – Los aportes o contribuciones patronales especiales",
@@ -101,6 +105,7 @@
     "destino_articulo": "13",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 13- Los Convenios Colectivos de Trabajo podrán prever la\nconstitución de Comisiones Paritarias, integradas por un número igual\nde representantes de empleadores y trabajadores del mismo ámbito\npersonal y territorial de cada convenio colectivo de trabajo, cuyo\nfuncionamiento y atribuciones serán las establecidas en el respectivo\nconvenio, sin perjuicio de lo dispuesto en el artículo siguiente.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 13- Los Convenios Colectivos de Trabajo podrán prever la",
@@ -119,6 +124,7 @@
     "destino_articulo": "18",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 18- Los Convenios Colectivos de ámbito mayor no podrán\nmodificar ni disponer el contenido de los convenios de ámbito menor.\nLos Convenios Colectivos de empresa, podrán establecer formas de\narticulación entre unidades de negociación de ámbitos diferentes,\najustándose las partes a sus respectivas facultades de representación.\nAsimismo, podrán hacer remisión expresa de las materias a negociar en\nlos Convenios de ámbito mayor que resulten aplicables en el ámbito\npersonal y territorial del Convenio de ámbito menor.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 18- Los Convenios Colectivos de ámbito mayor no podrán",
@@ -139,6 +145,7 @@
     "destino_articulo": "19",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 19- Queda\nestablecido el siguiente orden de prelación de normas:\na) Un convenio colectivo posterior modifica en cualquier sentido a un\nconvenio colectivo anterior de igual ámbito.\nb) Un convenio de ámbito menor, prevalece, dentro de su ámbito de\nrepresentación personal y territorial, frente a otro convenio de ámbito\nmayor, anterior o posterior.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 19- Queda",

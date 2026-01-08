@@ -43,7 +43,10 @@ HEADER_RE = re.compile(
 STRUCT_RE = re.compile(r"^\s*(T[ÍI]TULO|CAP[ÍI]TULO|SECCI[ÓO]N|ANEXO)\b", re.IGNORECASE)
 
 # Patrón para detectar títulos con número (TÍTULO I, TÍTULO II, etc.)
+# Busca al inicio de línea o después de un salto de línea implícito
 TITULO_RE = re.compile(r"^\s*T[ÍI]TULO\s+([IVXLCDM]+|[0-9]+)\b", re.IGNORECASE)
+# También buscar en medio de línea por si acaso
+TITULO_RE_ANYWHERE = re.compile(r"\bT[ÍI]TULO\s+([IVXLCDM]+|[0-9]+)\b", re.IGNORECASE)
 
 # Verbos operativos típicos del dictamen (operaciones legislativas)
 OP_VERBS = [
@@ -64,9 +67,21 @@ TRIGGER_RE = re.compile(
     re.IGNORECASE,
 )
 
-# Extracción simple de destino
-TARGET_ART_RE = re.compile(r"art[íi]culo\s+([0-9]+(?:\s*(?:bis|ter|quater))?)\s*[°º]?", re.IGNORECASE)
+# Regex específico para incorporaciones (prioridad alta)
+INCORPORATION_TARGET_RE = re.compile(
+    r"incorp[óo]rase\s+como\s+art[íi]culo\s+([0-9]+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?",
+    re.IGNORECASE
+)
+
+# Extracción simple de destino (fallback)
+TARGET_ART_RE = re.compile(
+    r"art[íi]culo\s+([0-9]+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?",
+    re.IGNORECASE
+)
 TARGET_INCISO_RE = re.compile(r"inciso\s+([a-z])\)\s+del\s+art[íi]culo\s+([0-9]+)\s*[°º]?", re.IGNORECASE)
+
+# Regex para detectar derogaciones de capítulos completos
+TARGET_CAPITULO_RE = re.compile(r"der[óo]gase\s+el\s+cap[íi]tulo\s+([IVXLCDM]+|[0-9]+)", re.IGNORECASE)
 
 LAW_NUM_RE = re.compile(r"Ley\s+.*?N[°º]\s*([0-9\.\-]+)", re.IGNORECASE)
 
@@ -84,6 +99,7 @@ class Operation:
     destino_articulo: Optional[str] = None
     destino_inciso: Optional[str] = None
     destino_articulo_padre: Optional[str] = None  # si destino_inciso aplica, acá va el artículo padre
+    destino_capitulo: Optional[str] = None  # si se deroga un capítulo completo
     texto_nuevo: Optional[str] = None
     texto_nuevo_lineas: Optional[List[str]] = None
 
@@ -220,7 +236,7 @@ def parse_action_and_target(header_text: str) -> Dict[str, Optional[str]]:
     Extrae campos básicos de la operación:
       - accion (verbo operativo)
       - ley_numero
-      - destino_articulo, destino_inciso, destino_articulo_padre
+      - destino_articulo, destino_inciso, destino_articulo_padre, destino_capitulo
     """
     out: Dict[str, Optional[str]] = {
         "accion": None,
@@ -228,6 +244,7 @@ def parse_action_and_target(header_text: str) -> Dict[str, Optional[str]]:
         "destino_articulo": None,
         "destino_inciso": None,
         "destino_articulo_padre": None,
+        "destino_capitulo": None,
     }
 
     mv = OP_VERB_RE.search(header_text)
@@ -238,12 +255,27 @@ def parse_action_and_target(header_text: str) -> Dict[str, Optional[str]]:
     if mlaw:
         out["ley_numero"] = mlaw.group(1)
 
+    # Para derogaciones, buscar primero si se deroga un capítulo completo
+    if out["accion"] == "derógase" or out["accion"] == "derogase":
+        mcap = TARGET_CAPITULO_RE.search(header_text)
+        if mcap:
+            out["destino_capitulo"] = mcap.group(1).strip()
+            return out
+
     minc = TARGET_INCISO_RE.search(header_text)
     if minc:
         out["destino_inciso"] = f"{minc.group(1)})"
         out["destino_articulo_padre"] = minc.group(2)
         return out
 
+    # Para incorporaciones, buscar primero el patrón específico
+    if out["accion"] == "incorpórase" or out["accion"] == "incorporase":
+        mincorp = INCORPORATION_TARGET_RE.search(header_text)
+        if mincorp:
+            out["destino_articulo"] = mincorp.group(1).strip()
+            return out
+
+    # Fallback: buscar cualquier "artículo X"
     mart = TARGET_ART_RE.search(header_text)
     if mart:
         out["destino_articulo"] = mart.group(1).strip()
@@ -307,8 +339,12 @@ def parse_dictamen(lines: List[str]) -> Dict[str, List[Operation]]:
     while i < len(lines):
         line = lines[i]
 
-        # Detectar inicio de nuevo título
+        # Detectar inicio de nuevo título (primero al inicio de línea, luego en cualquier parte)
         titulo_match = TITULO_RE.match(line)
+        if not titulo_match:
+            # Fallback: buscar en cualquier parte de la línea
+            titulo_match = TITULO_RE_ANYWHERE.search(line)
+        
         if titulo_match:
             # Si hay una operación en curso, cerrarla antes de cambiar de título
             if current:
@@ -388,6 +424,7 @@ def parse_dictamen(lines: List[str]) -> Dict[str, List[Operation]]:
                     destino_articulo=meta["destino_articulo"],
                     destino_inciso=meta["destino_inciso"],
                     destino_articulo_padre=meta["destino_articulo_padre"],
+                    destino_capitulo=meta["destino_capitulo"],
                 )
                 capturing_new_text = False
                 new_text_lines = []
@@ -414,6 +451,30 @@ def parse_dictamen(lines: List[str]) -> Dict[str, List[Operation]]:
                     new_text_lines.append(after)
                 i += 1
                 continue
+            
+            # Para incorporaciones, si no hay gatillo, buscar inicio automático
+            # Detectar cuando una línea comienza con "ARTÍCULO" como indicador
+            if current.accion == "incorpórase" or current.accion == "incorporase":
+                # Si la línea comienza con "ARTÍCULO", es probable que sea el inicio del texto nuevo
+                if HEADER_RE.match(line.strip()):
+                    capturing_new_text = True
+                    if line.strip():
+                        new_text_lines.append(line.strip())
+                    i += 1
+                    continue
+                # También considerar líneas no vacías después del encabezado como posible inicio
+                # (solo si no hemos encontrado un gatillo en las primeras líneas)
+                elif line.strip() and i < len(lines) - 1:
+                    # Verificar si la siguiente línea parece ser parte del texto nuevo
+                    # (contiene texto sustancial, no solo números o encabezados estructurales)
+                    next_line = lines[i + 1].strip() if i + 1 < len(lines) else ""
+                    if next_line and not STRUCT_RE.match(next_line) and not TITULO_RE.match(next_line):
+                        # Si la línea actual parece ser texto (no es solo un número o encabezado)
+                        if not re.match(r"^\s*\d+\s*$", line.strip()) and not HEADER_RE.match(line.strip()):
+                            capturing_new_text = True
+                            new_text_lines.append(line.strip())
+                            i += 1
+                            continue
 
         # Si estamos capturando el texto nuevo, acumulamos líneas (ignorando vacíos redundantes)
         if current and capturing_new_text:
@@ -458,6 +519,14 @@ def main() -> None:
 
     raw = extract_lines_from_pdf(args.pdf)
     lines = normalize_lines(raw)
+    
+    # Guardar archivo de texto plano normalizado (útil para debugging y ajuste de regex)
+    text_output = f"{args.output}_normalizado.txt"
+    with open(text_output, "w", encoding="utf-8") as f:
+        for i, line in enumerate(lines, 1):
+            f.write(f"{i:5d}|{line}\n")
+    print(f"Archivo de texto normalizado guardado: {text_output}")
+    
     titulos_ops = parse_dictamen(lines)
 
     # Generar un archivo JSON por cada título

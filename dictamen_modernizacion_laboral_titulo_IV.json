@@ -7,6 +7,7 @@
     "destino_articulo": "60",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 60- En los procesos no susceptibles de apreciación\npecuniaria, los honorarios de los peritos y de los peritos liquidadores de\naverías serán fijados conforme a las pautas valorativas del artículo 16 y\nen un mínimo de DOS (2) UMA, siendo suficiente para la fijación de los\nhonorarios mínimos, la aceptación del cargo conferido. En el caso de los\ndemás auxiliares de la Justicia, se aplicarán las normas específicas.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 60- En los procesos no susceptibles de apreciación",
@@ -25,6 +26,7 @@
     "destino_articulo": "61",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 61- En los procesos susceptibles de apreciación pecuniaria,\npor las actuaciones de primera instancia hasta la sentencia, los\nhonorarios del perito y del perito liquidador de averías serán fijados\nconforme lo establece el artículo 32. Para tales casos los honorarios\nmínimos a regular alcanzan a DOS (2) UMA. En el caso de los demás\nauxiliares de la Justicia se aplicarán las normas específicas.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 61- En los procesos susceptibles de apreciación pecuniaria,",
@@ -40,10 +42,26 @@
     "encabezado": "ARTÍCULO 94- Incorpórase como artículo 61 bis de la Ley de",
     "accion": "incorpórase",
     "ley_numero": null,
-    "destino_articulo": "94",
+    "destino_articulo": "61 bis",
     "destino_inciso": null,
     "destino_articulo_padre": null,
-    "texto_nuevo": null,
-    "texto_nuevo_lineas": null
+    "destino_capitulo": null,
+    "texto_nuevo": "Honorarios Profesionales de Abogados, Procuradores y Auxiliares de la\nJusticia Nacional y Federal Nº 27.423 y su modificación el siguiente:\nARTÍCULO 61 bis- Los honorarios de los peritos que intervengan en las\ncontroversias judiciales, no estarán vinculados a la cuantía del\nrespectivo juicio, ni al porcentaje de incapacidad que se dictamine en\ncaso de producirse una pericia médica. Su regulación responderá\nexclusivamente a la apreciación judicial de la labor técnica realizada en\nel pleito y su relevancia; calidad y extensión en lo concreto y deberá\nfijarse en un monto que asegure una adecuada retribución al perito.\nPor cada pericia, se fijará un monto mínimo de DOS (2) UMAS.\nEn caso de finalizar el proceso por transacción, avenimiento y\nconciliación, sin que el perito haya presentado la pericia encargada, se\nle regulará UN CUARTO (1/4) de UMA en tanto el perito haya aceptado\nel cargo.",
+    "texto_nuevo_lineas": [
+      "Honorarios Profesionales de Abogados, Procuradores y Auxiliares de la",
+      "Justicia Nacional y Federal Nº 27.423 y su modificación el siguiente:",
+      "ARTÍCULO 61 bis- Los honorarios de los peritos que intervengan en las",
+      "controversias judiciales, no estarán vinculados a la cuantía del",
+      "respectivo juicio, ni al porcentaje de incapacidad que se dictamine en",
+      "caso de producirse una pericia médica. Su regulación responderá",
+      "exclusivamente a la apreciación judicial de la labor técnica realizada en",
+      "el pleito y su relevancia; calidad y extensión en lo concreto y deberá",
+      "fijarse en un monto que asegure una adecuada retribución al perito.",
+      "Por cada pericia, se fijará un monto mínimo de DOS (2) UMAS.",
+      "En caso de finalizar el proceso por transacción, avenimiento y",
+      "conciliación, sin que el perito haya presentado la pericia encargada, se",
+      "le regulará UN CUARTO (1/4) de UMA en tanto el perito haya aceptado",
+      "el cargo."
+    ]
   }
 ]

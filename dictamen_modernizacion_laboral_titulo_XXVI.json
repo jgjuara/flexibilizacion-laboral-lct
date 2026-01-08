@@ -7,6 +7,7 @@
     "destino_articulo": "193",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -18,6 +19,7 @@
     "destino_articulo": "194",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -29,6 +31,7 @@
     "destino_articulo": "195",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -40,6 +43,7 @@
     "destino_articulo": "197",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -51,6 +55,7 @@
     "destino_articulo": "198",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -62,6 +67,7 @@
     "destino_articulo": "199",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -73,6 +79,7 @@
     "destino_articulo": "200",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -84,6 +91,7 @@
     "destino_articulo": "201",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -95,6 +103,7 @@
     "destino_articulo": "204",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -106,6 +115,7 @@
     "destino_articulo": null,
     "destino_inciso": "c)",
     "destino_articulo_padre": "17",
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -117,6 +127,7 @@
     "destino_articulo": "207",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -128,6 +139,7 @@
     "destino_articulo": "208",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -139,6 +151,7 @@
     "destino_articulo": "209",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   }

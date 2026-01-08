@@ -221,6 +221,17 @@ main {
     color: white;
 }
 
+.toc-item.is-incorporated::before {
+    content: "●";
+    color: #27ae60;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+.toc-item.is-incorporated.active::before {
+    color: white;
+}
+
 .nav-item {
     margin-bottom: 0.5rem;
 }
@@ -542,6 +553,18 @@ footer {
 }
 
 .split-article-row.has-change .split-article-right {
+    background: #e6ffe6;
+}
+
+.split-article-row.is-incorporated {
+    background: #fff9e6;
+}
+
+.split-article-row.is-incorporated .split-article-left {
+    background: transparent;
+}
+
+.split-article-row.is-incorporated .split-article-right {
     background: #e6ffe6;
 }
 

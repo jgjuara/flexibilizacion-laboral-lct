@@ -7,6 +7,7 @@
     "destino_articulo": "18",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 18- Peritos Médicos y Psicólogos. Los peritos médicos y\npsicólogos deberán ser profesionales legistas o especialistas en la rama\nde la medicina relacionada con la cuestión sometida a su dictamen.\nEstos deberán contar con la capacidad operativa y la especialización\nnecesaria para atender las controversias judiciales suscitadas en el\nmarco del Sistema de Riesgos del Trabajo, asegurando la objetividad e\nindependencia en sus dictámenes. Para ello deberán valerse de los\nentornos digitales que la Superintendencia de Riesgos del Trabajo\nponga a su disposición, y sus trabajos serán retribuidos tomando en\nconsideración exclusivamente la relevancia, calidad y extensión de la\nlabor profesional realizada, con total prescindencia del monto del\nproceso y de la gravedad de las constataciones efectuadas.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 18- Peritos Médicos y Psicólogos. Los peritos médicos y",
@@ -31,6 +32,7 @@
     "destino_articulo": "79",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 20. Competencia por materia. Serán de competencia de la\nJusticia Nacional del Trabajo, en general, las causas contenciosas en\nconflictos individuales de derecho, por demandas o reconvenciones\nfundadas en los contratos de trabajo, convenciones colectivas de\ntrabajo, laudos con eficacia de convenciones colectivas, o disposiciones\nlegales o reglamentarias del Derecho del Trabajo; y las causas entre\ntrabajadores y empleadores relativas a un contrato de trabajo, aunque\nse funden en disposiciones del derecho común aplicables a aquél.\nEn los casos que versen sobre la materia establecida en el párrafo\nanterior y a su vez sea parte o tercero interesado el ESTADO\nNACIONAL –PODER EJECUTIVO NACIONAL, PODER LEGISLATIVO,\nPODER JUDICIAL, MINISTERIO PÚBLICO-, incluyendo los entes\nprevistos en el artículo 8, inciso a), de la Ley Nº 24.156 y sus\nmodificaciones, serán competentes el fuero Contencioso Administrativo\nFederal de la CIUDAD AUTÓNOMA DE BUENOS AIRES y, en las\ndemás jurisdicciones, la Justicia Federal con competencia en lo\ncontencioso administrativo. En ningún caso la Justicia Nacional del\nTrabajo podrá expedirse en las causas aquí comprendidas.\nSe entenderá por modificada toda norma que asigne, en el supuesto\ncontemplado en el párrafo anterior, competencia alguna al fuero\nnacional del trabajo.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 20. Competencia por materia. Serán de competencia de la",
@@ -64,6 +66,7 @@
     "destino_articulo": "80",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 24. - Competencia territorial. En las causas entre\ntrabajadores y empleadores será competente, a elección del\ndemandante, el juez del lugar del trabajo, o el del lugar de celebración\ndel contrato, o el del domicilio del empleador.\nEl que no tuviere domicilio fijo, podrá ser demandado en el lugar en que\nse encuentre o en el de su última residencia.\nEn las causas incoadas por asociaciones profesionales por cobro de\naportes, contribuciones o cuotas, será competente el juez del domicilio\ndel demandado.\nEn las causas iniciadas en los términos de las Leyes Nros. 24.557 y sus\nmodificaciones y 27.348, se estará a la competencia territorial prevista\nen ellas.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 24. - Competencia territorial. En las causas entre",
@@ -88,6 +91,7 @@
     "destino_articulo": "26",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 26- Recusación y excusación. En materia de recusaciones,\ncon y sin expresión de causa, y excusaciones de jueces, secretarios,\nárbitros y peritos regirán las disposiciones del CÓDIGO PROCESAL\nCIVIL Y COMERCIAL DE LA NACIÓN.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 26- Recusación y excusación. En materia de recusaciones,",
@@ -104,6 +108,7 @@
     "destino_articulo": "46",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 46- Impulso del proceso. El procedimiento será impulsado\npor las partes. Se producirá la caducidad de instancia cuando no se\ninstare su curso dentro de los siguientes plazos, sin necesidad de\nintimación previa:\n1) de SEIS (6) meses, en primera o única instancia;\n2) de TRES (3) meses, en segunda instancia y en cualquiera de las\ninstancias en el juicio sumarísimo, en el juicio ejecutivo, en las\nejecuciones especiales y en los incidentes;\n3) de UN (1) mes, en el incidente de caducidad de instancia.\nLa instancia se abre con la promoción de la demanda aunque no\nhubiere sido notificada la resolución que dispone su traslado y termina\ncon el dictado de la sentencia.\nARTÍCULO 83- Disposición Transitoria. La modificación introducida por\nel artículo 82 de la presente ley se aplicará a los procesos en trámite,\ncontándose los plazos establecidos en dicha disposición desde el día\nsiguiente a la publicación de la presente ley en el BOLETÍN OFICIAL.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 46- Impulso del proceso. El procedimiento será impulsado",
@@ -132,8 +137,18 @@
     "destino_articulo": "84",
     "destino_inciso": null,
     "destino_articulo_padre": null,
-    "texto_nuevo": null,
-    "texto_nuevo_lineas": null
+    "destino_capitulo": null,
+    "texto_nuevo": "Organización y Procedimiento de la Justicia Nacional de Trabajo Nº\n18.345 (t.o. por Decreto Nº 106/98) y sus modificaciones, el siguiente\ntexto:\n8) La mención de los medios de prueba que la parte intente hacer valer\npara demostrar sus afirmaciones. Asimismo, presentará los documentos\nque obraren en su poder y si no los tuviere los individualizará indicando\nsu contenido, la persona en cuyo poder se hallaren, o el lugar, archivo u\noficina donde se encuentren.",
+    "texto_nuevo_lineas": [
+      "Organización y Procedimiento de la Justicia Nacional de Trabajo Nº",
+      "18.345 (t.o. por Decreto Nº 106/98) y sus modificaciones, el siguiente",
+      "texto:",
+      "8) La mención de los medios de prueba que la parte intente hacer valer",
+      "para demostrar sus afirmaciones. Asimismo, presentará los documentos",
+      "que obraren en su poder y si no los tuviere los individualizará indicando",
+      "su contenido, la persona en cuyo poder se hallaren, o el lugar, archivo u",
+      "oficina donde se encuentren."
+    ]
   },
   {
     "dictamen_articulo": "85",
@@ -143,6 +158,7 @@
     "destino_articulo": "71",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 71- Contestación de la demanda. La contestación de la\ndemanda se formulará por escrito y se ajustará, en lo aplicable, a lo\ndispuesto en el artículo 65 de esta ley y en el artículo 356 del CÓDIGO\nPROCESAL CIVIL Y COMERCIAL DE LA NACIÓN. La carga prevista\nen el inciso 1° del artículo 356 del CÓDIGO PROCESAL CIVIL Y\nCOMERCIAL DE LA NACIÓN no regirá respecto de los representantes\ndesignados en juicios universales.\nDel responde y de su documentación, se dará traslado al actor quien\ndentro del tercer día de notificado reconocerá o desconocerá la\nautenticidad de la documentación aportada por la demandada.\nSi el demandado debidamente citado no contestare la demanda en el\nplazo previsto en el artículo 68 será declarado rebelde, presumiéndose\ncomo ciertos los hechos expuestos en ella, salvo prueba en contrario.\nEn caso de discordancia entre los datos de la persona demandada y los\ndel que contesta la demanda, el juez tendrá por enderezada la acción,\nsalvo oposición expresa de la parte actora. Si el trabajador actuare\nmediante apoderado se entenderá que el poder es suficiente para\ncontinuar la acción contra quien ha contestado la demanda.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 71- Contestación de la demanda. La contestación de la",
@@ -173,6 +189,7 @@
     "destino_articulo": "76",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 76- Excepciones previas. En materia de excepciones de\nprevio y especial pronunciamiento, regirán las disposiciones del\nCÓDIGO PROCESAL CIVIL Y COMERCIAL DE LA NACIÓN. Junto con\nla oposición de la excepción deberá ofrecerse toda la prueba referida a\nella.\nEn el caso de la resolución de la excepción de prescripción, para que\nsea resuelta de previo y especial pronunciamiento será necesario que\nella no requiera la producción de prueba.\nJunto con la oposición de la excepción deberá ofrecerse toda la prueba\nreferida a ella.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 76- Excepciones previas. En materia de excepciones de",
@@ -195,8 +212,15 @@
     "destino_articulo": "87",
     "destino_inciso": null,
     "destino_articulo_padre": null,
-    "texto_nuevo": null,
-    "texto_nuevo_lineas": null
+    "destino_capitulo": null,
+    "texto_nuevo": "Organización y Procedimiento de la Justicia Nacional de Trabajo Nº\n18.345 (t.o. por Decreto Nº 106/98) y sus modificaciones, el siguiente\ntexto:\nd) Las sentencias por las que el magistrado rechaza excepciones de\nincompetencia y de falta de legitimación pasiva y activa.",
+    "texto_nuevo_lineas": [
+      "Organización y Procedimiento de la Justicia Nacional de Trabajo Nº",
+      "18.345 (t.o. por Decreto Nº 106/98) y sus modificaciones, el siguiente",
+      "texto:",
+      "d) Las sentencias por las que el magistrado rechaza excepciones de",
+      "incompetencia y de falta de legitimación pasiva y activa."
+    ]
   },
   {
     "dictamen_articulo": "88",
@@ -206,6 +230,7 @@
     "destino_articulo": "110",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 110- Apelaciones anteriores a la sentencia. Salvo el caso\ndel artículo 146, los supuestos vinculados a la competencia del tribunal,\nla falta de legitimación pasiva y activa, y los de medidas cautelares,\ntodas las apelaciones interpuestas aun en juicios prima facie\ninapelables, se tendrán presentes con efecto diferido hasta el momento\nen que se haya puesto fin al proceso de conocimiento, en primera\ninstancia, con la sentencia definitiva.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 110- Apelaciones anteriores a la sentencia. Salvo el caso",
@@ -225,6 +250,7 @@
     "destino_articulo": "124",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "ARTÍCULO 124- Dictado de fallos plenarios. Prohibiciones.\nEn materia de fallos plenarios, regirán las disposiciones del CÓDIGO\nPROCESAL CIVIL Y COMERCIAL DE LA NACIÓN.\nLos criterios de aplicación obligatoria o sugerida para la resolución de\naspectos concernientes a las causas judiciales, no podrán ser\nestablecidos por otro instrumento que no sea sentencia plenaria\nARTÍCULO 90- Los jueces que resuelvan causas de índole laboral\ndeberán, de forma obligatoria, adecuar sus decisiones a los precedentes\nestablecidos por la CORTE SUPREMA DE JUSTICIA DE LA NACIÓN\nen la materia.\nEl apartamiento infundado de los magistrados respecto de dichos\ncriterios configurará una causal de mal desempeño en sus funciones.\nARTÍCULO 91- Vigencia transitoria de la Justicia Nacional del Trabajo.\nLa Justicia Nacional del Trabajo mantendrá su vigencia hasta tanto se\ninstrumente el acuerdo de transferencia de competencias de la Justicia\nNacional del Trabajo entre la Nación y el Gobierno de la CIUDAD\nAUTÓNOMA DE BUENOS AIRES.\nUna vez formalizado dicho acuerdo se dispondrán los actos necesarios\npara su progresiva disolución conforme las previsiones y plazos que\nsurjan de dichos instrumentos.",
     "texto_nuevo_lineas": [
       "ARTÍCULO 124- Dictado de fallos plenarios. Prohibiciones.",

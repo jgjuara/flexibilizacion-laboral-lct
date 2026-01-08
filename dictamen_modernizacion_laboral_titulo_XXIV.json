@@ -7,8 +7,15 @@
     "destino_articulo": "185",
     "destino_inciso": null,
     "destino_articulo_padre": null,
-    "texto_nuevo": null,
-    "texto_nuevo_lineas": null
+    "destino_capitulo": null,
+    "texto_nuevo": "inmediato siguiente al de la entrada en vigencia de esta ley, como inciso\nm) del cuarto párrafo del artículo 28 de la Ley de Impuesto al Valor\nAgregado (t.o. en 1997), el siguiente:\nm) La provisión de energía eléctrica utilizada en sistemas y/o equipos de\nriego con destino al sector agroindustrial.",
+    "texto_nuevo_lineas": [
+      "inmediato siguiente al de la entrada en vigencia de esta ley, como inciso",
+      "m) del cuarto párrafo del artículo 28 de la Ley de Impuesto al Valor",
+      "Agregado (t.o. en 1997), el siguiente:",
+      "m) La provisión de energía eléctrica utilizada en sistemas y/o equipos de",
+      "riego con destino al sector agroindustrial."
+    ]
   },
   {
     "dictamen_articulo": "186",
@@ -18,6 +25,7 @@
     "destino_articulo": "186",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": "Los quebrantos generados en los ejercicios fiscales que se inicien a\npartir del 1° de enero de 2025, inclusive, se actualizarán teniendo en\ncuenta la variación del Índice de Precios al Consumidor Nivel General\n(IPC) que suministre el INSTITUTO NACIONAL DE ESTADÍSTICA Y\nCENSOS, organismo desconcentrado actuante en el ámbito del\nMINISTERIO DE ECONOMÍA, operada entre el mes de cierre del\nejercicio fiscal en que se originaron y el mes de cierre del ejercicio fiscal\nque se liquida, sin que resulte de aplicación lo dispuesto en el primer\npárrafo del artículo 93 de esta ley.",
     "texto_nuevo_lineas": [
       "Los quebrantos generados en los ejercicios fiscales que se inicien a",
@@ -39,6 +47,7 @@
     "destino_articulo": "187",
     "destino_inciso": null,
     "destino_articulo_padre": null,
+    "destino_capitulo": null,
     "texto_nuevo": null,
     "texto_nuevo_lineas": null
   },
@@ -50,6 +59,7 @@
     "destino_articulo": null,
     "destino_inciso": "n)",
     "destino_articulo_padre": "26",
+    "destino_capitulo": null,
     "texto_nuevo": "n) El valor locativo de la casa habitación y, con efectos para los\nejercicios o años fiscales que se inicien a partir del 1° de enero de 2026,\nlas ganancias derivadas del alquiler de inmuebles con destino a\ncasa-habitación a las que no les resultará de aplicación lo previsto en el\ninciso k) del artículo 85.\nAsimismo, también se encuentra exento el resultado derivado de la\nenajenación de inmuebles y de la transferencia de derechos sobre\ninmuebles, alcanzados por las disposiciones del artículo 99 de esta ley,\nque se enajenen o transfieran a partir del 1° de enero de 2026, en los\ntérminos que al respecto establezca la Reglamentación.",
     "texto_nuevo_lineas": [
       "n) El valor locativo de la casa habitación y, con efectos para los",
@@ -69,10 +79,34 @@
     "encabezado": "ARTÍCULO 189- Incorpórase, con efectos para los ejercicios fiscales",
     "accion": "incorpórase",
     "ley_numero": null,
-    "destino_articulo": "189",
+    "destino_articulo": "190",
     "destino_inciso": null,
     "destino_articulo_padre": null,
-    "texto_nuevo": null,
-    "texto_nuevo_lineas": null
+    "destino_capitulo": null,
+    "texto_nuevo": "que inicien a partir del 1º de enero de 2026, como artículo sin número a\ncontinuación del artículo 58 de la Ley de Impuesto a las Ganancias,\ntexto ordenado en 2019 y sus modificaciones, el siguiente:\nARTÍCULO…- Los titulares de los establecimientos de invernada y/o\nengorde a corral a los que se refiere el punto 2 del inciso d) del primer\npárrafo del artículo 56 de esta ley, podrán optar por valuar sus\nexistencias por los métodos descriptos en los incisos a) o b) del artículo\n57 de esta norma legal, dependiendo del tipo de hacienda de que se\ntrate. Para calcular la valuación de las vaquillonas y de los novillos, los\ncontribuyentes podrán usar los índices de relación contenidos en las\ntablas anexas a la Ley N° 23.079, para todas las vaquillonas, el\ncorrespondiente a vaquillona de UNO (1) a DOS (2) años y para todos\nlos novillos, el de novillo de UNO (1) a DOS (2) años, de acuerdo con la\ncategoría de que se trate.\nARTÍCULO 190- Modifícanse para los ejercicios fiscales que se inicien a\npartir del 1° de enero de 2026, las alícuotas de la escala del inciso a) del\nartículo 73 de la Ley de Impuesto a las Ganancias, t.o. en 2019 y sus\nmodificaciones, de la siguiente forma:\na) donde dice TREINTA POR CIENTO (30 %) deberá leerse\nVEINTISIETE POR CIENTO (27 %),\nb) donde dice TREINTA Y CINCO (35 %) deberá leerse TREINTA Y\nUNO COMA CINCO POR CIENTO (31,5 %).",
+    "texto_nuevo_lineas": [
+      "que inicien a partir del 1º de enero de 2026, como artículo sin número a",
+      "continuación del artículo 58 de la Ley de Impuesto a las Ganancias,",
+      "texto ordenado en 2019 y sus modificaciones, el siguiente:",
+      "ARTÍCULO…- Los titulares de los establecimientos de invernada y/o",
+      "engorde a corral a los que se refiere el punto 2 del inciso d) del primer",
+      "párrafo del artículo 56 de esta ley, podrán optar por valuar sus",
+      "existencias por los métodos descriptos en los incisos a) o b) del artículo",
+      "57 de esta norma legal, dependiendo del tipo de hacienda de que se",
+      "trate. Para calcular la valuación de las vaquillonas y de los novillos, los",
+      "contribuyentes podrán usar los índices de relación contenidos en las",
+      "tablas anexas a la Ley N° 23.079, para todas las vaquillonas, el",
+      "correspondiente a vaquillona de UNO (1) a DOS (2) años y para todos",
+      "los novillos, el de novillo de UNO (1) a DOS (2) años, de acuerdo con la",
+      "categoría de que se trate.",
+      "ARTÍCULO 190- Modifícanse para los ejercicios fiscales que se inicien a",
+      "partir del 1° de enero de 2026, las alícuotas de la escala del inciso a) del",
+      "artículo 73 de la Ley de Impuesto a las Ganancias, t.o. en 2019 y sus",
+      "modificaciones, de la siguiente forma:",
+      "a) donde dice TREINTA POR CIENTO (30 %) deberá leerse",
+      "VEINTISIETE POR CIENTO (27 %),",
+      "b) donde dice TREINTA Y CINCO (35 %) deberá leerse TREINTA Y",
+      "UNO COMA CINCO POR CIENTO (31,5 %)."
+    ]
   }
 ]

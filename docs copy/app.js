@@ -44,8 +44,8 @@ function getDestinoArticulo(cambio) {
 async function init() {
     try {
         const [leyResponse, dictamenResponse] = await Promise.all([
-            fetch('../data/ley_contrato_trabajo_oficial_completa.json'),
-            fetch('../data/dictamen_modernizacion_laboral_titulo_I.json')
+            fetch('data/ley_contrato_trabajo_oficial_completa.json'),
+            fetch('data/dictamen_modernizacion_laboral_titulo_I.json')
         ]);
 
         leyData = await leyResponse.json();
@@ -711,6 +711,121 @@ function getCambioForArticulo(numero) {
     });
 }
 
+function extractArticleBaseNumber(numero) {
+    // Extraer el número base sin sufijos (bis, ter, etc.)
+    const match = String(numero).match(/^(\d+)/);
+    return match ? parseInt(match[1]) : null;
+}
+
+function findTituloForArticle(articleNumber) {
+    // Buscar el título correcto para un artículo incorporado
+    // basándose en su posición numérica en la ley
+    
+    const targetBase = extractArticleBaseNumber(articleNumber);
+    if (targetBase === null) return { tituloNumero: "I", tituloNombre: "Disposiciones Generales" };
+    
+    // Primero, buscar si hay un artículo con el mismo número base (sin sufijo)
+    // Esto es importante para artículos como "104 bis" que deben estar con el "104"
+    const titulos = leyData.ley.titulos;
+    
+    for (const titulo of titulos) {
+        if (titulo.articulos) {
+            for (const articulo of titulo.articulos) {
+                const artBase = extractArticleBaseNumber(articulo.numero);
+                if (artBase === targetBase) {
+                    return {
+                        tituloNumero: titulo.numero,
+                        tituloNombre: titulo.nombre
+                    };
+                }
+            }
+        }
+        
+        if (titulo.capitulos) {
+            for (const capitulo of titulo.capitulos) {
+                if (capitulo.articulos) {
+                    for (const articulo of capitulo.articulos) {
+                        const artBase = extractArticleBaseNumber(articulo.numero);
+                        if (artBase === targetBase) {
+                            return {
+                                tituloNumero: titulo.numero,
+                                tituloNombre: titulo.nombre
+                            };
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // Si no se encontró un artículo con el mismo número base,
+    // buscar el artículo más cercano (anterior o igual)
+    const allArticlesWithTitulo = [];
+    
+    for (const titulo of titulos) {
+        if (titulo.articulos) {
+            for (const articulo of titulo.articulos) {
+                const base = extractArticleBaseNumber(articulo.numero);
+                if (base !== null) {
+                    allArticlesWithTitulo.push({
+                        base: base,
+                        tituloNumero: titulo.numero,
+                        tituloNombre: titulo.nombre
+                    });
+                }
+            }
+        }
+        
+        if (titulo.capitulos) {
+            for (const capitulo of titulo.capitulos) {
+                if (capitulo.articulos) {
+                    for (const articulo of capitulo.articulos) {
+                        const base = extractArticleBaseNumber(articulo.numero);
+                        if (base !== null) {
+                            allArticlesWithTitulo.push({
+                                base: base,
+                                tituloNumero: titulo.numero,
+                                tituloNombre: titulo.nombre
+                            });
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // Ordenar por número base
+    allArticlesWithTitulo.sort((a, b) => a.base - b.base);
+    
+    // Buscar el artículo más cercano (anterior o igual)
+    let bestMatch = null;
+    for (let i = allArticlesWithTitulo.length - 1; i >= 0; i--) {
+        if (allArticlesWithTitulo[i].base <= targetBase) {
+            bestMatch = allArticlesWithTitulo[i];
+            break;
+        }
+    }
+    
+    // Si no hay artículo anterior, buscar el siguiente
+    if (!bestMatch && allArticlesWithTitulo.length > 0) {
+        bestMatch = allArticlesWithTitulo[0];
+    }
+    
+    // Si aún no hay match, usar el último título
+    if (!bestMatch) {
+        const lastTitulo = titulos[titulos.length - 1];
+        return {
+            tituloNumero: lastTitulo.numero,
+            tituloNombre: lastTitulo.nombre
+        };
+    }
+    
+    return {
+        tituloNumero: bestMatch.tituloNumero,
+        tituloNombre: bestMatch.tituloNombre
+    };
+}
+
 function getIncorporatedArticles() {
     const incorporatedArticles = [];
     
@@ -751,13 +866,16 @@ function getIncorporatedArticles() {
                     }
                 }
                 
+                // Encontrar el título correcto basándose en el número del artículo
+                const tituloInfo = findTituloForArticle(destinoArticulo);
+                
                 incorporatedArticles.push({
                     numero: destinoArticulo,
                     titulo: titulo,
                     texto: cambio.texto_nuevo || "",
                     isIncorporated: true,
-                    tituloNumero: "I", // Por defecto, se puede inferir mejor después
-                    tituloNombre: "Disposiciones Generales" // Por defecto
+                    tituloNumero: tituloInfo.tituloNumero,
+                    tituloNombre: tituloInfo.tituloNombre
                 });
             }
         }

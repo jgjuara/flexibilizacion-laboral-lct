@@ -1,138 +1,22 @@
-let leyData = null;
-let dictamenData = null;
-let modifiedArticles = new Set();
-let derogatedArticles = new Set(); // Artículos derogados individualmente
-let derogatedChapters = new Map(); // Mapa de capítulo -> Set de artículos derogados
-
-function extractArticleNumberFromHeader(encabezado) {
-    if (!encabezado) return null;
-    
-    // Para incorporaciones, buscar "como artículo X" o "artículo X" después de incorpórase
-    const incorporacionMatch = encabezado.match(/incorp[óo]rase\s+como\s+art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)/i);
-    if (incorporacionMatch) {
-        return incorporacionMatch[1].trim();
-    }
-    
-    // Fallback: buscar cualquier "artículo X" con sufijos
-    const match = encabezado.match(/art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)/i);
-    if (match) {
-        return match[1].trim();
-    }
-    
-    return null;
-}
-
-function getDestinoArticulo(cambio) {
-    // Prioridad 1: destino_articulo explícito
-    if (cambio.destino_articulo) {
-        return String(cambio.destino_articulo);
-    }
-    
-    // Prioridad 2: extraer desde texto_nuevo (más confiable)
-    if (cambio.texto_nuevo) {
-        const match = cambio.texto_nuevo.match(/ART[ÍI]CULO\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?-/i);
-        if (match) {
-            return match[1].trim();
-        }
-    }
-    
-    // Prioridad 3: extraer desde encabezado
-    const fromHeader = extractArticleNumberFromHeader(cambio.encabezado);
-    return fromHeader ? String(fromHeader) : null;
-}
+let comparacionData = null; // JSON de comparación que contiene ley + metadatos de cambios
 
 async function init() {
     try {
-        const [leyResponse, dictamenResponse] = await Promise.all([
-            fetch('data/ley_contrato_trabajo_oficial_completa.json'),
-            fetch('data/dictamen_modernizacion_laboral_titulo_I.json')
-        ]);
+        const comparacionResponse = await fetch('data/comparacion_titulo_I.json');
+        comparacionData = await comparacionResponse.json();
 
-        leyData = await leyResponse.json();
-        dictamenData = await dictamenResponse.json();
-
-        processDictamenData();
         setupEventListeners();
         renderTOC();
         renderSplitView();
     } catch (error) {
         console.error('Error cargando datos:', error);
         document.getElementById('split-content').innerHTML = 
-            '<p class="error">Error al cargar los datos. Asegúrese de que los archivos JSON estén disponibles.</p>';
+            '<p class="error">Error al cargar los datos. Asegúrese de que el archivo JSON de comparación esté disponible.</p>';
     }
 }
 
-function findArticlesInChapter(capituloNumero) {
-    const articles = [];
-    const titulos = leyData.ley.titulos;
-    
-    for (const titulo of titulos) {
-        if (titulo.capitulos) {
-            for (const capitulo of titulo.capitulos) {
-                const capNum = String(capitulo.numero).toUpperCase();
-                const targetCapNum = String(capituloNumero).toUpperCase();
-                
-                if (capNum === targetCapNum && capitulo.articulos) {
-                    for (let i = 0; i < capitulo.articulos.length; i++) {
-                        const articulo = capitulo.articulos[i];
-                        // Si el artículo no tiene número o es "S/N", usar un identificador basado en índice
-                        const numero = String(articulo.numero || '').trim();
-                        if (numero === '' || numero.toUpperCase() === 'S/N' || numero === 'null') {
-                            // Crear identificador único: "CAP_VIII_ART_1", "CAP_VIII_ART_2", etc.
-                            articles.push(`CAP_${capituloNumero}_ART_${i + 1}`);
-                        } else {
-                            articles.push(numero);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    return articles;
-}
-
-function processDictamenData() {
-    dictamenData.forEach(cambio => {
-        // Detectar derogaciones de capítulos completos
-        if (cambio.destino_capitulo) {
-            const capituloNumero = cambio.destino_capitulo;
-            const articlesInChapter = findArticlesInChapter(capituloNumero);
-            derogatedChapters.set(capituloNumero, new Set(articlesInChapter));
-            // Marcar todos los artículos del capítulo como modificados
-            articlesInChapter.forEach(artNum => {
-                modifiedArticles.add(artNum);
-                derogatedArticles.add(artNum);
-            });
-            
-            // Si no se encontraron artículos (capítulo no existe o tiene artículos sin número),
-            // crear artículos sintéticos para mostrar la derogación
-            if (articlesInChapter.length === 0) {
-                // Para el Capítulo VIII de Formación Profesional, crear artículos sintéticos
-                // basados en la información proporcionada por el usuario (7 artículos sin número)
-                if (capituloNumero.toUpperCase() === 'VIII') {
-                    // Crear identificadores para los 7 artículos sin número del Capítulo VIII
-                    for (let i = 1; i <= 7; i++) {
-                        const artId = `CAP_VIII_ART_${i}`;
-                        modifiedArticles.add(artId);
-                        derogatedArticles.add(artId);
-                    }
-                    derogatedChapters.set(capituloNumero, new Set(Array.from({length: 7}, (_, i) => `CAP_VIII_ART_${i + 1}`)));
-                }
-            }
-        } else {
-            // Otras modificaciones (incorporaciones, sustituciones, etc.)
-            const destinoArticulo = getDestinoArticulo(cambio);
-            if (destinoArticulo) {
-                modifiedArticles.add(destinoArticulo);
-                // Si es una derogación individual, marcarla
-                if (cambio.accion === "derógase" || cambio.accion === "derogase") {
-                    derogatedArticles.add(destinoArticulo);
-                }
-            }
-        }
-    });
-}
+// Funciones de procesamiento del dictamen ya no son necesarias
+// El JSON de comparación ya tiene toda la información procesada
 
 function setupEventListeners() {
     // TOC toggle button
@@ -262,17 +146,13 @@ function renderTOC() {
         }
     });
     
-    // Obtener todos los títulos de la ley para incluir los que no tienen artículos
-    const allTitulos = leyData.ley.titulos || [];
-    const titulosMap = {};
-    allTitulos.forEach(titulo => {
-        titulosMap[String(titulo.numero)] = titulo;
-    });
+    // Obtener todos los títulos de la comparación
+    const allTitulos = comparacionData.ley.titulos || [];
     
     // Generar HTML plano sin anidamiento
     let html = '';
     
-    // Renderizar todos los títulos de la ley
+    // Renderizar todos los títulos
     allTitulos.forEach(titulo => {
         const tituloKey = `titulo-${titulo.numero}`;
         const tituloData = structure[tituloKey];
@@ -326,14 +206,17 @@ function renderTOC() {
 }
 
 function renderTOCItem(articulo, indented = false) {
-    const hasChange = modifiedArticles.has(String(articulo.numero));
-    const isIncorporated = articulo.isIncorporated === true;
-    const isDerogated = derogatedArticles.has(String(articulo.numero));
+    // Usar el estado directamente del JSON de comparación
+    const estado = articulo.estado || 'sin_cambios';
+    const isIncorporated = estado === 'incorporado';
+    const isDerogated = estado === 'derogado';
+    const hasChange = estado === 'sustituido' || isDerogated || isIncorporated;
     const isSynthetic = String(articulo.numero).startsWith('CAP_');
+    
     const classes = [];
     if (isIncorporated) {
         classes.push('is-incorporated');
-    } else if (hasChange || isDerogated) {
+    } else if (hasChange) {
         classes.push('has-change');
     }
     
@@ -611,58 +494,13 @@ function compareArticleNumbers(a, b) {
     return parsedA.suffixValue - parsedB.suffixValue;
 }
 
-function getDerogatedChapterArticles() {
-    const derogatedArticlesList = [];
-    
-    // Buscar capítulos derogados y crear artículos sintéticos si es necesario
-    derogatedChapters.forEach((articlesSet, capituloNumero) => {
-        articlesSet.forEach(artId => {
-            // Si es un artículo sintético (formato CAP_VIII_ART_X)
-            if (artId.startsWith('CAP_')) {
-                const match = artId.match(/CAP_(\w+)_ART_(\d+)/);
-                if (match) {
-                    const capNum = match[1];
-                    const artIndex = parseInt(match[2]);
-                    
-                    // Solo crear artículos sintéticos para Capítulo VIII de Formación Profesional
-                    if (capNum === 'VIII') {
-                        // Textos de los artículos del Capítulo VIII según el usuario
-                        const textos = [
-                            "La promoción profesional y la formación en el trabajo, en condiciones igualitarias de acceso y trato será un derecho fundamental para todos los trabajadores y trabajadoras.",
-                            "El empleador implementará acciones de formación profesional profesional y/o capacitación con la participación de los trabajadores y con la asistencia de los organismos competentes al Estado.",
-                            "La capacitación del trabajador se efectuará de acuerdo a los requerimientos del empleador, a las características de las tareas, a las exigencias de la organización del trabajo y a los medios que le provea el empleador para dicha capacitación.",
-                            "La organización sindical que represente a los trabajadores de conformidad a la legislación vigente tendrá derecho a recibir información sobre la evolución de la empresa, sobre innovaciones tecnológicas y organizativas y toda otra que tenga relación con la planificación de acciones de formación y capacitación profesional.",
-                            "La organización sindical que represente a los trabajadores de conformidad a la legislación vigente ante innovaciones de base tecnológica y organizativa de la empresa, podrá solicitar al empleador la implementación de acciones de formación profesional para la mejor adecuación del personal al nuevo sistema.",
-                            "En el certificado de trabajo que el empleador está obligado a entregar a la extinción del contrato de trabajo deberá constar además de lo prescripto en el artículo 80, la calificación profesional obtenida en el o los puestos de trabajo desempeñados, hubiere o no realizado el trabajador acciones regulares de capacitación.",
-                            "El trabajador tendrá derecho a una cantidad de horas del tiempo total anual del trabajo, de acuerdo a lo que se establezca en el convenio colectivo, para realizar, fuera de su lugar de trabajo actividades de formación y/o capacitación que él juzgue de su propio interés."
-                        ];
-                        
-                        if (artIndex <= textos.length) {
-                            derogatedArticlesList.push({
-                                numero: artId,
-                                titulo: "",
-                                texto: textos[artIndex - 1] || "",
-                                isDerogated: true,
-                                tituloNumero: "III", // El Capítulo VIII está en el Título III
-                                tituloNombre: "De los derechos y obligaciones de las partes",
-                                capituloNumero: "VIII",
-                                capituloNombre: "DE LA FORMACIÓN PROFESIONAL"
-                            });
-                        }
-                    }
-                }
-            }
-        });
-    });
-    
-    return derogatedArticlesList;
-}
+// Función ya no es necesaria - los artículos derogados ya están en el JSON de comparación
 
 function getAllArticles() {
     const allArticles = [];
-    const titulos = leyData.ley.titulos;
+    const titulos = comparacionData.ley.titulos;
     
-    // Obtener artículos de la ley original
+    // Obtener artículos de la estructura de comparación
     for (const titulo of titulos) {
         if (titulo.articulos) {
             for (const articulo of titulo.articulos) {
@@ -691,198 +529,12 @@ function getAllArticles() {
         }
     }
     
-    // Agregar artículos incorporados
-    const incorporatedArticles = getIncorporatedArticles();
-    allArticles.push(...incorporatedArticles);
-    
-    // Agregar artículos derogados de capítulos (artículos sintéticos)
-    const derogatedChapterArticles = getDerogatedChapterArticles();
-    allArticles.push(...derogatedChapterArticles);
-    
     // Ordenar considerando sufijos (bis, ter, etc.)
     return allArticles.sort(compareArticleNumbers);
 }
 
-function getCambioForArticulo(numero) {
-    const numeroStr = String(numero);
-    return dictamenData.find(c => {
-        const destinoArticulo = getDestinoArticulo(c);
-        return destinoArticulo === numeroStr;
-    });
-}
-
-function extractArticleBaseNumber(numero) {
-    // Extraer el número base sin sufijos (bis, ter, etc.)
-    const match = String(numero).match(/^(\d+)/);
-    return match ? parseInt(match[1]) : null;
-}
-
-function findTituloForArticle(articleNumber) {
-    // Buscar el título correcto para un artículo incorporado
-    // basándose en su posición numérica en la ley
-    
-    const targetBase = extractArticleBaseNumber(articleNumber);
-    if (targetBase === null) return { tituloNumero: "I", tituloNombre: "Disposiciones Generales" };
-    
-    // Primero, buscar si hay un artículo con el mismo número base (sin sufijo)
-    // Esto es importante para artículos como "104 bis" que deben estar con el "104"
-    const titulos = leyData.ley.titulos;
-    
-    for (const titulo of titulos) {
-        if (titulo.articulos) {
-            for (const articulo of titulo.articulos) {
-                const artBase = extractArticleBaseNumber(articulo.numero);
-                if (artBase === targetBase) {
-                    return {
-                        tituloNumero: titulo.numero,
-                        tituloNombre: titulo.nombre
-                    };
-                }
-            }
-        }
-        
-        if (titulo.capitulos) {
-            for (const capitulo of titulo.capitulos) {
-                if (capitulo.articulos) {
-                    for (const articulo of capitulo.articulos) {
-                        const artBase = extractArticleBaseNumber(articulo.numero);
-                        if (artBase === targetBase) {
-                            return {
-                                tituloNumero: titulo.numero,
-                                tituloNombre: titulo.nombre
-                            };
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    // Si no se encontró un artículo con el mismo número base,
-    // buscar el artículo más cercano (anterior o igual)
-    const allArticlesWithTitulo = [];
-    
-    for (const titulo of titulos) {
-        if (titulo.articulos) {
-            for (const articulo of titulo.articulos) {
-                const base = extractArticleBaseNumber(articulo.numero);
-                if (base !== null) {
-                    allArticlesWithTitulo.push({
-                        base: base,
-                        tituloNumero: titulo.numero,
-                        tituloNombre: titulo.nombre
-                    });
-                }
-            }
-        }
-        
-        if (titulo.capitulos) {
-            for (const capitulo of titulo.capitulos) {
-                if (capitulo.articulos) {
-                    for (const articulo of capitulo.articulos) {
-                        const base = extractArticleBaseNumber(articulo.numero);
-                        if (base !== null) {
-                            allArticlesWithTitulo.push({
-                                base: base,
-                                tituloNumero: titulo.numero,
-                                tituloNombre: titulo.nombre
-                            });
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    // Ordenar por número base
-    allArticlesWithTitulo.sort((a, b) => a.base - b.base);
-    
-    // Buscar el artículo más cercano (anterior o igual)
-    let bestMatch = null;
-    for (let i = allArticlesWithTitulo.length - 1; i >= 0; i--) {
-        if (allArticlesWithTitulo[i].base <= targetBase) {
-            bestMatch = allArticlesWithTitulo[i];
-            break;
-        }
-    }
-    
-    // Si no hay artículo anterior, buscar el siguiente
-    if (!bestMatch && allArticlesWithTitulo.length > 0) {
-        bestMatch = allArticlesWithTitulo[0];
-    }
-    
-    // Si aún no hay match, usar el último título
-    if (!bestMatch) {
-        const lastTitulo = titulos[titulos.length - 1];
-        return {
-            tituloNumero: lastTitulo.numero,
-            tituloNombre: lastTitulo.nombre
-        };
-    }
-    
-    return {
-        tituloNumero: bestMatch.tituloNumero,
-        tituloNombre: bestMatch.tituloNombre
-    };
-}
-
-function getIncorporatedArticles() {
-    const incorporatedArticles = [];
-    
-    dictamenData.forEach(cambio => {
-        if (cambio.accion === "incorpórase" || cambio.accion === "incorporase") {
-            const destinoArticulo = getDestinoArticulo(cambio);
-            if (!destinoArticulo) return;
-            
-            // Verificar si el artículo ya existe en la ley original
-            const existsInLaw = leyData.ley.titulos.some(titulo => {
-                if (titulo.articulos) {
-                    if (titulo.articulos.some(art => String(art.numero) === destinoArticulo)) {
-                        return true;
-                    }
-                }
-                if (titulo.capitulos) {
-                    for (const capitulo of titulo.capitulos) {
-                        if (capitulo.articulos) {
-                            if (capitulo.articulos.some(art => String(art.numero) === destinoArticulo)) {
-                                return true;
-                            }
-                        }
-                    }
-                }
-                return false;
-            });
-            
-            // Solo agregar si no existe en la ley original
-            if (!existsInLaw) {
-                // Extraer título del texto_nuevo si está disponible
-                let titulo = "";
-                if (cambio.texto_nuevo) {
-                    const tituloMatch = cambio.texto_nuevo.match(/ART[ÍI]CULO\s+\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?\s*[°º]?-\s*(.+?)(?:\n|$)/i);
-                    if (tituloMatch && tituloMatch[1]) {
-                        titulo = tituloMatch[1].trim();
-                        // Limpiar el título (puede tener más texto después)
-                        titulo = titulo.split('\n')[0].trim();
-                    }
-                }
-                
-                // Encontrar el título correcto basándose en el número del artículo
-                const tituloInfo = findTituloForArticle(destinoArticulo);
-                
-                incorporatedArticles.push({
-                    numero: destinoArticulo,
-                    titulo: titulo,
-                    texto: cambio.texto_nuevo || "",
-                    isIncorporated: true,
-                    tituloNumero: tituloInfo.tituloNumero,
-                    tituloNombre: tituloInfo.tituloNombre
-                });
-            }
-        }
-    });
-    
-    return incorporatedArticles;
-}
+// Funciones de procesamiento del dictamen ya no son necesarias
+// El JSON de comparación ya tiene toda la información procesada
 
 function renderSplitView() {
     const container = document.getElementById('split-content');
@@ -898,8 +550,8 @@ function renderSplitView() {
         articlesByTitulo[tituloKey].push(articulo);
     });
     
-    // Obtener todos los títulos de la ley, incluso los que no tienen artículos
-    const allTitulos = leyData.ley.titulos || [];
+    // Obtener todos los títulos de la comparación, incluso los que no tienen artículos
+    const allTitulos = comparacionData.ley.titulos || [];
     
     if (allTitulos.length === 0 && allArticles.length === 0) {
         container.innerHTML = '<p class="placeholder">No se encontraron artículos.</p>';
@@ -925,8 +577,41 @@ function renderSplitView() {
             </div>
         `;
         
-        // Si no hay artículos para este título, mostrar un mensaje
-        if (tituloArticles.length === 0) {
+        // Renderizar capítulos si existen
+        if (titulo.capitulos) {
+            titulo.capitulos.forEach(capitulo => {
+                const capituloNumero = String(capitulo.numero);
+                
+                // Renderizar header del capítulo
+                html += `
+                    <div class="split-section-header" id="capitulo-${capituloNumero}">
+                        <div class="split-section-left">
+                            <h4 class="section-subtitle">Capítulo ${capitulo.numero}: ${capitulo.nombre}</h4>
+                        </div>
+                        <div class="split-section-right">
+                            <h4 class="section-subtitle">Capítulo ${capitulo.numero}: ${capitulo.nombre}</h4>
+                        </div>
+                    </div>
+                `;
+                
+                // Renderizar artículos del capítulo
+                if (capitulo.articulos) {
+                    capitulo.articulos.forEach(articulo => {
+                        html += renderArticleRow(articulo, titulo, capitulo);
+                    });
+                }
+            });
+        }
+        
+        // Renderizar artículos directos del título (sin capítulo)
+        if (titulo.articulos) {
+            titulo.articulos.forEach(articulo => {
+                html += renderArticleRow(articulo, titulo, null);
+            });
+        }
+        
+        // Si no hay artículos ni capítulos para este título, mostrar un mensaje
+        if (tituloArticles.length === 0 && (!titulo.capitulos || titulo.capitulos.length === 0) && (!titulo.articulos || titulo.articulos.length === 0)) {
             html += `
                 <div class="split-article-row">
                     <div class="split-article-left">
@@ -941,99 +626,128 @@ function renderSplitView() {
                     </div>
                 </div>
             `;
-        } else {
-            // Renderizar los artículos de este título
-            let currentCapitulo = null;
-            
-            tituloArticles.forEach(articulo => {
-                const cambio = getCambioForArticulo(articulo.numero);
-                const hasChange = cambio !== undefined;
-                
-                if (articulo.capituloNumero && currentCapitulo !== articulo.capituloNumero) {
-                    currentCapitulo = articulo.capituloNumero;
-                    html += `
-                        <div class="split-section-header" id="capitulo-${articulo.capituloNumero}">
-                            <div class="split-section-left">
-                                <h4 class="section-subtitle">Capítulo ${articulo.capituloNumero}: ${articulo.capituloNombre}</h4>
-                            </div>
-                            <div class="split-section-right">
-                                <h4 class="section-subtitle">Capítulo ${articulo.capituloNumero}: ${articulo.capituloNombre}</h4>
-                            </div>
-                        </div>
-                    `;
-                }
-                
-                const isIncorporated = articulo.isIncorporated === true;
-                const isDerogated = derogatedArticles.has(String(articulo.numero));
-                const isSynthetic = String(articulo.numero).startsWith('CAP_');
-                
-                // Para incorporaciones, no usar la clase has-change (que aplica fondo rojo)
-                const rowClasses = [];
-                if (isIncorporated) {
-                    rowClasses.push('is-incorporated');
-                } else if (hasChange || isDerogated) {
-                    rowClasses.push('has-change');
-                }
-                
-                // Determinar el número de artículo a mostrar
-                let displayNumber = articulo.numero;
-                if (isSynthetic) {
-                    const match = articulo.numero.match(/CAP_VIII_ART_(\d+)/);
-                    if (match) {
-                        displayNumber = `S/N (${match[1]})`;
-                    }
-                }
-                
-                html += `
-                    <div class="split-article-row ${rowClasses.join(' ')}" id="article-${articulo.numero}">
-                        <div class="split-article-left">
-                            <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
-                                <span class="split-article-number">Art. ${displayNumber}</span>
-                                ${articulo.titulo ? `<span class="split-article-title">${articulo.titulo}</span>` : ''}
-                            </div>
-                            <div class="split-article-content">
-                                ${isIncorporated ? 
-                                    '<p class="placeholder" style="color: #999; font-style: italic;">Artículo nuevo (no existe en ley actual)</p>' : 
-                                    renderArticleContent(articulo)
-                                }
-                            </div>
-                        </div>
-                        <div class="split-article-right">
-                            ${isDerogated ? `
-                                <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
-                                    <span class="split-article-number">Art. ${displayNumber}</span>
-                                    <span class="split-change-badge" style="background: #e74c3c;">DERÓGASE</span>
-                                </div>
-                                <div class="split-article-content changed" style="background: #ffe6e6;">
-                                    <p class="placeholder" style="color: #c0392b; font-weight: bold; font-style: italic;">Artículo eliminado</p>
-                                </div>
-                            ` : hasChange ? `
-                                <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
-                                    <span class="split-article-number">Art. ${displayNumber}</span>
-                                    <span class="split-change-badge">${cambio.accion || 'Modificación'}</span>
-                                </div>
-                                <div class="split-article-content changed">
-                                    ${cambio.texto_nuevo ? 
-                                        formatText(cambio.texto_nuevo) : 
-                                        '<p class="placeholder" style="color: #999; font-style: italic;">Texto no disponible</p>'
-                                    }
-                                </div>
-                            ` : `
-                                <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
-                                    <span class="split-article-number">Art. ${displayNumber}</span>
-                                </div>
-                                <div class="split-article-content unchanged">
-                                    ${renderArticleContent(articulo)}
-                                </div>
-                            `}
-                        </div>
-                    </div>
-                `;
-            });
         }
     });
     
     container.innerHTML = html;
+}
+
+function renderArticleRow(articulo, titulo, capitulo) {
+    // Usar el estado directamente del JSON de comparación
+    const estado = articulo.estado || 'sin_cambios';
+    const isIncorporated = estado === 'incorporado';
+    const isDerogated = estado === 'derogado';
+    const isSustituido = estado === 'sustituido';
+    const hasChange = isSustituido || isDerogated || isIncorporated;
+    const isSynthetic = String(articulo.numero).startsWith('CAP_');
+    
+    // Para incorporaciones, no usar la clase has-change (que aplica fondo rojo)
+    const rowClasses = [];
+    if (isIncorporated) {
+        rowClasses.push('is-incorporated');
+    } else if (hasChange) {
+        rowClasses.push('has-change');
+    }
+    
+    // Determinar el número de artículo a mostrar
+    let displayNumber = articulo.numero;
+    if (isSynthetic) {
+        const match = articulo.numero.match(/CAP_VIII_ART_(\d+)/);
+        if (match) {
+            displayNumber = `S/N (${match[1]})`;
+        }
+    }
+    
+    // Determinar título a mostrar
+    const tituloDisplay = articulo.titulo_nuevo || articulo.titulo || '';
+    
+    // Determinar texto a mostrar en el lado izquierdo (original)
+    let textoIzquierdo = '';
+    if (isIncorporated) {
+        textoIzquierdo = '<p class="placeholder" style="color: #999; font-style: italic;">Artículo nuevo (no existe en ley actual)</p>';
+    } else if (isSustituido && articulo.texto_original) {
+        // Para sustituciones, mostrar el texto original en el lado izquierdo
+        textoIzquierdo = renderArticleContent({
+            ...articulo,
+            texto: articulo.texto_original,
+            incisos: articulo.incisos_originales || articulo.incisos
+        });
+    } else {
+        textoIzquierdo = renderArticleContent(articulo);
+    }
+    
+    // Determinar contenido del lado derecho (nuevo/modificado)
+    let contenidoDerecho = '';
+    if (isDerogated) {
+        contenidoDerecho = `
+            <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
+                <span class="split-article-number">Art. ${displayNumber}</span>
+                <span class="split-change-badge" style="background: #e74c3c;">DERÓGASE</span>
+            </div>
+            <div class="split-article-content changed" style="background: #ffe6e6;">
+                <p class="placeholder" style="color: #c0392b; font-weight: bold; font-style: italic;">Artículo eliminado</p>
+            </div>
+        `;
+    } else if (isSustituido) {
+        // Mostrar texto nuevo
+        const textoNuevo = articulo.texto_nuevo || '';
+        const incisosNuevos = articulo.incisos_nuevos || articulo.incisos;
+        contenidoDerecho = `
+            <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
+                <span class="split-article-number">Art. ${displayNumber}</span>
+                <span class="split-change-badge">${articulo.accion || 'Modificación'}</span>
+            </div>
+            <div class="split-article-content changed">
+                ${textoNuevo ? 
+                    renderArticleContent({
+                        ...articulo,
+                        texto: textoNuevo,
+                        titulo: tituloDisplay,
+                        incisos: incisosNuevos
+                    }) : 
+                    '<p class="placeholder" style="color: #999; font-style: italic;">Texto no disponible</p>'
+                }
+            </div>
+        `;
+    } else if (isIncorporated) {
+        // Mostrar texto del artículo incorporado
+        contenidoDerecho = `
+            <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
+                <span class="split-article-number">Art. ${displayNumber}</span>
+                <span class="split-change-badge" style="background: #27ae60;">INCORPÓRASE</span>
+            </div>
+            <div class="split-article-content changed" style="background: #e8f5e9;">
+                ${renderArticleContent(articulo)}
+            </div>
+        `;
+    } else {
+        // Sin cambios
+        contenidoDerecho = `
+            <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
+                <span class="split-article-number">Art. ${displayNumber}</span>
+            </div>
+            <div class="split-article-content unchanged">
+                ${renderArticleContent(articulo)}
+            </div>
+        `;
+    }
+    
+    return `
+        <div class="split-article-row ${rowClasses.join(' ')}" id="article-${articulo.numero}">
+            <div class="split-article-left">
+                <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
+                    <span class="split-article-number">Art. ${displayNumber}</span>
+                    ${tituloDisplay ? `<span class="split-article-title">${tituloDisplay}</span>` : ''}
+                </div>
+                <div class="split-article-content">
+                    ${textoIzquierdo}
+                </div>
+            </div>
+            <div class="split-article-right">
+                ${contenidoDerecho}
+            </div>
+        </div>
+    `;
 }
 
 function renderArticleContent(articulo) {

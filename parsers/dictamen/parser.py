@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Parseador de "dictámenes" que modifican normas (ej. LCT) donde aparecen
+Parser de "dictámenes" que modifican normas (ej. LCT) donde aparecen
 dos niveles de "ARTÍCULO": (a) artículo del dictamen (operación) y
 (b) artículo/inciso del texto que se incorpora a la ley.
 
@@ -13,9 +13,6 @@ Estrategia (parser por estados):
   hasta el próximo artículo del dictamen o un encabezado estructural (TÍTULO/CAPÍTULO/SECCIÓN).
 
 Salida: JSON con una lista de operaciones (artículos del dictamen) y su texto nuevo, si aplica.
-
-Uso:
-  python parse_dictamen.py "/ruta/al/Dictamen.pdf" -o salida.json
 
 Requisitos:
   - pdfplumber (recomendado) o PyMuPDF (fitz) como fallback.
@@ -506,6 +503,22 @@ def parse_dictamen(lines: List[str]) -> Dict[str, List[Operation]]:
     return titulos_ops
 
 
+def parse_dictamen_pdf(pdf_path: str) -> Dict[str, List[Operation]]:
+    """
+    Parsea un PDF de dictamen y retorna las operaciones agrupadas por título.
+    
+    Args:
+        pdf_path: Ruta al archivo PDF del dictamen
+    
+    Returns:
+        Diccionario donde las claves son números de título (I, II, etc.)
+        y los valores son listas de operaciones
+    """
+    raw = extract_lines_from_pdf(pdf_path)
+    lines = normalize_lines(raw)
+    return parse_dictamen(lines)
+
+
 # ----------------------------
 # CLI
 # ----------------------------
@@ -517,17 +530,16 @@ def main() -> None:
     ap.add_argument("--pretty", action="store_true", help="JSON con indentación.")
     args = ap.parse_args()
 
-    raw = extract_lines_from_pdf(args.pdf)
-    lines = normalize_lines(raw)
+    titulos_ops = parse_dictamen_pdf(args.pdf)
     
     # Guardar archivo de texto plano normalizado (útil para debugging y ajuste de regex)
+    raw = extract_lines_from_pdf(args.pdf)
+    lines = normalize_lines(raw)
     text_output = f"{args.output}_normalizado.txt"
     with open(text_output, "w", encoding="utf-8") as f:
         for i, line in enumerate(lines, 1):
             f.write(f"{i:5d}|{line}\n")
     print(f"Archivo de texto normalizado guardado: {text_output}")
-    
-    titulos_ops = parse_dictamen(lines)
 
     # Generar un archivo JSON por cada título
     total_ops = 0

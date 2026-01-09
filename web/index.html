@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ley de Contrato de Trabajo - Comparador de Cambios</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
     <header>
         <h1>Ley de Contrato de Trabajo</h1>
         <p class="subtitle">Comparación: Ley Actual vs Dictamen Propuesto</p>
-        <button id="export-pdf-btn" class="export-btn">Exportar a PDF</button>
     </header>
 
     <main class="main-split-layout">
-        <aside class="toc-sidebar">
+        <button id="toc-toggle" class="toc-toggle-btn" aria-label="Toggle índice">☰</button>
+        <aside class="toc-sidebar" id="toc-sidebar">
             <h2>Índice de Artículos</h2>
             <div id="toc-container"></div>
         </aside>

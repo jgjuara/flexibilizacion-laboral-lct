@@ -75,6 +75,13 @@ TARGET_ART_RE = re.compile(
     r"art[íi]culo\s+([0-9]+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?",
     re.IGNORECASE
 )
+
+# Regex específico para buscar "el artículo X" después del verbo operativo
+# Esto evita capturar el número del artículo del dictamen (ej: "ARTÍCULO 21-")
+TARGET_ART_AFTER_VERB_RE = re.compile(
+    r"(?:sustit[úu]yese|der[óo]gase|modif[íi]case|supr[íi]mese|reempl[áa]zase)\s+el\s+art[íi]culo\s+([0-9]+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?",
+    re.IGNORECASE
+)
 TARGET_INCISO_RE = re.compile(r"inciso\s+([a-z])\)\s+del\s+art[íi]culo\s+([0-9]+)\s*[°º]?", re.IGNORECASE)
 
 # Regex para detectar derogaciones de capítulos completos
@@ -272,7 +279,15 @@ def parse_action_and_target(header_text: str) -> Dict[str, Optional[str]]:
             out["destino_articulo"] = mincorp.group(1).strip()
             return out
 
-    # Fallback: buscar cualquier "artículo X"
+    # Para sustituciones/derogaciones/modificaciones, buscar "el artículo X" después del verbo
+    # Esto evita capturar el número del artículo del dictamen (ej: "ARTÍCULO 21-")
+    if out["accion"] in ("sustitúyese", "sustituyese", "derógase", "derogase", "modifícase", "modificase", "suprímese", "suprimese", "reemplázase", "reemplazase"):
+        mart_after_verb = TARGET_ART_AFTER_VERB_RE.search(header_text)
+        if mart_after_verb:
+            out["destino_articulo"] = mart_after_verb.group(1).strip()
+            return out
+
+    # Fallback: buscar cualquier "artículo X" (puede ser incorrecto si coincide con el número del dictamen)
     mart = TARGET_ART_RE.search(header_text)
     if mart:
         out["destino_articulo"] = mart.group(1).strip()
@@ -297,7 +312,8 @@ def extract_article_number_from_texto_nuevo(texto_nuevo: str) -> Optional[str]:
         return None
     
     # Patrón para extraer número de artículo (puede incluir bis, ter, quater, etc.)
-    pattern = r"ART[ÍI]CULO\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?-"
+    # Acepta tanto guion (-) como punto (.) después del número
+    pattern = r"ART[ÍI]CULO\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?[\.-]"
     match = re.search(pattern, texto_nuevo, re.IGNORECASE)
     
     if match:

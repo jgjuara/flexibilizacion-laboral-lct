@@ -428,9 +428,10 @@
                 "texto": "ARTICULO 21.- Habrá contrato de trabajo, cualquiera sea su forma o denominación, siempre que una persona física se obligue a realizar actos, ejecutar obras o prestar servicios en favor de la otra y bajo la dependencia de ésta, durante un período determinado o indeterminado de tiempo, mediante el pago de una remuneración. Sus cláusulas, en cuanto a la forma y condiciones de la prestación, quedan sometidas a las disposiciones de orden público, los estatutos, las convenciones colectivas o los laudos con fuerza de tales y los usos y costumbres.",
                 "estado": "sustituido",
                 "texto_original": "ARTICULO 21.- Habrá contrato de trabajo, cualquiera sea su forma o denominación, siempre que una persona física se obligue a realizar actos, ejecutar obras o prestar servicios en favor de la otra y bajo la dependencia de ésta, durante un período determinado o indeterminado de tiempo, mediante el pago de una remuneración. Sus cláusulas, en cuanto a la forma y condiciones de la prestación, quedan sometidas a las disposiciones de orden público, los estatutos, las convenciones colectivas o los laudos con fuerza de tales y los usos y costumbres.",
-                "texto_nuevo": "ARTÍCULO 53. Omisión de formalidades. Los jueces merituarán la\nomisión de formalidades en la registración en los términos del artículo\n52 de la presente ley, en función de las particulares circunstancias de\ncada caso.",
+                "texto_nuevo": "Habrá contrato de trabajo,\ncualquiera sea su forma o denominación, siempre que una persona\nhumana se obligue a prestar servicios en favor de otra persona y bajo la\ndependencia de ésta, durante un período determinado o indeterminado\nde tiempo, mediante el pago de una remuneración. Sus cláusulas, en\ncuanto a la forma y condiciones de la prestación, quedan sometidas a\nlas disposiciones de orden público, los estatutos, las convenciones\ncolectivas o los laudos con fuerza de tales.",
+                "titulo_nuevo": "Contrato de trabajo.",
                 "accion": "sustitúyese",
-                "dictamen_articulo": "21"
+                "dictamen_articulo": "11"
               },
               {
                 "numero": "22",
@@ -490,9 +491,12 @@
                 "numero": "26",
                 "titulo": "Empleador",
                 "texto": "ARTICULO 26.- Se considera \"empleador\" a la persona física o conjunto de ellas, o jurídica, tenga o no personalidad jurídica propia, que requiera los servicios de un trabajador.",
-                "estado": "derogado",
-                "accion": "derógase",
-                "dictamen_articulo": "26"
+                "estado": "sustituido",
+                "texto_original": "ARTICULO 26.- Se considera \"empleador\" a la persona física o conjunto de ellas, o jurídica, tenga o no personalidad jurídica propia, que requiera los servicios de un trabajador.",
+                "texto_nuevo": "Se considera empleador a la persona\nhumana o jurídica, o conjunto de ellas aún sin personalidad jurídica\npropia, que, a los fines de desempeñarse bajo su dependencia, requiera\nlos servicios de un trabajador.",
+                "titulo_nuevo": "Empleador.",
+                "accion": "sustitúyese",
+                "dictamen_articulo": "14"
               },
               {
                 "numero": "27",
@@ -614,11 +618,7 @@
                     "ref": "LEY C 026390 2008 06 04 0003 000 0000 000"
                   }
                 ],
-                "estado": "sustituido",
-                "texto_original": "Artículo 32.- Las personas desde los dieciocho (18) años, pueden celebrar contrato de trabajo.Las personas desde los dieciséis (16) años y menores de dieciocho (18) años, pueden celebrar contrato de trabajo, con autorización de sus padres, responsables o tutores. Se presume tal autorización cuando el adolescente viva independientemente de ellos.",
-                "texto_nuevo": "ARTÍCULO 104. Formas de determinar la remuneración. El salario\npuede fijarse por tiempo o por rendimiento del trabajo, y en este último\ncaso por unidad de obra, comisión individual o colectiva. En ningún caso\nlas propinas podrán ser consideradas como remuneración aun cuando\npor los usos y costumbres de determinadas actividades sean habituales.",
-                "accion": "sustitúyese",
-                "dictamen_articulo": "32"
+                "estado": "sin_cambios"
               },
               {
                 "numero": "33",
@@ -656,11 +656,7 @@
                 "numero": "36",
                 "titulo": "Actos de las personas jurídicas",
                 "texto": "ARTICULO 36.- A los fines de la celebración del contrato de trabajo, se reputarán actos de las personas jurídicas los de sus representantes legales o de quienes, sin serlo, aparezcan como facultados para ello.",
-                "estado": "sustituido",
-                "texto_original": "ARTICULO 36.- A los fines de la celebración del contrato de trabajo, se reputarán actos de las personas jurídicas los de sus representantes legales o de quienes, sin serlo, aparezcan como facultados para ello.",
-                "texto_nuevo": "",
-                "accion": "sustitúyese",
-                "dictamen_articulo": "36"
+                "estado": "sin_cambios"
               }
             ]
           },
@@ -750,11 +746,7 @@
                 "numero": "48",
                 "titulo": "Forma",
                 "texto": "ARTICULO 48.- Las partes podrán escoger libremente sobre las formas a observar para la celebración del contrato de trabajo, salvo lo que dispongan las leyes o convenciones colectivas en casos particulares.",
-                "estado": "sustituido",
-                "texto_original": "ARTICULO 48.- Las partes podrán escoger libremente sobre las formas a observar para la celebración del contrato de trabajo, salvo lo que dispongan las leyes o convenciones colectivas en casos particulares.",
-                "texto_nuevo": "",
-                "accion": "sustitúyese",
-                "dictamen_articulo": "48"
+                "estado": "sin_cambios"
               },
               {
                 "numero": "49",
@@ -835,7 +827,11 @@
                 "numero": "53",
                 "titulo": "Omisión de formalidades",
                 "texto": "ARTICULO 53.- Los jueces merituarán en función de las particulares circunstancias de cada caso los libros que carezcan de algunas de las formalidades prescriptas en el artículo 52 o que tengan algunos de los defectos allí consignados.",
-                "estado": "sin_cambios"
+                "estado": "sustituido",
+                "texto_original": "ARTICULO 53.- Los jueces merituarán en función de las particulares circunstancias de cada caso los libros que carezcan de algunas de las formalidades prescriptas en el artículo 52 o que tengan algunos de los defectos allí consignados.",
+                "texto_nuevo": "ARTÍCULO 53. Omisión de formalidades. Los jueces merituarán la\nomisión de formalidades en la registración en los términos del artículo\n52 de la presente ley, en función de las particulares circunstancias de\ncada caso.",
+                "accion": "sustitúyese",
+                "dictamen_articulo": "21"
               },
               {
                 "numero": "54",
@@ -1592,7 +1588,11 @@
                 "numero": "104",
                 "titulo": "Formas de determinar la remuneración.",
                 "texto": "ARTICULO 104.- El salario puede fijarse por tiempo o por rendimiento del trabajo, y en este último caso por unidad de obra, comisión individual o colectiva, habilitación, gratificación o participación en las utilidades e integrarse con premios en cualquiera de sus formas o modalidades.",
-                "estado": "sin_cambios"
+                "estado": "sustituido",
+                "texto_original": "ARTICULO 104.- El salario puede fijarse por tiempo o por rendimiento del trabajo, y en este último caso por unidad de obra, comisión individual o colectiva, habilitación, gratificación o participación en las utilidades e integrarse con premios en cualquiera de sus formas o modalidades.",
+                "texto_nuevo": "ARTÍCULO 104. Formas de determinar la remuneración. El salario\npuede fijarse por tiempo o por rendimiento del trabajo, y en este último\ncaso por unidad de obra, comisión individual o colectiva. En ningún caso\nlas propinas podrán ser consideradas como remuneración aun cuando\npor los usos y costumbres de determinadas actividades sean habituales.",
+                "accion": "sustitúyese",
+                "dictamen_articulo": "32"
               },
               {
                 "numero": "104 bis",
@@ -3955,7 +3955,7 @@
     "dictamen_origen": "dictamen_modernizacion_laboral_titulo_I.json",
     "total_sustituciones": 50,
     "total_incorporaciones": 3,
-    "total_derogaciones": 1,
+    "total_derogaciones": 0,
     "capitulos_derogados": [
       "VIII"
     ]

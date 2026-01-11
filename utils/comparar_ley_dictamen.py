@@ -51,27 +51,65 @@ def get_destino_articulo(cambio: Dict[str, Any]) -> Optional[str]:
     Obtiene el número de artículo destino desde un cambio del dictamen.
     
     Prioridad:
-    1. destino_articulo explícito
-    2. Extraer desde texto_nuevo
-    3. Extraer desde encabezado
-    """
-    # Prioridad 1: destino_articulo explícito
-    if cambio.get('destino_articulo'):
-        return str(cambio['destino_articulo'])
+    1. Extraer desde encabezado ("Sustitúyese el artículo X")
+    2. Extraer desde texto_nuevo ("ARTÍCULO X")
+    3. destino_articulo explícito (solo si coincide o como último recurso)
     
-    # Prioridad 2: extraer desde texto_nuevo (más confiable)
+    Si hay discrepancia, se prioriza lo extraído del encabezado/texto_nuevo.
+    """
+    numero_desde_encabezado = None
+    numero_desde_texto = None
+    
+    # Prioridad 1: extraer desde encabezado (buscar "Sustitúyese el artículo X")
+    encabezado = cambio.get('encabezado', '')
+    if encabezado:
+        # Buscar explícitamente "Sustitúyese el artículo X" o "Incorpórase como artículo X"
+        match_sustituye = re.search(
+            r'(?:sustit[úu]yese|der[óo]gase|modif[íi]case)\s+el\s+art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
+            encabezado,
+            re.IGNORECASE
+        )
+        if match_sustituye:
+            numero_desde_encabezado = match_sustituye.group(1).strip()
+        else:
+            # Para incorporaciones
+            match_incorpora = re.search(
+                r'incorp[óo]rase\s+como\s+art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
+                encabezado,
+                re.IGNORECASE
+            )
+            if match_incorpora:
+                numero_desde_encabezado = match_incorpora.group(1).strip()
+    
+    # Prioridad 2: extraer desde texto_nuevo (más confiable - es el texto real del artículo)
     if cambio.get('texto_nuevo'):
+        # Acepta tanto guion (-) como punto (.) después del número
         match = re.search(
-            r'ART[ÍI]CULO\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?-',
+            r'ART[ÍI]CULO\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?[\.-]',
             cambio['texto_nuevo'],
             re.IGNORECASE
         )
         if match:
-            return match.group(1).strip()
+            numero_desde_texto = match.group(1).strip()
     
-    # Prioridad 3: extraer desde encabezado
-    from_header = extract_article_number_from_header(cambio.get('encabezado', ''))
-    return from_header
+    # Usar el número más confiable (encabezado > texto_nuevo)
+    numero_final = numero_desde_encabezado or numero_desde_texto
+    
+    # Validar destino_articulo si existe
+    destino_articulo = cambio.get('destino_articulo')
+    if destino_articulo:
+        destino_articulo = str(destino_articulo).strip()
+        # Si tenemos un número extraído y no coincide con destino_articulo, usar el extraído
+        if numero_final:
+            if normalize_article_number(destino_articulo) != normalize_article_number(numero_final):
+                # destino_articulo está mal, usar el número extraído
+                return numero_final
+        # Si no tenemos número extraído, usar destino_articulo como último recurso
+        if not numero_final:
+            return destino_articulo
+    
+    # Retornar el número final o destino_articulo como último recurso
+    return numero_final or (destino_articulo if destino_articulo else None)
 
 
 def normalize_article_number(numero: Any) -> str:

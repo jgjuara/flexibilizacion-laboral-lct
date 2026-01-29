@@ -1,0 +1,21 @@
+{
+  "ley": {
+    "numero": "20657",
+    "nombre": "REGIMEN DE TRABAJO Y DESCANSO EN LOS SUPERMERCADOS, SUPERTIENDAS, AUTOSERVICIOS Y SECCIONES MINORISTAS DE VENTA DE ALIMENTACION",
+    "tipo": {
+      "codigo": "LEY",
+      "texto": "Ley"
+    },
+    "estado": "DEROGADA (POR DICTAMEN)",
+    "titulos": []
+  },
+  "metadatos": {
+    "ley_origen": "normalized_ley_20657.json",
+    "dictamen_origen": "aggregated_dictamen",
+    "total_sustituciones": 0,
+    "total_incorporaciones": 0,
+    "total_derogaciones": 0,
+    "capitulos_derogados": [],
+    "derogacion_total": true
+  }
+}

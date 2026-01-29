@@ -1,0 +1,65 @@
+{
+  "manual_matches": [
+    {
+      "dictamen_articulo": "27",
+      "target_ley": "20744",
+      "target_articulo": "92 003"
+    },
+    {
+      "dictamen_articulo": "17",
+      "target_ley": "20744",
+      "target_articulo": "29 002"
+    },
+    {
+      "dictamen_articulo": "31",
+      "target_ley": "20744",
+      "target_articulo": "103 002"
+    },
+    {
+      "dictamen_articulo": "42",
+      "target_ley": "20744",
+      "target_articulo": "197 002"
+    },
+    {
+      "dictamen_articulo": "133",
+      "target_ley": "23551",
+      "target_articulo": "20 002"
+    },
+    {
+      "dictamen_articulo": "134",
+      "target_ley": "23551",
+      "target_articulo": "20 003"
+    },
+    {
+      "dictamen_articulo": "206",
+      "target_ley": "26727",
+      "target_articulo": "17"
+    },
+    {
+      "dictamen_articulo": "36",
+      "target_ley": "20744",
+      "target_articulo": "132"
+    },
+    {
+      "dictamen_articulo": "48",
+      "target_ley": "20744",
+      "target_articulo": "231"
+    },
+    {
+      "dictamen_articulo": "138",
+      "target_ley": "23551",
+      "target_articulo": "44"
+    },
+    {
+      "dictamen_articulo": "144",
+      "target_ley": "23551",
+      "target_articulo": "59"
+    }
+  ],
+  "law_replacements": {
+    "150": "27348"
+  },
+  "null_target_overrides": [
+    "193", "194", "195", "197", "198", "199", "200", "201", "208", "209"
+  ]
+}

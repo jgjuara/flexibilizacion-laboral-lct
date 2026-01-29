@@ -1,0 +1,268 @@
+{
+  "ley": {
+    "nombre": "PROCEDIMIENTO PARA LAS NEGOCIACIONES COLECTIVAS DE TRABAJO PARA RESOLVER LOS CONFLICTOS LABORALES.",
+    "numero": "23546",
+    "tipo": {
+      "codigo": "TOR",
+      "texto": "Texto Ordenado Ley"
+    },
+    "fecha": "2004-08-31",
+    "texto_ordenado": "TEXTO ORDENADO POR DECRETO NACIONAL 1135/2004",
+    "estado": "Vigente, de alcance general",
+    "jurisdiccion": {
+      "codigo": "CAPITAL FEDERAL",
+      "descripcion": "Nacional",
+      "capital": "Capital Federal",
+      "id-pais": 11
+    },
+    "publicacion": {
+      "publicacion-decodificada": {
+        "organismo": "Boletín Oficial",
+        "fecha": "2004 09 03"
+      }
+    },
+    "lugar_sancion": "BUENOS AIRES",
+    "identificacion_coloquial": {
+      "identificacion-coloquial": [
+        "*LEY 23.546",
+        "BUENOS AIRES, 31 DE AGOSTO DE 2004"
+      ]
+    },
+    "metadatos": {
+      "uuid": "123456789-0abc-defg-g48-84000scanyel",
+      "document_content_type": "legislacion",
+      "timestamp": 1413584395033,
+      "friendly_url": {
+        "subdomain": "texto ordenado ley",
+        "description": "23546-nacional-procedimiento-para-negociaciones-colectivas-trabajo-para-resolver-conflictos-laborales-lns0004884-2004-08-31"
+      },
+      "id_infojus": "LNS0004884",
+      "fecha_umod": ""
+    },
+    "decretos_reglamentarios": {
+      "cr": null,
+      "id": "DECRETO_REGLAMENTARIO_0",
+      "ref": "DEC C 000200 1988 02 16 0000 000 0000 000"
+    },
+    "generalidades": {
+      "observaciones-generales": "[[p]]CANTIDAD DE ARTICULOS QUE COMPONEN LA NORMA 10 NRO. DE ART. QUE ESTABLECE LA ENTRADA EN VIGENCIA 6 OBSERVACION: POR ART. 2 DEL DECRETO 1135/2004 SE APRUEBA EL TEXTO ORDENADO DE LA PRESENTE LEY (B.O. 03/09/2004)[[/p]]"
+    },
+    "descriptores": {
+      "descriptor": [
+        {
+          "elegido": {
+            "termino": "trabajo"
+          },
+          "preferido": {
+            "termino": "Derecho laboral/contrato de trabajo/contrato de trabajo en general/objeto del contrato de trabajo/trabajo"
+          },
+          "sinonimos": {
+            "termino": [
+              "contrato laboral",
+              "derecho del trabajo"
+            ]
+          }
+        },
+        {
+          "elegido": {
+            "termino": "negociación colectiva"
+          },
+          "preferido": {
+            "termino": "Derecho laboral/derecho colectivo del trabajo/negociación colectiva"
+          },
+          "sinonimos": {
+            "termino": "derecho del trabajo"
+          }
+        },
+        {
+          "elegido": {
+            "termino": "conflicto gremial"
+          },
+          "preferido": {
+            "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/conflicto gremial"
+          },
+          "sinonimos": {
+            "termino": [
+              "derecho del trabajo",
+              "asociaciones gremiales",
+              "asociaciones gremiales de trabajadores"
+            ]
+          }
+        }
+      ],
+      "suggest": {
+        "termino": [
+          "conflicto gremial",
+          "derecho colectivo del trabajo",
+          "asociaciones gremiales de trabajadores (asociaciones sindicales)",
+          "contrato laboral (contrato de trabajo)",
+          "contrato de trabajo",
+          "derecho del trabajo (Derecho laboral)",
+          "trabajo",
+          "objeto del contrato de trabajo",
+          "Derecho laboral",
+          "asociaciones sindicales",
+          "contrato de trabajo en general",
+          "negociación colectiva",
+          "asociaciones gremiales (asociaciones sindicales)"
+        ]
+      }
+    },
+    "sumario": {
+      "sumario": "[[p]]TRABAJO-NEGOCIACION COLECTIVA-CONFLICTO GREMIAL[[/p]]"
+    },
+    "titulos": [
+      {
+        "numero": "S/N",
+        "nombre": "Artículos Generales",
+        "articulos": [
+          {
+            "numero": "1",
+            "titulo": "",
+            "texto": "ARTICULO 1º.- El procedimiento para la negociación colectiva se ajustará a lo previsto en la presente Ley.",
+            "estado": "sin_cambios"
+          },
+          {
+            "numero": "2",
+            "titulo": "",
+            "texto": "ARTICULO 2º.- La representación de los empleadores o de los trabajadores que promueva la negociación lo notificará por escrito a la otra parte, con copia a la autoridad administrativa del trabajo, indicando:a) Representación que inviste;b) Alcance personal y territorial de la convención colectiva pretendida;c) Materia a negociar.",
+            "incisos": [
+              {
+                "letra": "a",
+                "texto": "Representación que inviste;"
+              },
+              {
+                "letra": "b",
+                "texto": "Alcance personal y territorial de la convención colectiva pretendida;"
+              },
+              {
+                "letra": "c",
+                "texto": "Materia a negociar."
+              }
+            ],
+            "estado": "sin_cambios"
+          },
+          {
+            "numero": "3",
+            "titulo": "",
+            "texto": "ARTICULO 3º.- Quienes reciban la comunicación del artículo anterior estarán obligados a responderla y a designar sus representantes en la comisión que se integre al efecto.",
+            "estado": "sin_cambios"
+          },
+          {
+            "numero": "4",
+            "titulo": "",
+            "texto": "ARTICULO 4º.- En el plazo de QUINCE (15) días a contar desde la recepción de la notificación del artículo 2º de esta Ley, se constituirá la comisión negociadora con representantes sindicales, la que deberá integrarse respetando lo establecido en la Ley Nº 25.674, y la representación de los empleadores.Las partes podrán concurrir a las negociaciones con asesores técnicos con voz pero sin voto.a) Las partes están obligadas a negociar de buena fe. Ello implica:I. Concurrir a las reuniones acordadas o fijadas por la autoridad de aplicación.II. Designar negociadores con mandato suficiente.III. Intercambiar la información necesaria a los fines del examen de las cuestiones en debate, para entablar una discusión fundada y obtener un acuerdo. Dicho intercambio deberá obligatoriamente incluir la información relativa a la distribución de los beneficios de la productividad, la situación actual del empleo y las previsiones sobre su futura evolución.IV. Realizar esfuerzos conducentes a lograr acuerdos.b) En la negociación colectiva entablada al nivel de la empresa el intercambio de información alcanzará, además, a las informaciones relativas a los siguientes temas:I. Situación económica de la empresa, del sector y del entorno en el que aquélla se desenvuelve.II. Costo laboral unitario.III. Causales e indicadores de ausentismo.IV. Innovaciones tecnológicas y organizacionales previstas.V. Organización, duración y distribución del tiempo de trabajo.VI. Siniestralidad laboral y medidas de prevención.VII. Planes y acciones en materia de formación profesional.c) La obligación de negociar de buena fe en los procedimientos preventivos de crisis y respecto de las empresas concursadas, impone al empleador el deber de informar a los trabajadores a través de la representación sindical sobre las causas y circunstancias que motivaron la iniciación del procedimiento de crisis o la presentación en concurso.En el caso del procedimiento de crisis, la empresa deberá informar sobre las siguientes materias:I. Mantenimiento del empleo.II. Movilidad funcional, horaria o salarial.III. Innovación tecnológica y cambio organizacional.IV. Recalificación y formación profesional de los trabajadores.V. Reubicación interna o externa de trabajadores y programas de reinserción laboral.VI. Aportes convenidos al Sistema Integrado de Jubilaciones y Pensiones.VII. Programas de apoyo a la generación de microemprendimientos para los trabajadores afectados.En el supuesto de empresas concursadas, se deberá informar especialmente sobre las siguientes materias:I. Causas de la crisis y sus repercusiones sobre el empleo.II. Situación económico financiera de la empresa y del entorno en que se desenvuelve.III. Propuesta de acuerdo con los acreedores.IV. Rehabilitación de la actividad productiva.V. Situación de los créditos laborales.d) Quienes reciban información calificada de confidencial por la empresa, como consecuencia del cumplimiento por parte de ésta de los deberes de información, están obligados a guardar secreto acerca de la misma.e) Cuando alguna de las partes, se rehusare injustificadamente a negociar colectivamente vulnerando el principio de buena fe, en los términos del inciso a), la parte afectada por el incumplimiento podrá promover una acción judicial ante el tribunal laboral competente, mediante el proceso sumarísimo establecido en el artículo 498 del Código Procesal Civil y Comercial de la Nación, o equivalente de los Códigos Procesales Civiles provinciales.El tribunal dispondrá el cese inmediato del comportamiento violatorio del deber de negociar de buena fe y podrá, además, sancionar a la parte incumplidora con una multa de hasta un máximo equivalente al VEINTE POR CIENTO (20%) del total de la masa salarial del mes en que se produzca el hecho, correspondiente a los trabajadores comprendidos en el ámbito personal de la negociación. Si la parte infractora mantuviera su actitud, el importe de la sanción se incrementará en un DIEZ POR CIENTO (10%) por cada CINCO (5) días de mora en acatar la decisión judicial. En el supuesto de reincidencia el máximo previsto en el presente inciso podrá elevarse hasta el equivalente al CIEN POR CIENTO (100%) de esos montos.Sin perjuicio de ello, el juez, a petición de parte, podrá también aplicar lo dispuesto por el artículo 666 bis del Código Civil.Cuando cesaren los actos que dieron origen a la acción entablada, dentro del plazo que al efecto establezca la decisión judicial, el monto de la sanción podrá ser reducido por el juez hasta el CINCUENTA POR CIENTO (50%).Todos los importes que así se devenguen tendrán como exclusivo destino programas de inspección del MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL.",
+            "incisos": [
+              {
+                "letra": "a",
+                "texto": "Las partes están obligadas a negociar de buena fe. Ello implica:"
+              },
+              {
+                "letra": "b",
+                "texto": "En la negociación colectiva entablada al nivel de la empresa el intercambio de información alcanzará, además, a las informaciones relativas a los siguientes temas:"
+              },
+              {
+                "letra": "c",
+                "texto": "La obligación de negociar de buena fe en los procedimientos preventivos de crisis y respecto de las empresas concursadas, impone al empleador el deber de informar a los trabajadores a través de la representación sindical sobre las causas y circunstancias que motivaron la iniciación del procedimiento de crisis o la presentación en concurso."
+              },
+              {
+                "letra": "d",
+                "texto": "Quienes reciban información calificada de confidencial por la empresa, como consecuencia del cumplimiento por parte de ésta de los deberes de información, están obligados a guardar secreto acerca de la misma."
+              },
+              {
+                "letra": "e",
+                "texto": "Cuando alguna de las partes, se rehusare injustificadamente a negociar colectivamente vulnerando el principio de buena fe, en los términos del inciso"
+              }
+            ],
+            "referencias_normativas": [
+              {
+                "cr": null,
+                "id": "REFERENCIAS_NORMATIVAS_0",
+                "ref": "LEY C 025674 2002 11 06 0000 000 0000 000"
+              },
+              {
+                "cr": null,
+                "id": "REFERENCIAS_NORMATIVAS_1",
+                "ref": "CPC C 017454 1981 08 18 0498 000 0000 000"
+              },
+              {
+                "cr": null,
+                "id": "REFERENCIAS_NORMATIVAS_2",
+                "ref": "CCI C 000340 1869 09 25 0666 000 0666 000  A"
+              }
+            ],
+            "estado": "sustituido",
+            "texto_original": "ARTICULO 4º.- En el plazo de QUINCE (15) días a contar desde la recepción de la notificación del artículo 2º de esta Ley, se constituirá la comisión negociadora con representantes sindicales, la que deberá integrarse respetando lo establecido en la Ley Nº 25.674, y la representación de los empleadores.Las partes podrán concurrir a las negociaciones con asesores técnicos con voz pero sin voto.a) Las partes están obligadas a negociar de buena fe. Ello implica:I. Concurrir a las reuniones acordadas o fijadas por la autoridad de aplicación.II. Designar negociadores con mandato suficiente.III. Intercambiar la información necesaria a los fines del examen de las cuestiones en debate, para entablar una discusión fundada y obtener un acuerdo. Dicho intercambio deberá obligatoriamente incluir la información relativa a la distribución de los beneficios de la productividad, la situación actual del empleo y las previsiones sobre su futura evolución.IV. Realizar esfuerzos conducentes a lograr acuerdos.b) En la negociación colectiva entablada al nivel de la empresa el intercambio de información alcanzará, además, a las informaciones relativas a los siguientes temas:I. Situación económica de la empresa, del sector y del entorno en el que aquélla se desenvuelve.II. Costo laboral unitario.III. Causales e indicadores de ausentismo.IV. Innovaciones tecnológicas y organizacionales previstas.V. Organización, duración y distribución del tiempo de trabajo.VI. Siniestralidad laboral y medidas de prevención.VII. Planes y acciones en materia de formación profesional.c) La obligación de negociar de buena fe en los procedimientos preventivos de crisis y respecto de las empresas concursadas, impone al empleador el deber de informar a los trabajadores a través de la representación sindical sobre las causas y circunstancias que motivaron la iniciación del procedimiento de crisis o la presentación en concurso.En el caso del procedimiento de crisis, la empresa deberá informar sobre las siguientes materias:I. Mantenimiento del empleo.II. Movilidad funcional, horaria o salarial.III. Innovación tecnológica y cambio organizacional.IV. Recalificación y formación profesional de los trabajadores.V. Reubicación interna o externa de trabajadores y programas de reinserción laboral.VI. Aportes convenidos al Sistema Integrado de Jubilaciones y Pensiones.VII. Programas de apoyo a la generación de microemprendimientos para los trabajadores afectados.En el supuesto de empresas concursadas, se deberá informar especialmente sobre las siguientes materias:I. Causas de la crisis y sus repercusiones sobre el empleo.II. Situación económico financiera de la empresa y del entorno en que se desenvuelve.III. Propuesta de acuerdo con los acreedores.IV. Rehabilitación de la actividad productiva.V. Situación de los créditos laborales.d) Quienes reciban información calificada de confidencial por la empresa, como consecuencia del cumplimiento por parte de ésta de los deberes de información, están obligados a guardar secreto acerca de la misma.e) Cuando alguna de las partes, se rehusare injustificadamente a negociar colectivamente vulnerando el principio de buena fe, en los términos del inciso a), la parte afectada por el incumplimiento podrá promover una acción judicial ante el tribunal laboral competente, mediante el proceso sumarísimo establecido en el artículo 498 del Código Procesal Civil y Comercial de la Nación, o equivalente de los Códigos Procesales Civiles provinciales.El tribunal dispondrá el cese inmediato del comportamiento violatorio del deber de negociar de buena fe y podrá, además, sancionar a la parte incumplidora con una multa de hasta un máximo equivalente al VEINTE POR CIENTO (20%) del total de la masa salarial del mes en que se produzca el hecho, correspondiente a los trabajadores comprendidos en el ámbito personal de la negociación. Si la parte infractora mantuviera su actitud, el importe de la sanción se incrementará en un DIEZ POR CIENTO (10%) por cada CINCO (5) días de mora en acatar la decisión judicial. En el supuesto de reincidencia el máximo previsto en el presente inciso podrá elevarse hasta el equivalente al CIEN POR CIENTO (100%) de esos montos.Sin perjuicio de ello, el juez, a petición de parte, podrá también aplicar lo dispuesto por el artículo 666 bis del Código Civil.Cuando cesaren los actos que dieron origen a la acción entablada, dentro del plazo que al efecto establezca la decisión judicial, el monto de la sanción podrá ser reducido por el juez hasta el CINCUENTA POR CIENTO (50%).Todos los importes que así se devenguen tendrán como exclusivo destino programas de inspección del MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL.",
+            "texto_nuevo": "recepción de la notificación del artículo 2º de esta ley, se constituirá la\ncomisión negociadora con representantes de los trabajadores de\nacuerdo al nivel de negociación que se proponga.\nSi se trata de una negociación por empresa o por región, la\nrepresentación sindical será la del o de los sindicatos de primer grado o\nde empresa con personería gremial en el ámbito territorial y personal\nque se pretenda negociar. Esta disposición es de orden público por\ncuanto toda disposición establecida por estatuto de la Organización\nSindical de Segundo o Primer Grado que se oponga a la misma, no será\nválida.\nEn el supuesto de una negociación por actividad, la representación será\nde la Federación u Organización Gremial de Primer Grado con alcance\nnacional de acuerdo a la personería gremial otorgada.\nEn cualquiera de los casos, la representación sindical deberá integrarse\nrespetando lo establecido en la Ley Nº 25.674.\nLa representación de los empleadores -cualquiera sea su nivel- se\nacreditará conforme lo disponga la SECRETARÍA DE TRABAJO,\nEMPLEO Y SEGURIDAD SOCIAL del MINISTERIO DE CAPITAL\nHUMANO en cada caso. Las partes podrán concurrir a las\nnegociaciones con asesores técnicos con voz pero sin voto.\na) Las partes están obligadas a negociar de buena fe. Ello implica:\nConcurrir a las reuniones acordadas o fijadas\nI.\npor la Autoridad de\nAplicación.\nDesignar negociadores con mandato\nII.\nsuficiente.\nIII. Intercambiar la información necesaria a los fines del examen de\nlas cuestiones en debate, para entablar una discusión fundada y obtener\nun acuerdo. Dicho intercambio deberá obligatoriamente incluir la\ninformación relativa a la distribución de los beneficios de la\nproductividad, la situación actual del empleo y las previsiones sobre su\nfutura evolución.\nIV. Realizar esfuerzos conducentes a lograr acuerdos.\nb) En la negociación colectiva entablada al nivel de la empresa el\nintercambio de información alcanzará, además, a las informaciones\nrelativas a los siguientes temas:\nSituación económica de la empresa, del\nI.\nsector y del entorno en el\nque aquélla se desenvuelve.\nII. Costo laboral unitario.\nIII. Causales e indicadores de ausentismo.\nIV. Innovaciones tecnológicas y organizacionales previstas.\nV. Organización, duración y distribución del tiempo de trabajo.\nVI. Siniestralidad laboral y medidas de prevención.\nVII. Planes y acciones en materia de formación profesional.\nc) La obligación de negociar de buena fe en los procedimientos\npreventivos de crisis y respecto de las empresas concursadas, impone\nal empleador el deber de informar a los trabajadores a través de la\nrepresentación sindical sobre las causas y circunstancias que motivaron\nla iniciación del procedimiento de crisis o la presentación en concurso.\nEn el caso del procedimiento de crisis, la empresa deberá informar\nsobre las siguientes materias:\nI. Mantenimiento del empleo.\nII. Movilidad funcional, horaria o salarial.\nIII. Innovación tecnológica y cambio organizacional.\nIV. Recalificación y formación profesional de los trabajadores.\nV. Reubicación interna o externa de trabajadores y programas de\nreinserción laboral.\nVI. Aportes convenidos al Sistema Integrado de Jubilaciones y\nPensiones.\nVII. Programas de apoyo a la generación de microemprendimientos\npara los trabajadores afectados.\nEn el supuesto de empresas concursadas, se deberá informar\nespecialmente sobre las siguientes materias:\nCausas de la crisis y sus repercusiones sobre\nI. el empleo.\nII. Situación económico financiera de la\nempresa y del entorno en\nque se desenvuelve.\nIII. Propuesta de acuerdo con los acreedores.\nIV. Rehabilitación de la actividad productiva.\nV. Situación de los créditos laborales.\nd) Quienes reciban información calificada de confidencial por la\nempresa, como consecuencia del cumplimiento por parte de ésta de los\ndeberes de información, están obligados a guardar secreto acerca de la\nmisma.\ne) Cuando alguna de las representaciones, se rehusare\ninjustificadamente a negociar colectivamente vulnerando el principio de\nbuena fe, en los términos del inciso a), la parte afectada por el\nincumplimiento podrá solicitar a la SECRETARÍA DE TRABAJO,\nEMPLEO Y SEGURIDAD SOCIAL del MINISTERIO DE CAPITAL\nHUMANO que adopte las medidas conducentes para la concreción de la\nmesa de negociación pudiendo entre otras facultades delimitar el\nalcance de la prórroga en la vigencia de las cláusulas obligacionales del\nConvenio Colectivo de Trabajo que se intenta renegociar si a ese\nmomento aún se encontrasen vigentes, como también la de promover\nuna acción judicial ante el tribunal laboral competente, mediante el\nproceso sumarísimo establecido en el artículo 498 del CÓDIGO\nPROCESAL CIVIL Y COMERCIAL DE LA NACIÓN, o equivalente de los\nCódigos Procesales Civiles provinciales.\nEl tribunal dispondrá el cese inmediato del comportamiento violatorio del\ndeber de negociar de buena fe y sancionará a la parte incumplidora con\nuna multa de hasta un máximo equivalente al VEINTE POR CIENTO (20\n%) del total de la masa salarial del mes en que se produzca el hecho,\ncorrespondiente a los trabajadores comprendidos en el ámbito personal\nde la negociación. Si la parte infractora mantuviera su actitud, el importe\nde la sanción se incrementará en un DIEZ POR CIENTO (10 %) por\ncada CINCO (5) días de mora en acatar la decisión judicial. en el\nsupuesto de reincidencia el máximo previsto en el presente inciso podrá\nelevarse hasta el equivalente al CIEN POR CIENTO (100 %) de esos\nmontos.\nSin perjuicio de ello, el juez, a petición de parte, podrá también aplicar lo\ndispuesto por el artículo 804 del CÓDIGO CIVIL Y COMERCIAL DE LA\nNACIÓN.\nCuando cesaren los actos que dieron origen a la acción entablada,\ndentro del plazo de DIEZ (10) días que al efecto debe establecer la\ndecisión judicial, el monto de la sanción podrá ser eliminada por el juez\nTodos los importes que así se devenguen tendrán como exclusivo\ndestino programas de inspección de la SECRETARÍA DE TRABAJO,\nEMPLEO Y SEGURIDAD SOCIAL del MINISTERIO DE CAPITAL\nHUMANO.",
+            "titulo_nuevo": "En el plazo de QUINCE (15) días a contar desde la",
+            "accion": "sustitúyese",
+            "dictamen_articulo": "145"
+          },
+          {
+            "numero": "5",
+            "titulo": "",
+            "texto": "ARTICULO 5º.- De lo ocurrido en el transcurso de las negociaciones se labrará un acta resumida.Los acuerdos se adoptarán con el consentimiento de los sectores representados.Cuando en el seno de la representación de una de las partes no hubiere unanimidad, prevalecerá la posición de la mayoría de sus integrantes.",
+            "estado": "sin_cambios"
+          },
+          {
+            "numero": "6",
+            "titulo": "",
+            "texto": "ARTICULO 6º.- Las convenciones colectivas de trabajo son homologadas por el MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL, en su carácter de autoridad de aplicación.La homologación deberá producirse dentro de un plazo no mayor de TREINTA (30) días de recibida la solicitud, siempre que la convención reúna todos los requisitos establecidos a tal efecto. Transcurrido dicho plazo se la considerará tácitamente homologada.",
+            "estado": "sustituido",
+            "texto_original": "ARTICULO 6º.- Las convenciones colectivas de trabajo son homologadas por el MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL, en su carácter de autoridad de aplicación.La homologación deberá producirse dentro de un plazo no mayor de TREINTA (30) días de recibida la solicitud, siempre que la convención reúna todos los requisitos establecidos a tal efecto. Transcurrido dicho plazo se la considerará tácitamente homologada.",
+            "texto_nuevo": "homologadas y/o registradas por la SECRETARÍA DE TRABAJO,\nEMPLEO Y SEGURIDAD SOCIAL del MINISTERIO DE CAPITAL\nHUMANO, en su carácter de Autoridad de Aplicación.\nLa homologación o registración deberá producirse dentro de un plazo no\nmayor de TREINTA (30) días de recibida la solicitud, siempre que la\nconvención reúna todos los requisitos establecidos a tal efecto.\nTranscurrido dicho plazo, sin que existan observaciones a cumplir por\nlas partes, se la considerará tácitamente homologada.",
+            "titulo_nuevo": "Las convenciones colectivas de trabajo son",
+            "accion": "sustitúyese",
+            "dictamen_articulo": "146"
+          },
+          {
+            "numero": "7",
+            "titulo": "",
+            "texto": "ARTICULO 7º.- En los diferendos que se susciten en el curso de las negociaciones se aplicará la Ley Nº 14.786. Sin perjuicio de ello las partes podrán, de común acuerdo, someterse a la intervención de un servicio de mediación, conciliación y arbitraje que funcionará en el ámbito del MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL.La reglamentación determinará sus funciones así como su organización y normas de procedimiento, preservando su autonomía.",
+            "referencias_normativas": [
+              {
+                "cr": null,
+                "id": "REFERENCIAS_NORMATIVAS_0",
+                "ref": "LEY C 014786 1958 12 22 0000 000 0000 000"
+              }
+            ],
+            "estado": "sustituido",
+            "texto_original": "ARTICULO 7º.- En los diferendos que se susciten en el curso de las negociaciones se aplicará la Ley Nº 14.786. Sin perjuicio de ello las partes podrán, de común acuerdo, someterse a la intervención de un servicio de mediación, conciliación y arbitraje que funcionará en el ámbito del MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL.La reglamentación determinará sus funciones así como su organización y normas de procedimiento, preservando su autonomía.",
+            "texto_nuevo": "Sin perjuicio de ello las partes podrán, de común acuerdo, someterse a\nla intervención de un servicio de mediación, conciliación y arbitraje que\nfuncionará en el ámbito de la SECRETARÍA DE TRABAJO, EMPLEO Y\nSEGURIDAD SOCIAL del MINISTERIO DE CAPITAL HUMANO.\nLa Reglamentación determinará sus funciones así como su organización\ny normas de procedimiento, preservando su autonomía.",
+            "titulo_nuevo": "En los diferendos que se susciten en el curso de las",
+            "accion": "sustitúyese",
+            "dictamen_articulo": "147"
+          },
+          {
+            "numero": "8",
+            "titulo": "",
+            "texto": "ARTICULO 8º.- Los plazos a que se refiere esta Ley se computarán en días hábiles administrativos.",
+            "estado": "sin_cambios"
+          },
+          {
+            "numero": "9",
+            "titulo": "",
+            "texto": "ARTICULO 9º.- Derógase la Ley de facto 21.307.",
+            "estado": "sin_cambios"
+          },
+          {
+            "numero": "10",
+            "titulo": "",
+            "texto": "ARTICULO 10.- Comuníquese al PODER EJECUTIVO NACIONAL.",
+            "estado": "sin_cambios"
+          }
+        ],
+        "capitulos": []
+      }
+    ]
+  },
+  "metadatos": {
+    "ley_origen": "normalized_ley_23546.json",
+    "dictamen_origen": "aggregated_dictamen",
+    "total_sustituciones": 3,
+    "total_incorporaciones": 0,
+    "total_derogaciones": 0,
+    "capitulos_derogados": [],
+    "derogacion_total": false
+  }
+}

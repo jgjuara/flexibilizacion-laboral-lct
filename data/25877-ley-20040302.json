@@ -1,0 +1,938 @@
+{
+  "data": {
+    "document": {
+      "metadata": {
+        "uuid": "123456789-0abc-defg-g75-84000scanyel",
+        "document-content-type": "legislacion",
+        "timestamp": 1756928840081,
+        "operation": "ADD",
+        "target-document-repository-id": "infojus",
+        "target-index-id": "index",
+        "target-document-indexing-id": "legislacion",
+        "document-recovery-strategy": "abstract-legislacion",
+        "friendly-url": {
+          "subdomain": "ley",
+          "description": "25877-nacional-ley-reforma-laboral-lns0004857-2004-03-02"
+        }
+      },
+      "content": {
+        "mecanografico": "S0004857",
+        "decreto-reglamentario": {
+          "referencia-normativa": [
+            {
+              "cr": "(B.O. 28-06-2004) REGLAMENTA ARTICULO 6",
+              "id": "DECRETO_REGLAMENTARIO_0",
+              "ref": "DEC C 000817 2004 06 23 0000 000 0000 000"
+            },
+            {
+              "cr": "(B.O. 13-03-2006) REGLAMENTA ARTICULO 24",
+              "id": "DECRETO_REGLAMENTARIO_1",
+              "ref": "DEC C 000272 2006 03 10 0001 000 0000 000"
+            },
+            {
+              "cr": "(B.O. 1/10/2014) REGLAMENTA ART. 29",
+              "id": "DECRETO_REGLAMENTARIO_2",
+              "ref": "DEC C 001714 2014 09 30 0003 000 0000 000"
+            }
+          ]
+        },
+        "numero-norma": 25877,
+        "tipo-norma": {
+          "codigo": "LEY",
+          "texto": "Ley"
+        },
+        "fecha": "2004-03-02",
+        "jurisdiccion": {
+          "codigo": "CAPITAL FEDERAL",
+          "descripcion": "Nacional",
+          "capital": "Capital Federal",
+          "id-pais": 11
+        },
+        "standard-normativo": "LEY C 025877 2004 03 02",
+        "identificacion-coloquial": {
+          "identificacion-coloquial": [
+            "LEY 25.877",
+            "BUENOS AIRES, 2 DE MARZO DE 2004"
+          ]
+        },
+        "titulo-norma": "LEY DE REFORMA LABORAL.",
+        "publicacion-codificada": {
+          "publicacion-decodificada": {
+            "organismo": "Boletín Oficial",
+            "fecha": "2004 03 19"
+          }
+        },
+        "sancion": "El Senado y Cámara de Diputados de la Nación Argentina reunidos en Congreso, etc. sancionan con fuerza de Ley:",
+        "lugar-sancion": "BUENOS AIRES",
+        "nombre-coloquial": "LEY 25.877",
+        "estado": "Vigente, de alcance general",
+        "enciclopedia": {
+          "texto": "Integridad y Transparencia"
+        },
+        "uid-alta": "ABM",
+        "uid-mod": "ABM",
+        "fecha-alta": "2025-09-03",
+        "fecha-mod": "2025-09-03",
+        "timestamp": "2025-09-03T16:42:12",
+        "timestamp-alta": "2025-09-03T16:42:12",
+        "timestamp-m": "2025-09-03T16:42:12",
+        "sumario": {
+          "sumario": "[[p]]REFORMA LABORAL-POLITICA LABORAL-SIMPLIFICACION Y UNIFICACION REGISTRAL-INSPECCION DEL TRABAJO[[/p]]"
+        },
+        "descriptores": {
+          "descriptor": [
+            {
+              "elegido": {
+                "termino": "ley de reforma laboral"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/política laboral/reforma laboral"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "ley de reforma laboral"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "política laboral"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/política laboral"
+              },
+              "sinonimos": {
+                "termino": "derecho del trabajo"
+              }
+            },
+            {
+              "elegido": {
+                "termino": "simplificación y unificación registral"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/contrato de trabajo/contrato de trabajo en general/prueba del contrato de trabajo/registros laborales/empleo registrado/simplificación y unificación registral"
+              },
+              "sinonimos": {
+                "termino": [
+                  "contrato laboral",
+                  "derecho del trabajo",
+                  "trabajo registrado"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "inspección del trabajo"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/promoción del empleo/fiscalización laboral/inspección del trabajo"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "promoción del empleo"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/promoción del empleo"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "sostenimiento del empleo"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/promoción del empleo/sostenimiento del empleo"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "reinserción laboral"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/promoción del empleo/reinserción laboral"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "trabajadores desocupados"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/promoción del empleo/reinserción laboral/trabajadores desocupados"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "capacitación laboral"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/promoción del empleo/capacitación laboral"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "fiscalización laboral"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/promoción del empleo/fiscalización laboral"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "Organización Internacional del Trabajo"
+              },
+              "preferido": {
+                "termino": "Derecho Internacional/organismos internacionales/Organización Internacional del Trabajo"
+              },
+              "sinonimos": {
+                "termino": [
+                  "OIT",
+                  "organizaciones internacionales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "Consejo Federal del Trabajo"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/promoción del empleo/Consejo Federal del Trabajo"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "desburocratización"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/modernización del Estado/desburocratización"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "simplificación normativa"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/modernización del Estado/desburocratización/simplificación normativa"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "simplificación registral"
+              },
+              "preferido": {
+                "termino": "Estado/fortalecimiento de las instituciones/politicas públicas/modernización del Estado/desburocratización/simplificación registral"
+              },
+              "sinonimos": {
+                "termino": [
+                  "políticas de Estado",
+                  "politicas públicas transversales"
+                ]
+              }
+            }
+          ],
+          "suggest": {
+            "termino": [
+              "reforma laboral",
+              "políticas de Estado (politicas públicas)",
+              "politicas públicas transversales (politicas públicas)",
+              "política laboral",
+              "Derecho Internacional",
+              "sostenimiento del empleo",
+              "reinserción laboral",
+              "prueba del contrato de trabajo",
+              "ley de reforma laboral (reforma laboral)",
+              "contrato laboral (contrato de trabajo)",
+              "fortalecimiento de las instituciones",
+              "trabajadores desocupados",
+              "desburocratización",
+              "organizaciones internacionales (organismos internacionales)",
+              "Consejo Federal del Trabajo",
+              "modernización del Estado",
+              "simplificación y unificación registral",
+              "promoción del empleo",
+              "Organización Internacional del Trabajo",
+              "fiscalización laboral",
+              "politicas públicas",
+              "inspección del trabajo",
+              "trabajo registrado (empleo registrado)",
+              "simplificación normativa",
+              "derecho del trabajo (Derecho laboral)",
+              "contrato de trabajo",
+              "Estado",
+              "organismos internacionales",
+              "simplificación registral",
+              "capacitación laboral",
+              "Derecho laboral",
+              "empleo registrado",
+              "contrato de trabajo en general",
+              "registros laborales",
+              "OIT (Organización Internacional del Trabajo)"
+            ]
+          }
+        },
+        "generalidades": {
+          "informacion-vinculada": 10000000000000000000,
+          "observaciones-generales": "[[p]]CANTIDAD DE ARTICULOS QUE COMPONEN LA NORMA: 46.[[/p]][[p]]OBSERVACION: LA CAMARA NACIONAL DE APELACIONES DEL TRABAJO SUSPENDE LA APLICACION DE LO DISPUESTO EN EL TITULO IV TRABAJO DEL DNU 70/23 (B.O 21/12/2023) HASTA TANTO RECAIGA SENTENCIA DEFINITIVA SOBRE LA CUESTION DE FONDO, EN EL MARCO DE LA ACCION IMPULSADA POR LA CGT. DE LAS MODIFICACIONES LABORALES CONTENIDAS EN EL MISMO.<A HREF=\"http://www.saij.gob.ar/FA24040001\"> Ver fallo </A>.[[/p]][[p]]OBSERVACION: EL DNU 340/25 (B.O 21/5/2025) QUE MODIFICA LA PRESENTE LEY HA SIDO RECHAZADO POR RESOLUCION 39/25 DE LA HONORABLE CÁMARA DE DIPUTADOS DE LA NACIÓN Y 57/25 DEL HONORABLE SENADO DE LA NACIÓN (B.O. 25/8/2025). DEROGADO CONFORME LO DISPUESTO POR ART. 24 DE LA LEY 26.122.[[/p]][[p]]OBSERVACION: POR DNU 628/25 (B.O. 3/9/2025) SE RESTITUYE LA PLENA VIGENCIA DE LAS DISPOSICIONES NORMATIVAS QUE FUERON DEROGADAS, SUSTITUIDAS O MODIFICADAS POR EL DECRETO 340/25 Y QUE SE ENCONTRABAN VIGENTES AL MOMENTO DEL DICTADO DE DICHO DECRETO.[[/p]]"
+        },
+        "segmento": [
+          {
+            "titulo-particion": "TITULO PRELIMINAR  DEL ORDENAMIENTO DEL REGIMEN LABORAL",
+            "articulo": {
+              "numero-articulo": 1,
+              "texto": "[[p]]ARTICULO 1º - Derógase la Ley Nº 25.250 y sus normas reglamentarias.[[/p]]",
+              "deroga-a": {
+                "referencia-normativa": {
+                  "cr": null,
+                  "id": "DEROGA_A_0",
+                  "ref": "LEY C 025250 2000 05 11 0000 000 0000 000"
+                }
+              }
+            }
+          },
+          {
+            "titulo-particion": "TITULO I  DERECHO INDIVIDUAL DEL TRABAJO",
+            "segmento": [
+              {
+                "titulo-particion": "Capítulo I  Del Período de Prueba",
+                "articulo": {
+                  "modifica-a": {
+                    "referencia-normativa": {
+                      "cr": "SUSTITUYE ARTICULO",
+                      "id": "MODIFICA_A_0",
+                      "ref": "LCT C 020744 1976 05 13 0092 002 0000 000"
+                    }
+                  },
+                  "numero-articulo": 2,
+                  "texto": "[[p]]ARTICULO 2.- NOTA DE REDACCION (MODIFICA LEY 20744)[[/p]]"
+                }
+              },
+              {
+                "titulo-particion": "Capítulo II  De la Extinción del Contrato de Trabajo Preaviso",
+                "articulo": [
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "MODIFICA_A_0",
+                        "ref": "LCT C 020744 1976 05 13 0000 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 3,
+                    "texto": "[[p]]ARTICULO 3º - NOTA DE REDACCION (MODIFICA LEY 20744)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "LCT C 020744 1976 05 13 0233 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 4,
+                    "texto": "[[p]]ARTICULO 4º - NOTA DE REDACCION (MODIFICA LEY 20744)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "LCT C 020744 1976 05 13 0245 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 5,
+                    "texto": "[[p]]ARTICULO 5º - NOTA DE REDACCION (MODIFICA LEY 20744)[[/p]]"
+                  }
+                ]
+              },
+              {
+                "titulo-particion": "Capítulo III  Promoción del Empleo",
+                "articulo": [
+                  {
+                    "referencias-normativas": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "REFERENCIAS_NORMATIVAS_0",
+                        "ref": "LCT C 020744 1976 05 13 0099 000 0000 000"
+                      }
+                    },
+                    "derogado-por": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "DEROGADO_POR_0",
+                        "ref": "LEY C 026476 2008 12 18 0049 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 6,
+                    "texto": "[[p]]*ARTICULO 6.- NOTA DE REDACCION: Derogado por Ley 26.476.[[/p]]",
+                    "observado-por": {
+                      "referencia-normativa": [
+                        {
+                          "cr": "(B.O. 7/1/2005) PRORROGA HASTA EL 31 DE DICIEMBRE DE 2005EL BENEFICIO ESTABLECIDO EN EL PRESENTE ARTICULO",
+                          "id": "OBSERVADO_POR_0",
+                          "ref": "DEC C 002013 2004 12 29 0001 000 0000 000"
+                        },
+                        {
+                          "cr": "(B.O. 11/01/2006) PRORROGA HASTA EL 31 DE DICIEMBRE DE 2006EL BENEFICIO ESTABLECIDO EN EL PRESENTE ARTICULO",
+                          "id": "OBSERVADO_POR_1",
+                          "ref": "DEC C 000031 2006 01 10 0001 000 0000 000"
+                        },
+                        {
+                          "cr": "(B.O. 24/01/2007) PRORROGA DESDE LA FECHA DE VENCIMIENTO PREVISTA EN EL DECRETO 31/06 HASTA EL 31/12/07 LA VIGENCIA DEL BENEFICIO ESTABLECIDO EN ESTE ARTICULO",
+                          "id": "OBSERVADO_POR_2",
+                          "ref": "DEC C 000025 2007 01 22 0001 000 0000 000"
+                        },
+                        {
+                          "cr": "(B.O. 10/07/2008) PRORROGA DESDE LA FECHA DE VENCIMIENTO PREVISTA EN EL DECRETO 25/07 HASTA EL 31/12/08 LA VIGENCIA DEL BENEFICIO ESTABLECIDO EN ESTE ARTICULO",
+                          "id": "OBSERVADO_POR_3",
+                          "ref": "DEC C 001066 2008 07 04 0001 000 0000 000"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "numero-articulo": 7,
+                    "texto": "[[p]]ARTICULO 7.- El MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL promoverá la inclusión del concepto de trabajo decente en las políticas públicas nacionales, provinciales y municipales. A tal fin, ejecutará y promoverá la implementación, articulada con otros organismos nacionales, provinciales y municipales, de acciones dirigidas a sostener y fomentar el empleo, reinsertar laboralmente a los trabajadores desocupados y capacitar y formar profesionalmente a los trabajadores.[[/p]]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "titulo-particion": "TITULO II  DERECHO COLECTIVO DEL TRABAJO",
+            "segmento": [
+              {
+                "titulo-particion": "Capítulo I  Negociación Colectiva",
+                "articulo": [
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0001 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 8,
+                    "texto": "[[p]]ARTICULO 8.- NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0002 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 9,
+                    "texto": "[[p]]ARTICULO 9.- NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0003 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 10,
+                    "texto": "[[p]]ARTICULO 10. - NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0004 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 11,
+                    "texto": "[[p]]ARTICULO 11. - NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0005 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 12,
+                    "texto": "[[p]]ARTICULO 12. - NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0006 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 13,
+                    "texto": "[[p]]ARTICULO 13. - NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0013 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 14,
+                    "texto": "[[p]]ARTICULO 14. - NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0014 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 15,
+                    "texto": "[[p]]ARTICULO 15. - NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0015 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 16,
+                    "texto": "[[p]]ARTICULO 16. - NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": "SUSTITUYE ARTICULO",
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 1988 01 27 0016 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 17,
+                    "texto": "[[p]]ARTICULO 17. - NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 014250 2004 08 31 0000 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 18,
+                    "texto": "[[p]]ARTICULO 18. - NOTA DE REDACCION (MODIFICA LEY 14250)[[/p]]"
+                  }
+                ]
+              },
+              {
+                "titulo-particion": "Capítulo II  Procedimiento de la Negociación Colectiva",
+                "articulo": [
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 023546 2004 08 31 0000 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 19,
+                    "texto": "[[p]]ARTICULO 19. - NOTA DE REDACCION (MODIFICA LEY 23546)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 023546 2004 08 31 0000 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 20,
+                    "texto": "[[p]]ARTICULO 20. - NOTA DE REDACCION (MODIFICA LEY 23546)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 023546 2004 08 31 0000 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 21,
+                    "texto": "[[p]]ARTICULO 21. - NOTA DE REDACCION (MODIFICA LEY 23546)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 023546 2004 08 31 0000 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 22,
+                    "texto": "[[p]]ARTICULO 22. - NOTA DE REDACCION (MODIFICA LEY 23546)[[/p]]"
+                  },
+                  {
+                    "modifica-a": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "MODIFICA_A_0",
+                        "ref": "TOR C 023546 2004 08 31 0000 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 23,
+                    "texto": "[[p]]ARTICULO 23. - NOTA DE REDACCION (MODIFICA LEY 23546)[[/p]]"
+                  }
+                ]
+              },
+              {
+                "titulo-particion": "Capítulo III  Conflictos Colectivos de Trabajo",
+                "articulo": {
+                  "numero-articulo": 24,
+                  "antecedentes": {
+                    "referencia-normativa": {
+                      "cr": "(B.O 21/05/2025) ARTICULO SUSTITUIDO PERO DECRETO 340/25 DEROGADO POR HABER SIDO RECHAZADO POR AMBAS CAMARAS DEL CONGRESO DE LA NACION CONFORME LO DISPUESTO POR EL ARTICULO 24 DE LA LEY 26.122 .",
+                      "id": "ANTECEDENTES_0",
+                      "ref": "DNU C 000340 2025 05 20 0003 000 0000 000"
+                    }
+                  },
+                  "texto": "[[p]]ARTICULO 24. - Los conflictos colectivos que pudieren afectar la normal prestación de servicios esenciales o actividades de importancia trascendental, quedan sujetos a las siguientes garantías de prestación de servicios mínimos.[[/p]][[p]]En lo que respecta a la prestación de servicios mínimos, en el caso de los servicios esenciales, en ningún caso podrá negociar o imponer a las partes una cobertura menor al SETENTA Y CINCO POR CIENTO (75%) de la prestación normal del servicio de que se tratare.[[/p]][[p]]En el caso de las actividades o servicios de importancia trascendental, en ningún caso se podrá negociar o imponer a las partes una cobertura menor al CINCUENTA POR CIENTO (50%).[[/p]][[p]]Se considerarán servicios esenciales en sentido estricto, las actividades siguientes:.[[/p]][[p]]a. Los servicios sanitarios y hospitalarios, así como el transporte y distribución de medicamentos e insumos hospitalarios y los servicios farmacéuticos;[[/p]][[p]]b. La producción, transporte y distribución y comercialización de agua potable, gas y otros combustibles y energía eléctrica; c. Los servicios de telecomunicaciones, incluyendo internet y comunicaciones satelitales;[[/p]][[p]]d. La aeronáutica comercial y el control de tráfico aéreo y portuario; incluyendo balizamiento, dragado, amarre, estiba y remolque de buques;[[/p]][[p]]e. servicios aduaneros y migratorios, y demás vinculados al comercio exterior; y.[[/p]][[p]]f. cuidado de menores y educación de niveles guardería, preescolar, primario y secundario, así como la educación especial.[[/p]][[p]]Se consideran actividades de importancia trascendental las siguientes:.[[/p]][[p]]a. Producción de medicamentos y/o insumos hospitalarios; b. Transporte marítimo, fluvial, terrestre y subterráneo de personas y/o mercaderías a través de los distintos medios que se utilicen para tal fin;[[/p]][[p]]c. Servicios de radio y televisión;[[/p]][[p]]d. Actividades industriales continuas, incluyendo siderurgia y la producción de aluminio, actividad química y la actividad cementera;[[/p]][[p]]e. Industria alimenticia en toda su cadena de valor;[[/p]][[p]]f. La producción y distribución de materiales de la construcción, servicios de reparación de aeronaves y buques, todos los servicios portuarios y aeroportuarios, servicios logísticos, actividad minera, actividad frigorífica, correos, distribución y comercialización de alimentos y bebidas, actividad agropecuaria y su cadena de valor;[[/p]][[p]]g. Los servicios bancarios, financieros, servicios hoteleros y gastronómicos y el comercio electrónico; y.[[/p]][[p]]h. La producción de bienes y/o servicios de toda actividad, que estuvieran afectados a compromisos de exportación.[[/p]][[p]]Una comisión independiente y autónoma, denominada COMISIÓN DE GARANTÍAS, integrada según se establezca en la reglamentación, por cinco (5) miembros de reconocida solvencia técnica, profesional o académica en materia de relaciones del trabajo, del derecho laboral o de derecho constitucional y destacada trayectoria, podrá, mediante resolución fundada, calificar como servicio esencial o servicio de importancia trascendental una actividad no incluida en las enumeraciones precedentes, cuando se diere alguna de las siguientes circunstancias:.[[/p]][[p]]a) La extensión y duración de la interrupción de la actividad de que se tratare pudiere poner en peligro la vida, la salud o la seguridad de la persona en toda o parte de la comunidad;[[/p]][[p]]b) La actividad afectada constituyere un servicio público de importancia trascendental o de utilidad pública;[[/p]][[p]]c) La interrupción o suspensión del servicio pudiere provocar una situación de crisis nacional aguda que hiciere peligrar las condiciones normales o de existencia de parte de la población; y d) la interrupción o suspensión de la producción pudiere poner en peligro el adecuado abastecimiento de productos críticos para la población y/o afectar metas de recaudación asociadas a las políticas de equilibrio fiscal.[[/p]][[p]]El Poder Ejecutivo Nacional dictará la reglamentación correspondiente y la Autoridad de Aplicación las normas complementarias, aclaratorias y operativas que resulten necesarias.[[/p]]",
+                  "modificado-por": {
+                    "referencia-normativa": [
+                      {
+                        "cr": "(B.O 21/12/2023) ARTICULO SUSTITUIDO",
+                        "id": "MODIFICADO_POR_0",
+                        "ref": "DNU C 000070 2023 12 20 0097 000 0000 000"
+                      },
+                      {
+                        "cr": "(B.O 3/9/2025) VIGENCIA RESTITUIDA A PARTIR DEL DIA DE SU PUBLICACION EN EL BOLETIN OFICIAL",
+                        "id": "MODIFICADO_POR_1",
+                        "ref": "DNU C 000628 2025 09 02 0001 000 0000 000"
+                      }
+                    ]
+                  },
+                  "observado-por": {
+                    "referencia-normativa": {
+                      "cr": "(B.O. 18/03/2010) COMISION DE GARANTIAS CONSTITUIDA",
+                      "id": "OBSERVADO_POR_0",
+                      "ref": "DEC C 000362 2010 03 15 0001 000 0000 000"
+                    }
+                  }
+                }
+              },
+              {
+                "titulo-particion": "Capítulo IV  Balance Social",
+                "articulo": [
+                  {
+                    "numero-articulo": 25,
+                    "texto": "[[p]]ARTICULO 25.- Las empresas que ocupen a más de TRESCIENTOS (300) trabajadores deberán elaborar, anualmente, un balance social que recoja información sistematizada relativa a condiciones de trabajo y empleo, costo laboral y prestaciones sociales a cargo de la empresa. Este documento será girado por la empresa al sindicato con personería gremial, signatario de la convención colectiva de trabajo que le sea aplicable, dentro de los TREINTA (30) días de elaborado.[[/p]][[p]]Una copia del balance será depositada en el MINISTERIO DE TRABAJO EMPLEO Y SEGURIDAD SOCIAL, la que será considerada estrictamente confidencial.[[/p]][[p]]Las empresas que empleen trabajadores distribuidos en varios establecimientos, deberán elaborar un balance social único, si la convención colectiva aplicable fuese de actividad o se aplicare un único convenio colectivo de empresa. Para el caso de que la misma empresa sea suscriptora de más de un convenio colectivo de trabajo, deberá elaborar un balance social en cada caso, cualquiera sea el número de trabajadores comprendidos.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 26,
+                    "texto": "[[p]]ARTICULO 26. - El balance social incluirá la información que seguidamente se indica, la que podrá ser ampliada por la reglamentación tomando en cuenta, entre otras consideraciones, las actividades de que se trate:[[/p]][[p]]a) Balance general anual, cuenta de ganancias y pérdidas, notas complementarias, cuadros anexos y memoria del ejercicio.[[/p]][[p]]b) Estado y evolución económica y financiera de la empresa y del mercado en que actúa.[[/p]][[p]]c) Incidencia del costo laboral.[[/p]][[p]]d) Evolución de la masa salarial promedio. Su distribución según niveles y categorías.[[/p]][[p]]e) Evolución de la dotación del personal y distribución del tiempo de trabajo.[[/p]][[p]]f) Rotación del personal por edad y sexo.[[/p]][[p]]g) Capacitación.[[/p]][[p]]h) Personal efectivizado.[[/p]][[p]]i) Régimen de pasantías y prácticas rentadas.[[/p]][[p]]j) Estadísticas sobre accidentes de trabajo y enfermedades inculpables.[[/p]][[p]]k) Tercerizaciones y subcontrataciones efectuadas.[[/p]][[p]]l) Programas de innovación tecnológica y organizacional que impacten sobre la plantilla de personal o puedan involucrar modificación de condiciones de trabajo.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 27,
+                    "texto": "[[p]]ARTICULO 27.- El primer balance social de cada empresa o establecimiento corresponderá al año siguiente al que se registre la cantidad mínima de trabajadores legalmente exigida.[[/p]]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "titulo-particion": "TITULO III  ADMINISTRACION DEL TRABAJO",
+            "segmento": [
+              {
+                "titulo-particion": "Capítulo I  Inspección del Trabajo",
+                "articulo": [
+                  {
+                    "numero-articulo": 28,
+                    "texto": "[[p]]ARTICULO 28.- Créase el Sistema Integral de Inspección del Trabajo y de la Seguridad Social (SIDITYSS), destinado al control y fiscalización del cumplimiento de las normas del trabajo y de la seguridad social en todo el territorio nacional, a fin de garantizar los derechos de los trabajadores previstos en el artículo 14 bis de la Constitución Nacional, y en los Convenios Internacionales ratificados por la República Argentina, eliminar el empleo no registrado y las demás distorsiones que el incumplimiento de la normativa laboral y de la seguridad social provoquen.[[/p]][[p]]Integrarán el sistema la autoridad administrativa del trabajo y de la seguridad social nacional y las autoridades provinciales y de la Ciudad Autónoma de Buenos Aires, que actuarán bajo los principios de corresponsabilidad, coparticipación, cooperación y coordinación, para garantizar su funcionamiento eficaz y homogéneo en todo el territorio nacional.[[/p]][[p]]A tal efecto se celebrarán convenios y ejecutarán acciones con las provincias y la Ciudad Autónoma de Buenos Aires, para alcanzar los fines y objetivos descriptos en los párrafos precedentes.[[/p]][[p]]Los convenios celebrados por el Estado nacional con las Provincias y la Ciudad Autónoma de Buenos Aires, con anterioridad a la sanción de la presente ley, mantendrán su vigencia hasta tanto no sean modificados.[[/p]][[p]]Invítase a las provincias y a la Ciudad Autónoma de Buenos Aires, a dictar normas similares a las del presente capítulo en sus respectivas jurisdicciones.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 29,
+                    "texto": "[[p]]ARTICULO 29.- El Ministerio de Trabajo, Empleo y Seguridad Social será la Autoridad de Aplicación del Sistema Integral de Inspección del Trabajo y de la Seguridad Social y, en todo el territorio nacional, ejercerá las funciones de fiscalización de trabajo y de la normativa laboral, articulando con las administraciones del trabajo provinciales y de la Ciudad Autónoma de Buenos Aires. Asimismo, en tal carácter, le corresponde:[[/p]][[p]]a) Velar para que los distintos servicios del sistema cumplan con las normas que los regulan y, en especial, con las exigencias de los Convenios 81 y 129 de la Organización Internacional del Trabajo (OIT);[[/p]][[p]]b) Coordinar la actuación de todos los servicios, formulando recomendaciones y elaborando planes de mejoramiento;[[/p]][[p]]c) Ejercer las demás funciones que a la autoridad central asignan los Convenios 81 y 129 de la Organización Internacional del Trabajo (OIT), sus recomendaciones complementarias y aquellas otras que contribuyan al mejor desempeño de los servicios;[[/p]][[p]]d) Detectar núcleos de trabajo no registrado, mediante acciones inspectivas complementarias, articulando con el servicio local;[[/p]][[p]]e) Recabar y promover, especialmente con miras a la detección del trabajo no registrado, la participación coordinada y la colaboración de las entidades representativas de los trabajadores y los empleadores;[[/p]][[p]]f) Aplicar las sanciones establecidas en el Anexo II del Pacto Federal del Trabajo, ratificado por la ley 25.212, o las que en el futuro las reemplacen, cuando verifique incumplimientos o infracciones.[[/p]]",
+                    "modificado-por": {
+                      "referencia-normativa": {
+                        "cr": "(B.O. 2/6/2014) ARTICULO SUSTITUIDO",
+                        "id": "MODIFICADO_POR_0",
+                        "ref": "LEY C 026940 2014 05 21 0036 000 0000 000"
+                      }
+                    }
+                  },
+                  {
+                    "numero-articulo": 30,
+                    "texto": "[[p]]ARTICULO 30.- Cuando un servicio local de Inspección del Trabajo no cumpla con las exigencias de los Convenios 81 y 129 de la Organización Internacional del Trabajo (OIT) o con las que se deriven de este capítulo, el Ministerio de Trabajo, Empleo y Seguridad Social ejercerá coordinadamente con el Consejo Federal del Trabajo en concurso con las jurisdicciones provinciales y, en su caso, con la Ciudad Autónoma de Buenos Aires, las correspondientes facultades.[[/p]]",
+                    "modificado-por": {
+                      "referencia-normativa": {
+                        "cr": "(B.O. 2/6/2014) ARTICULO SUSTITUIDO",
+                        "id": "MODIFICADO_POR_0",
+                        "ref": "LEY C 026940 2014 05 21 0037 000 0000 000"
+                      }
+                    }
+                  },
+                  {
+                    "numero-articulo": 31,
+                    "texto": "[[p]]ARTICULO 31.- Los servicios de inspección comprendidos en el Sistema Integral de Inspección del Trabajo y de la Seguridad Social (SIDITYSS) deberán contar con los recursos adecuados para la real y efectiva prestación del servicio y llevarán un Registro de Inspección, Infracciones y Sanciones. Deberán informar a las organizaciones empresariales y sindicales acerca de las actividades realizadas y de los resultados alcanzados.[[/p]][[p]]Los representantes sindicales de los trabajadores tendrán derecho a acompañar al inspector durante la inspección y a ser informados de sus resultados.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 32,
+                    "texto": "[[p]]ARTICULO 32.- Los inspectores actuarán de oficio o por denuncia, recogerán en actas el resultado de sus actuaciones y, en su caso, iniciarán el procedimiento para la aplicación de sanciones.[[/p]][[p]]En el ejercicio de sus funciones y dentro de su jurisdicción, los inspectores están facultados para:[[/p]][[p]]a) Entrar en los lugares sujetos a inspección, sin necesidad de notificación previa ni de orden judicial de allanamiento.[[/p]][[p]]b) Requerir la información y realizar las diligencias probatorias que consideren necesarias, incluida la identificación de las personas que se encuentren en el lugar de trabajo inspeccionado.[[/p]][[p]]c) Solicitar los documentos y datos que estimen necesarios para el ejercicio de sus funciones, intimar el cumplimiento de las normas y hacer comparecer a los responsables de su cumplimiento.[[/p]][[p]]d) Clausurar los lugares de trabajo en los supuestos legalmente previstos y ordenar la suspensión inmediata de tareas que -a juicio de la autoridad de aplicación- impliquen un riesgo grave e inminente para la salud y la seguridad de los trabajadores.[[/p]][[p]]En todos los casos los inspectores labrarán un acta circunstanciada del procedimiento que firmarán junto al o los sujetos responsables. Los responsables del cumplimiento de la normativa del trabajo y la seguridad social, están obligados a colaborar con el inspector, así como a facilitarle la información y documentación necesarias para el desarrollo de sus competencias.[[/p]][[p]]La fuerza pública deberá prestar el auxilio que requiera el inspector en ejercicio de sus funciones.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 33,
+                    "texto": "[[p]]ARTICULO 33.- Comprobada la infracción a las normas laborales que impliquen, de alguna forma, una evasión tributaria o a la Seguridad Social, el hecho deberá ser denunciado formalmente a la Administración Federal de Ingresos Públicos y/o a los otros organismos de control fiscal.[[/p]][[p]]Ello sin perjuicio, en el caso que corresponda, de la notificación fehaciente a las autoridades de control migratorio a los fines de la aplicación de la Ley 25.871.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 34,
+                    "texto": "[[p]]ARTICULO 34.- El MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL deberá destinar la totalidad de los recursos obtenidos por la aplicación de sanciones pecuniarias a la infracción de la normativa laboral, sea por imperio de la Ley 25.212 o del artículo 37 de la presente, al fortalecimiento del servicio de la inspección del trabajo.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 35,
+                    "texto": "[[p]]ARTICULO 35.- Sin perjuicio de las facultades propias en materia de Inspección del Trabajo de los gobiernos provinciales, de la Ciudad Autónoma de Buenos Aires y del Ministerio de Trabajo, Empleo y Seguridad Social, éste realizará en todo el territorio nacional acciones dirigidas a la erradicación del trabajo infantil. Las actuaciones labradas por dicho ministerio en las que se verifiquen violaciones a la prohibición del trabajo infantil tramitarán en el ámbito de las respectivas administraciones locales.[[/p]]",
+                    "modificado-por": {
+                      "referencia-normativa": {
+                        "cr": "(B.O. 2/6/2014) ARTICULO SUSTITUIDO",
+                        "id": "MODIFICADO_POR_0",
+                        "ref": "LEY C 026940 2014 05 21 0038 000 0000 000"
+                      }
+                    }
+                  },
+                  {
+                    "numero-articulo": 36,
+                    "informacion-vinculada": 10000000000000000000,
+                    "texto": "[[p]]ARTICULO 36.- El MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL procederá, sin perjuicio de las facultades concurrentes de la Administración Federal de Ingresos Públicos, a verificar y fiscalizar en todo el territorio nacional, el cumplimiento por parte de los empleadores de la obligación de declarar e ingresar los aportes y contribuciones sobre la nómina salarial, que integran el Sistema Unico de la Seguridad Social, a cargo de la Administración Nacional de la Seguridad Social, conforme a las normas reglamentarias vigentes en la materia.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 37,
+                    "informacion-vinculada": 10000000000000000000,
+                    "texto": "[[p]]ARTICULO 37.- Cuando el MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL, en ejercicio de las facultades conferidas en el artículo anterior, verifique infracciones de los empleadores a las obligaciones de la seguridad social aplicará las penalidades correspondientes, utilizando la tipificación, procedimiento y régimen sancionatorio que, a tal efecto, aplica la Administración Federal de Ingresos Públicos. Posteriormente, remitirá las actuaciones a la Administración Federal de Ingresos Públicos para la determinación, notificación, percepción y, en su caso, ejecución de la deuda, en el marco de su competencia.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 38,
+                    "texto": "[[p]]ARTICULO 38.- El MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL y la Administración Federal de Ingresos Públicos, dictarán las normas complementarias y aprobarán los modelos de instrumentos actuariales necesarios para su implementación, dentro del plazo de SESENTA (60) días de la entrada en vigencia de la presente ley.[[/p]]"
+                  }
+                ]
+              },
+              {
+                "titulo-particion": "Capítulo II  Simplificación Registral",
+                "articulo": {
+                  "numero-articulo": 39,
+                  "texto": "[[p]]ARTICULO 39.- El MINISTERIO DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL establecerá el organismo encargado y los procedimientos destinados a la simplificación y unificación en materia de inscripción laboral y de la Seguridad Social, con el objeto de que la registración de empleadores y trabajadores se cumpla en un solo acto y a través de un único trámite.[[/p]][[p]]El PODER EJECUTIVO NACIONAL dictará las normas para la reglamentación e instrumentación de lo dispuesto en el presente artículo.[[/p]]"
+                }
+              },
+              {
+                "titulo-particion": "Capítulo III  Cooperativas de Trabajo",
+                "articulo": {
+                  "numero-articulo": 40,
+                  "texto": "[[p]]ARTICULO 40. - Los servicios de inspección del trabajo están habilitados para ejercer el contralor de las cooperativas de trabajo a los efectos de verificar el cumplimiento de las normas laborales y de la seguridad social en relación con los trabajadores dependientes a su servicio así como a los socios de ella que se desempeñaren en fraude a la ley laboral.[[/p]][[p]]Estos últimos serán considerados trabajadores dependientes de la empresa usuaria para la cual presten servicios, a los efectos de la aplicación de la legislación laboral y de la seguridad social.[[/p]][[p]]Si durante esas inspecciones se comprobare que se ha incurrido en una desnaturalización de la figura cooperativa con el propósito de sustraerse, total o parcialmente, a la aplicación de la legislación del trabajo denunciarán, sin perjuicio del ejercicio de su facultad de constatar las infracciones a las normas laborales y proceder a su juzgamiento y sanción, esa circunstancia a la autoridad específica de fiscalización pública a los efectos del artículo 101 y concordantes de la Ley 20.337.[[/p]][[p]]Las cooperativas de trabajo no podrán actuar como empresas de provisión de servicios eventuales, ni de temporada, ni de cualquier otro modo brindar servicios propios de las agencias de colocación.[[/p]]"
+                }
+              },
+              {
+                "titulo-particion": "TITULO IV  DISPOSICIONES FINALES",
+                "articulo": [
+                  {
+                    "numero-articulo": 41,
+                    "texto": "[[p]]ARTICULO 41.- Derógase la Ley 17.183, los artículos 17 y 19 de la Ley 14.250 t.o. 1988; el artículo 92 de la Ley 24.467, los artículos 4, 5, 6, 7, 8, 10, 11 y 13 de la Ley 25.013 y el Decreto Nº 105/00.[[/p]]",
+                    "deroga-a": {
+                      "referencia-normativa": [
+                        {
+                          "cr": null,
+                          "id": "DEROGA_A_0",
+                          "ref": "LEY C 017183 1967 02 22 0000 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "DEROGA_A_1",
+                          "ref": "DEC C 000105 2000 02 01 0000 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "DEROGA_A_2",
+                          "ref": "TOR C 014250 1988 01 27 0017 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "DEROGA_A_3",
+                          "ref": "TOR C 014250 1988 01 27 0019 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "DEROGA_A_4",
+                          "ref": "LEY C 024467 1995 03 15 0092 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "DEROGA_A_5",
+                          "ref": "LEY C 025013 1998 09 02 0004 000 0008 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "DEROGA_A_6",
+                          "ref": "LEY C 025013 1998 09 02 0010 000 0011 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "DEROGA_A_7",
+                          "ref": "LEY C 025013 1998 09 02 0013 000 0000 000"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "observa-a": {
+                      "referencia-normativa": [
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_0",
+                          "ref": "LEY C 016936 1966 08 26 0000 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_1",
+                          "ref": "LEY C 018608 1970 02 06 0000 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_2",
+                          "ref": "LEY C 018692 1970 05 29 0000 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_3",
+                          "ref": "LEY C 020638 1974 01 11 0000 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_4",
+                          "ref": "TOR C 014250 1988 01 27 0018 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_5",
+                          "ref": "TOR C 014250 1988 01 27 0011 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_6",
+                          "ref": "LEY C 025013 1998 09 02 0012 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_7",
+                          "ref": "LEY C 025013 1998 09 02 0014 000 0016 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_8",
+                          "ref": "LEY C 025212 1999 11 24 0002 000 0000 000"
+                        },
+                        {
+                          "cr": null,
+                          "id": "OBSERVA_A_9",
+                          "ref": "DEC C 002184 1990 10 16 0000 000 0000 000"
+                        }
+                      ]
+                    },
+                    "numero-articulo": 42,
+                    "texto": "[[p]]ARTICULO 42.- Ratifícase la derogación de las Leyes Nº 16.936, Nº 18.608, Nº 18.692 y Nº 20.638; los artículos 11, 18 y 20 de la Ley 14.250 t.o. 1988; los artículos 12, 14, 15 y 16 de la Ley 25.013, el inciso e) del artículo 2 del Anexo I de la Ley 25.212 y los Decretos Nº 2184/90 y Nº 470/93.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 43,
+                    "texto": "[[p]]ARTICULO 43.- Lo establecido por el artículo 2 de la presente ley será de aplicación a todas las relaciones laborales iniciadas a partir de su entrada en vigencia.[[/p]]"
+                  },
+                  {
+                    "referencias-normativas": {
+                      "referencia-normativa": {
+                        "cr": null,
+                        "id": "REFERENCIAS_NORMATIVAS_0",
+                        "ref": "DEC C 000843 2000 09 29 0000 000 0000 000"
+                      }
+                    },
+                    "numero-articulo": 44,
+                    "texto": "[[p]]ARTICULO 44.- Hasta tanto el PODER EJECUTIVO NACIONAL dicte la reglamentación prevista por el artículo 24 de la presente ley, continuará transitoriamente en vigencia el Decreto Nº 843/00.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 45,
+                    "texto": "[[p]]ARTICULO 45. - Todos los plazos previstos en la presente ley, excepto los establecidos en el Título I, se computarán en días hábiles administrativos.[[/p]]"
+                  },
+                  {
+                    "numero-articulo": 46,
+                    "texto": "[[p]]ARTICULO 46. - Comuníquese al Poder Ejecutivo Nacional.[[/p]]"
+                  }
+                ],
+                "firmantes": {
+                  "firmantes": "CAMAÑO-GUINLE-Rollano-Estrada"
+                }
+              }
+            ]
+          }
+        ],
+        "id-infojus": "LNS0004857",
+        "fecha-umod": 20250903164720
+      }
+    }
+  },
+  "guid": "123456789-0abc-defg-g75-84000scanyel"
+}

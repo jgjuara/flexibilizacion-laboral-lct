@@ -1,0 +1,789 @@
+{
+  "data": {
+    "document": {
+      "metadata": {
+        "uuid": "123456789-0abc-defg-g18-81000scanyel",
+        "document-content-type": "legislacion",
+        "timestamp": 1759405730788,
+        "operation": "ADD",
+        "target-document-repository-id": "infojus",
+        "target-index-id": "index",
+        "target-document-indexing-id": "legislacion",
+        "document-recovery-strategy": "abstract-legislacion",
+        "friendly-url": {
+          "subdomain": "ley",
+          "description": "23551-nacional-ley-organizacion-asociaciones-sindicales-lns0001881-1988-03-23"
+        }
+      },
+      "content": {
+        "mecanografico": "S0001881",
+        "decreto-reglamentario": {
+          "referencia-normativa": [
+            {
+              "cr": null,
+              "id": "DECRETO_REGLAMENTARIO_0",
+              "ref": "DEC C 000467 1988 04 14 0000 000 0000 000"
+            },
+            {
+              "cr": "REGLAMENTA ARTICULO 59 (B.O. 28-08-2001)",
+              "id": "DECRETO_REGLAMENTARIO_1",
+              "ref": "DEC C 001040 2001 08 16 0000 000 0000 000"
+            }
+          ]
+        },
+        "numero-norma": 23551,
+        "tipo-norma": {
+          "codigo": "LEY",
+          "texto": "Ley"
+        },
+        "fecha": "1988-03-23",
+        "jurisdiccion": {
+          "codigo": "CAPITAL FEDERAL",
+          "descripcion": "Nacional",
+          "capital": "Capital Federal",
+          "id-pais": 11
+        },
+        "standard-normativo": "LEY C 023551 1988 03 23",
+        "identificacion-coloquial": {
+          "identificacion-coloquial": [
+            "LEY 23551",
+            "BUENOS AIRES, 23 DE MARZO DE 1988"
+          ]
+        },
+        "titulo-norma": "LEY DE ORGANIZACION DE LAS ASOCIACIONES SINDICALES.",
+        "publicacion-codificada": {
+          "publicacion-decodificada": {
+            "organismo": "Boletín Oficial",
+            "fecha": "1988 04 22"
+          }
+        },
+        "sancion": "EL SENADO Y CAMARA DE DIPUTADOS DE LA NACION ARGENTINA REUNIDOS EN CONGRESO, ETC., SANCIONAN CON FUERZA DE LEY:",
+        "lugar-sancion": "BUENOS AIRES",
+        "nombre-coloquial": "Ley 23.551",
+        "estado": "Vigente, de alcance general",
+        "analista": "Rocca, Adriana",
+        "responsable": "Rocca, Adriana",
+        "uid-alta": "ABM",
+        "uid-mod": "ABM",
+        "fecha-alta": "2025-10-02",
+        "fecha-mod": "2025-10-02",
+        "timestamp": "2025-10-02T08:00:40",
+        "timestamp-alta": "2025-10-02T08:00:40",
+        "timestamp-m": "2025-10-02T08:00:40",
+        "sumario": {
+          "sumario": "[[p]]TRABAJO-ACTIVIDAD GREMIAL-ASOCIACIONES SINDICALES-PERSONERIA GREMIAL-SINDICATOS-FEDERACIONES-CONFEDERACIONES-REPRESENTACION SINDICAL EN LA EMPRESA-TUTELA SINDICAL-DEROGA LEY 22.105[[/p]]"
+        },
+        "descriptores": {
+          "descriptor": [
+            {
+              "elegido": {
+                "termino": "LEY DE ORGANIZACIÓN DE LAS ASOCIACIONES SINDICALES"
+              },
+              "preferido": {
+                "termino": "LEY DE ORGANIZACIÓN DE LAS ASOCIACIONES SINDICALES"
+              },
+              "sinonimos": null
+            },
+            {
+              "elegido": {
+                "termino": "derecho colectivo del trabajo"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo"
+              },
+              "sinonimos": {
+                "termino": "derecho del trabajo"
+              }
+            },
+            {
+              "elegido": {
+                "termino": "asociaciones sindicales"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "derechos sindicales"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/derechos sindicales"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores",
+                  "garantías sindicales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "libertad sindical"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/libertad sindical"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "derecho a la sindicación",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores",
+                  "derecho a la organización sindical libre y democrática",
+                  "derecho de asociación sindical"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "sindicatos"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/tipos de asociaciones sindicales/sindicatos"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores",
+                  "gremios"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "federación gremial"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/tipos de asociaciones sindicales/federación gremial"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "confederación gremial"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/tipos de asociaciones sindicales/confederación gremial"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "afiliación sindical"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/afiliación sindical"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "personería gremial"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/personería gremial"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "aportes sindicales"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/afiliación sindical/aportes sindicales"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "aportes gremiales",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores",
+                  "aportes y contribuciones a entidades gremiales"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "delegado gremial"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/cargos gremiales/dirigente gremial/delegado gremial"
+              },
+              "sinonimos": {
+                "termino": [
+                  "representante gremial",
+                  "dirigente sindical",
+                  "derecho del trabajo",
+                  "personal gremial",
+                  "representante sindical",
+                  "asociaciones gremiales",
+                  "representante sectorial",
+                  "asociaciones gremiales de trabajadores"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "Ministerio de Trabajo y Seguridad Social"
+              },
+              "preferido": {
+                "termino": "MINISTERIO DE TRABAJO"
+              },
+              "sinonimos": {
+                "termino": [
+                  "Ministerio de Trabajo, Empleo y Seguridad Social",
+                  "Ministerio de Trabajo, Empleo y Formación de Recursos Humanos",
+                  "Ministerio de Trabajo y Seguridad Social de la Nación",
+                  "Ministerio de Trabajo y Seguridad Social"
+                ]
+              }
+            },
+            {
+              "elegido": {
+                "termino": "prácticas antisindicales"
+              },
+              "preferido": {
+                "termino": "Derecho laboral/derecho colectivo del trabajo/asociaciones sindicales/prácticas antisindicales"
+              },
+              "sinonimos": {
+                "termino": [
+                  "derecho del trabajo",
+                  "asociaciones gremiales",
+                  "asociaciones gremiales de trabajadores"
+                ]
+              }
+            }
+          ],
+          "suggest": {
+            "termino": [
+              "aportes y contribuciones a entidades gremiales (aportes sindicales)",
+              "delegado gremial",
+              "personería gremial",
+              "garantías sindicales (derechos sindicales)",
+              "federación gremial",
+              "derecho colectivo del trabajo",
+              "Ministerio de Trabajo, Empleo y Seguridad Social (MINISTERIO DE TRABAJO)",
+              "representante gremial (dirigente gremial)",
+              "asociaciones gremiales de trabajadores (asociaciones sindicales)",
+              "Ministerio de Trabajo y Seguridad Social (MINISTERIO DE TRABAJO)",
+              "Ministerio de Trabajo y Seguridad Social de la Nación (MINISTERIO DE TRABAJO)",
+              "dirigente gremial",
+              "derecho a la sindicación (libertad sindical)",
+              "representante sectorial (delegado gremial)",
+              "prácticas antisindicales",
+              "derechos sindicales",
+              "tipos de asociaciones sindicales",
+              "MINISTERIO DE TRABAJO",
+              "afiliación sindical",
+              "personal gremial (cargos gremiales)",
+              "sindicatos",
+              "derecho de asociación sindical (libertad sindical)",
+              "aportes sindicales",
+              "derecho a la organización sindical libre y democrática (libertad sindical)",
+              "confederación gremial",
+              "derecho del trabajo (Derecho laboral)",
+              "Ministerio de Trabajo, Empleo y Formación de Recursos Humanos (MINISTERIO DE TRABAJO)",
+              "cargos gremiales",
+              "dirigente sindical (dirigente gremial)",
+              "LEY DE ORGANIZACIÓN DE LAS ASOCIACIONES SINDICALES",
+              "Derecho laboral",
+              "libertad sindical",
+              "aportes gremiales (aportes sindicales)",
+              "asociaciones sindicales",
+              "representante sindical (dirigente gremial)",
+              "gremios (sindicatos)",
+              "asociaciones gremiales (asociaciones sindicales)"
+            ]
+          }
+        },
+        "generalidades": {
+          "observaciones-generales": "[[p]]CANTIDAD DE ARTICULOS QUE COMPONEN LA NORMA: 67.[[/p]][[p]]NRO. DE ART. QUE ESTABLECE LA ENTRADA EN VIGENCIA: 65.[[/p]][[p]]FECHA DE ENTRADA EN VIGENCIA: 1988 04 23.[[/p]][[p]]OBSERVACION: LA CAMARA NACIONAL DE APELACIONES DEL TRABAJO SUSPENDE LA APLICACION DE LO DISPUESTO EN EL TITULO IV TRABAJO DEL DNU 70/23 (B.O 21/12/2023) HASTA TANTO RECAIGA SENTENCIA DEFINITIVA SOBRE LA CUESTION DE FONDO, EN EL MARCO DE LA ACCION IMPULSADA POR LA CGT. DE LAS MODIFICACIONES LABORALES CONTENIDAS EN EL MISMO.<A HREF=\"http://www.saij.gob.ar/FA24040001\"> Ver fallo </A>.[[/p]][[p]]OBSERVACION: POR RESOLUCION 204/24 DEL MINISTERIO DE CAPITAL HUMANO (B.O. 17/5/2024) SE DELEGA EN LA SECRETARÍA DE TRABAJO, EMPLEO Y SEGURIDAD SOCIAL EL EJERCICIO DE LAS COMPETENCIAS COMO AUTORIDAD DE APLICACION DE LA PRESENTE NORMA.[[/p]]"
+        },
+        "segmento": [
+          {
+            "titulo-particion": "TITULO PRELIMINAR.- De la tutela de la libertad sindical",
+            "articulo": [
+              {
+                "numero-articulo": 1,
+                "texto": "[[p]]ARTICULO 1.- La libertad sindical será garantizada por todas las normas que se refieren a la organización y acción de las asociaciones sindicales.[[/p]]"
+              },
+              {
+                "numero-articulo": 2,
+                "texto": "[[p]]ARTICULO 2.- Las asociaciones que tengan por objeto la defensa de los intereses de los trabajadores se regirán por esta Ley.[[/p]]"
+              },
+              {
+                "numero-articulo": 3,
+                "texto": "[[p]]ARTICULO 3.- Entiéndese por interés de los trabajadores todo cuanto se relacione con sus condiciones de vida y de trabajo. La acción sindical contribuirá a remover los obstáculos que dificulten la realización plena del trabajador.[[/p]]"
+              },
+              {
+                "numero-articulo": 4,
+                "texto": "[[p]]ARTICULO 4.- Los trabajadores tienen los siguientes derechos sindicales:[[/p]][[p]]a) Constituir libremente y sin necesidad de autorización previa, asociaciones sindicales;[[/p]][[p]]b) Afiliarse a las ya constituidas, no afiliarse o desafiliarse;[[/p]][[p]]c) Reunirse y desarrollar actividades sindicales;[[/p]][[p]]d) Peticionar ante las autoridades y los empleadores;[[/p]][[p]]e) Participar en la vida interna de las asociaciones sindicales, elegir libremente a sus representantes, ser elegidos y posturlar candidatos.[[/p]]"
+              },
+              {
+                "numero-articulo": 5,
+                "texto": "[[p]]ARTICULO 5.- Las asociaciones sindicales tienen los siguientes derechos:[[/p]][[p]]a) Determinar su nombre, no pudiendo utilizar los ya adoptados ni aquellos que pudieran inducir a error o confusión;[[/p]][[p]]b) Determinar su objeto, ámbito de representación personal y de actuación territorial;[[/p]][[p]]c) Adoptar el tipo de organización que estimen apropiado, aprobar sus estatutos y constituir asociaciones de grado superior, alifiarse a las ya constituidas o desafiliarse;[[/p]][[p]]d) Formular su programa de acción, y realizar todas las actividades lícitas en defensa del interés de los trabajadores.[[/p]][[p]]En especial, ejercer el derecho a negociar colectivamente, el de participar, el de huelga y el de adoptar demás medidas 1 mas de acción sindical.[[/p]]"
+              },
+              {
+                "numero-articulo": 6,
+                "texto": "[[p]]ARTICULO 6.- Los poderes públicos y en especial la autoridad administrativa del trabajo, los empleadores y sus asociaciones y toda persona física o jurídica deberán abstenerse de limitar la autonomía de las asociaciones sindicales, más allá de lo establecido en la legislación vigente.[[/p]]"
+              },
+              {
+                "numero-articulo": 7,
+                "texto": "[[p]]ARTICULO 7.- Las asociaciones sindicales no podrán establecer diferencias por razones ideológicas, políticas, sociales, de credo, nacionalidad, raza o sexo, debiendo abstenerse de dar un trto discriminatorio a los afiliados.[[/p]][[p]]Lo dispuesto regirá también respecto de la relación entre una asociación de grado superior y otra de grado inferior.[[/p]]"
+              },
+              {
+                "numero-articulo": 8,
+                "texto": "[[p]]ARTICULO 8.- Las asociaciones sindicales garantizarán la efectiva democracia interna. Sus estatutos deberán garantizar:[[/p]][[p]]a) Una fluida comunicación entre los órganos internos de la asociación y sus afiliados;[[/p]][[p]]b) Que los delegados a los órganos deliberativos obren con mandato de sus representados y les informen luego de su gestión;[[/p]][[p]]c) La efectiva participación de todos los afiliados en la vida de la asociación, garantizando la elección directa de los cuerpos directivos en los sindicatos locales y seccionales;[[/p]][[p]]d) La representación de las minorías en los cuerpos deliberativos.[[/p]]"
+              },
+              {
+                "numero-articulo": 9,
+                "texto": "[[p]]ARTICULO 9.- Las asociaciones sindicales no podrán recibir ayuda económica de empleadores, ni de organismos políticos nacionales o extranjeros.[[/p]][[p]]Esta prohibición no alcanza a los aportes que los empleadores efectúen en virtud de normas legales o convencionales.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "I.- De los tipos de asociaciones sindicales",
+            "articulo": [
+              {
+                "numero-articulo": 10,
+                "texto": "[[p]]ARTICULO 10.- Se considerarán asociaciones sindicales de trabajadores las constituidas por:[[/p]][[p]]a) Trabajadores de una misma actividad o actividades afines;[[/p]][[p]]b) Trabajadores de un mismo oficio, profesión o categoría, aunque se desempeñen en actividades distintas;[[/p]][[p]]c) Trabajadores que presten servicios en una misma empresa.[[/p]]"
+              },
+              {
+                "numero-articulo": 11,
+                "texto": "[[p]]ARTICULO 11.- Las asociaciones sindicales pueden asumir algunas de las siguientes formas:[[/p]][[p]]a) Sindicatos o uniones;[[/p]][[p]]b) Federaciones, cuando agrupen asociaciones de primer grado;[[/p]][[p]]c) Confederaciones, cuando agrupen a las asociaciones contempladas en los incisos que preceden a éstos.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "II.- De la afiliación y desafiliación",
+            "articulo": [
+              {
+                "numero-articulo": 12,
+                "texto": "[[p]]ARTICULO 12.- Las asociaciones sindicales deberán admitir la libre afiliación, de acuerdo a esta ley y a sus estatutos, los que deberá conformarse a la misma.[[/p]]"
+              },
+              {
+                "numero-articulo": 13,
+                "texto": "[[p]]Artículo 13.- Las personas mayores de dieciséis (16) años, sin necesidad de autorización, podrán afiliarse.[[/p]]",
+                "modificado-por": {
+                  "referencia-normativa": {
+                    "cr": "(B.O. 25-06-2008) SUSTITUIDO",
+                    "id": "MODIFICADO_POR_0",
+                    "ref": "LEY C 026390 2008 06 04 0021 000 0000 000"
+                  }
+                }
+              },
+              {
+                "numero-articulo": 14,
+                "texto": "[[p]]ARTICULO 14.- En caso de jubilación, accidente, enfermedad, invalidez, desocupación o servicio militar, los afiliados no perderán por esas circunstancias el derecho de pertenecer a la asociación respectiva, pero gozarán de los derechos y estarán sujetos a las obligaciones que el estatuto establezca.[[/p]]"
+              },
+              {
+                "numero-articulo": 15,
+                "texto": "[[p]]ARTICULO 15.- El trabajador que dejare de pertenecer a una asociación sindical no tendrá derecho al reintegro de las cuotas o aportes abonados. Lo dispuesto será aplicable a las relaciones entre asociaciones de diverso grado.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "III.- De los estatutos",
+            "articulo": {
+              "numero-articulo": 16,
+              "texto": "[[p]]ARTICULO 16.- Los estatutos deberán ajustarse a lo establecido en el artículo 8 y contener:[[/p]][[p]]a) Denominación, domicilio, objeto y zona de actuación;[[/p]][[p]]b) Actividad, oficio, profesión o categoría de los trabajadores que represente;[[/p]][[p]]c) Derechos y obligaciones de los afiliados, requisitos para su admisión y procedimiento para su separación que garanticen el derecho de defensa.[[/p]][[p]]d) Determinación de las autoridades y especificación de sus funciones con indicación de las que ejerzan su representación legal, duración de los mandatos, recaudos para su revocación y procedimientos para la designación y reemplazos de los directivos e integrantes de los congresos;[[/p]][[p]]e) Modo de sontitución, administración y control del patrimonio social y su destino en caso de disolución y régimen de cotizaciones de sus afiliados y contribuciones;[[/p]][[p]]f) Epoca y forma de presentación, aprobación y publicación de memorias y balances; órganos para su revisión y fiscalización;[[/p]][[p]]g) Régimen electoral que asegure la democracia interna de acuerdo con los principios de la presente ley, no pudiendo contener como exigencia para presentar listas de candidatos a órganos asociacionales, avales que superen el tres por ciento (3%) de sus afiliados;[[/p]][[p]]h) Régimen de convocatoria y funcionamiento de asambleas, y congresos;[[/p]][[p]]i) Procedimiento para disponer medidas legítimas de acción sindical;[[/p]][[p]]j) Procedimiento para la modificación de los estatutos y disolución de la asociación.[[/p]]"
+            }
+          },
+          {
+            "titulo-particion": "IV.- Dirección y administración",
+            "articulo": [
+              {
+                "numero-articulo": 17,
+                "texto": "[[p]]ARTICULO 17.- La dirección y administración serán ejercidas por un órgano compuesto por un mínimo de cinco (5) miembros, elegidos en forma que asegure la voluntas de la mayoríade los afiliados o delegados congresales mediante el voto directo y secreto.[[/p]][[p]]Los mandatos no podrán exceder de cuatro (4) años, teniendo derecho a ser reelegidos.[[/p]]"
+              },
+              {
+                "numero-articulo": 18,
+                "texto": "[[p]]*ARTICULO 18.- Para integrar los órganos directivos, se requerirá:[[/p]][[p]]a) Mayoría de edad;[[/p]][[p]]b) No tener inhibiciones civiles ni penales;[[/p]][[p]]c) Estar afiliado/a, tener dos (2) años de antigüedad en la afiliación y encontrarse desempeñando la actividad durante dos (2) años.[[/p]][[p]]El setenta y cinco por ciento (75%) de los cargos directivos y representativos deberán ser desempeñados por ciudadanos/as argentinos, el/la titular del cargo de mayor jerarquía y su reemplazante estatutario deberán ser ciudadanos/as argentinos.[[/p]][[p]]La representación femenina en los cargos electivos y representativos de las asociaciones sindicales será de un mínimo del 30% (treinta por ciento), cuando el número de mujeres alcance o supere ese porcentual sobre el total de los trabajadores.[[/p]][[p]]Cuando la cantidad de trabajadoras no alcanzare el 30% del total de trabajadores, el cupo para cubrir la participación femenina en las listas de candidatos y su representación en los cargos electivos y representativos de la asociación sindical, será proporcional a esa cantidad.[[/p]][[p]]Asimismo, las listas que se presenten deberán incluir mujeres en esos porcentuales mínimos y en lugares que posibiliten su elección.[[/p]][[p]]No podrá oficializarse ninguna lista que no cumpla con los requisitos estipulados.[[/p]]",
+                "modificado-por": {
+                  "referencia-normativa": {
+                    "cr": "(B.O. 29/11/2002) ARTICULO SUSTITUIDO",
+                    "id": "MODIFICADO_POR_0",
+                    "ref": "LEY C 025674 2002 11 06 0003 000 0000 000"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "titulo-particion": "V.- De las Asambleas y congresos",
+            "articulo": [
+              {
+                "numero-articulo": 19,
+                "texto": "[[p]]ARTICULO 19.- Las asambleas y congresos deberán reunirse:[[/p]][[p]]a) En sesión ordinaria, anualmente;[[/p]][[p]]b) En sesión extraordinaria, cuando los convoque el órgano directivo de la asociación por propia decisión o a solicitud del número de afiliados o delegados congresales que fije el estatuto, el que no podrá ser superior al quince por ciento (15%) en asamblea de afiliados y al treinta y tres por ciento (33%) en asamblea de delegados congresales.[[/p]]"
+              },
+              {
+                "numero-articulo": 20,
+                "texto": "[[p]]ARTICULO 20.- Será privativo de las asambleas o congresos:[[/p]][[p]]a) Fijar criterios generales de actuación;[[/p]][[p]]b) Considerar los anteproyectos de convenciones colectivas de trabajo;[[/p]][[p]]c) Aprobar y modificar los estatutos, memorias y balances;[[/p]][[p]]La fusión con otras asociaciones, afiliación o desafiliación a asociaciones, nacionales o internacionales;[[/p]][[p]]d) Dar mandato alos delegados a congresos de asociaciones de grado superior y recibir el informe de su desempeño;[[/p]][[p]]e) Fijar el monto de las cotizaciones ordinarias y extraordinarias de los afiliados.[[/p]]"
+              },
+              {
+                "numero-articulo": "20 002",
+                "texto": "[[p]]ARTÍCULO 20 bis.- Derecho de realizar Asambleas, Congresos. Los representantes sindicales dentro de la empresa, delegados, comisiones internas u organismos similares, así como las autoridades de las distintas seccionales de las asociaciones sindicales tendrán derecho a convocar a asambleas y congresos de delegados sin perjudicar las actividades normales de la empresa o afectar a terceros.[[/p]]",
+                "modificado-por": {
+                  "referencia-normativa": {
+                    "cr": "(B.O 21/12/2023) ARTICULO INCORPORADO",
+                    "id": "MODIFICADO_POR_0",
+                    "ref": "DNU C 000070 2023 12 20 0087 000 0000 000"
+                  }
+                }
+              },
+              {
+                "numero-articulo": "20 003",
+                "texto": "[[p]]ARTÍCULO 20 ter - Acciones prohibidas. Las siguientes conductas están prohibidas y serán consideradas infracciones muy graves:.[[/p]][[p]]a. Afectar la libertad de trabajo de quienes no adhieran a una medida de fuerza, mediante actos, hechos, intimidaciones o amenazas;[[/p]][[p]]b. Provocar el bloqueo o tomar un establecimiento; impedir u obstruir total o parcialmente el ingreso o egreso de personas y/o cosas al establecimiento;[[/p]][[p]]c. Ocasionar daños en personas o en cosas de propiedad de la empresa o de terceros situadas en el establecimiento (instalaciones, mercaderías, insumos y materias primas, herramientas, etc.) o retenerlas indebidamente.[[/p]][[p]]Verificadas dichas acciones como medidas de acción directa sindical, la entidad responsable será pasible de la aplicación de las sanciones que establezca la reglamentación, una vez cumplimentado el procedimiento que se disponga al efecto a cargo de la Autoridad de Aplicación, sin perjuicio de las responsabilidades civiles y/o penales que pudieran corresponder.[[/p]]",
+                "modificado-por": {
+                  "referencia-normativa": {
+                    "cr": "(B.O 21/12/2023) ARTICULO INCORPORADO",
+                    "id": "MODIFICADO_POR_0",
+                    "ref": "DNU C 000070 2023 12 20 0088 000 0000 000"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "titulo-particion": "VI.- De la Inscripción",
+            "articulo": [
+              {
+                "numero-articulo": 21,
+                "texto": "[[p]]ARTICULO 21.- Las asociaciones presentarán ante la autoridad administrativa del trabajo solicitud de inscripción haciendo constar:[[/p]][[p]]a) Nombre, domicilio, patrimonio y antecedentes de su fundación;[[/p]][[p]]b) Lista de afiliados;[[/p]][[p]]c) Nómina y nacionalidad de los integrantes de su organismo directivo;[[/p]][[p]]d) Estatutos.[[/p]]"
+              },
+              {
+                "numero-articulo": 22,
+                "texto": "[[p]]ARTICULO 22.- Cumplidos los recaudos del artículo anterior, la autoridad administrativa del trabajo, dentro de los noventa (90) días de presentada la solicitud, dispondrá la inscripción en el registro especial y la publicación, sin cargo, de la resolución que autorice la inscripción y extracto de los estatutos en el Boletín Oficial.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "VII.- De las derechos y obligaciones de las asociaciones sindicales",
+            "articulo": [
+              {
+                "numero-articulo": 23,
+                "texto": "[[p]]ARTICULO 23.- La asociación a partir de su inscripción, adquirirá personería jurídica y tendrá los siguientes derechos:[[/p]][[p]]a) Peticionar y representar, a solicitud de parte, los intereses individuales de sus afiliados;[[/p]][[p]]b) Representar los interess colectivos, cuando no hubiere en la misma actividad o categoría asociación con personería gremial;[[/p]][[p]]c) Promover:[[/p]][[p]]1. La formación de sociedades cooperativas y mutuales.[[/p]][[p]]2. El perfeccionamiento de la legislación laboral, previsional de seguridad social.[[/p]][[p]]3. La educación general y la formación profesional de los trabajadores;[[/p]][[p]]d) Imponer cotizaciones a sus afiliados;[[/p]][[p]]e) Realizar reuniones o asambleas sin necesidad de autorización previa[[/p]]"
+              },
+              {
+                "numero-articulo": 24,
+                "texto": "[[p]]ARTICULO 24.- Las asociaciones sindicales están obligadas a remitir o comunicar a la autoridad administrativa del trabajo:[[/p]][[p]]a) Los estatutos y sus modificaciones a los efectos de control de la legislación;[[/p]][[p]]b) La integración de los órganos directivos y sus modificaciones;[[/p]][[p]]c) Dentro de los ciento veinte (120) días de cerrado el ejercicio, copia autenticada de la memoria, balance y nómina de afiliados;[[/p]][[p]]d) La convocatoria a elecciones para la renovación de sus órganos en los plazos estatutarios;[[/p]][[p]]e) Los libros de contabilidad y registros de afiliados a efectos de su rubricación.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "VIII.- De las asociaciones sindicales con personería gremial",
+            "articulo": [
+              {
+                "numero-articulo": 25,
+                "texto": "[[p]]ARTICULO 25.- La asociación que en su ámbito territorial y personal de actuación sea la más representativa, obtendrá personería gremial, siempre que cumpla los siguientes requisitos:[[/p]][[p]]a) Se encuentre inscripta de acuerdo a lo prescripto en esta ley y haya actuado durante un período no menor de seis (6) meses;[[/p]][[p]]b) Afilie a más de veinte por ciento (20%) de los trabajadores que intente representar.[[/p]][[p]]c) La calificación de más representativa se atribuirá a la asociación que cuente con mayor número promedio de afiliados cotizantes, sobre la cantidad promedio de trabajadores que intente representar.[[/p]][[p]]Los promedios se determinarán sobre los seis meses anteriores a la solicitud.[[/p]][[p]]Al reconocerse personería gremial la autoridad administrativa del trabajo o judicial, deberá precisar el ámbito de representación personal y territorial. Estos no excederán de los establecidos en los estatutos, pero podrán ser reducidos si existiere superposición con otra asociación sindical.[[/p]][[p]]Cuando los ámbitos pretendidos se superpongan con los de otra asociación sindical con personería gremial, no podrá reconocerse a la peticionante la amplitud de representación, sin antes dar intervención a la asociación afectada y proceder al cotejo necesario para determinar cuál es la más representativa conforme al procedimiento del artículo 28.[[/p]][[p]]La omisión de los recaudos indicados determinará la nulidad del acto administrativo o judicial.[[/p]]"
+              },
+              {
+                "numero-articulo": 26,
+                "texto": "[[p]]ARTICULO 26.- Cumplidos los recaudos, la autoridad administrativa dictará resolución dentro de los noventa (90) días.[[/p]]"
+              },
+              {
+                "numero-articulo": 27,
+                "texto": "[[p]]ARTICULO 27.- Otorgada la personería gremial se inscribirá la asociación en el registro que prevé esta ley, publicándose en el Boletín Oficial, sin cargo, la resolución administrativa y los estatutos.[[/p]]"
+              },
+              {
+                "numero-articulo": 28,
+                "texto": "[[p]]ARTICULO 28.- En caso de que existiera una asociación sindical de trabajadores con personería gremial, sólo podrá concederse igual personería a otra asociación, para actuar en la misma zona y actividad o categoría, en tanto que la cantidad de afiliados contizantes de la peticionante, durante un período mínimo y continuado de seis (6) meses anteriores a su presentación, fuere considerablemente superior a la de la asociación con personería preexistente.[[/p]][[p]]Presentado el requerimiento del mismo se dará traslado a la asociación con personería gremial por el término de veinte (20) días, a fin de que ejerza su defensa y ofrezca pruebas.[[/p]][[p]]De la contestación se dará traslado por cinco (5) días a la peticionante. Las pruebas se sustanciarán con el control de ambas asociaciones.[[/p]][[p]]Cuando se resolviere otorgar la personería a la solicitante, la que la poseía continuará como inscripta.[[/p]][[p]]La personería peticionada se acordará sin necesidad del trámite previsto en este artículo, cuando mediare conformidad expresa máximo órgano deliberativo de la asociación que la poseía.[[/p]]"
+              },
+              {
+                "numero-articulo": 29,
+                "texto": "[[p]]ARTICULO 29.- Sólo podrá otorgarse personería a un sindicato de empresa, cuando no obrare en la zona de actuación y en la actividad o en la categoría una asociación sindical de primer grado o unión.[[/p]]"
+              },
+              {
+                "numero-articulo": 30,
+                "texto": "[[p]]ARTICULO 30.- Cuando la asociación sindical de trabajadores con personería gremial invista la forma de unión, asociación o sindicato de actividad y la peticionante hubiera adoptado la forma de sindicato de oficio, profesión o categoría, la personería podrá concedérsele si existieran intereses sindicales diferenciados como para justificar una representación específica y se cumplimenten los requisitos exigidos por el artículo 25, y siempre que la unión o sindicato preexistente no comprenda en su personería la representación de dichos trabajadores.[[/p]]"
+              },
+              {
+                "numero-articulo": 31,
+                "texto": "[[p]]ARTICULO 31.- Son derechos exclusivos de la asociación sindical con personería gremial:[[/p]][[p]]a) Defender y representar ante el Estado y los empleadores los intereses individuales y colectivos de los trabajadores;[[/p]][[p]]b) Participar en instituciones de planificación y control de conformidades con lo que dispongan las normas respectivas;[[/p]][[p]]c) Intervenir en negociaciones colectivas y vigilar el cumplimiento de la normativa laboral y de seguridad social;[[/p]][[p]]d) Colaborar con el Estado en el estudio y solución de los problemas de los trabajadores;[[/p]][[p]]e) Constituir patrimonios de afectación que tendrán los mismos derechos que las cooperativas y mutualidades;[[/p]][[p]]f) Administrar sus propias obras sociales y, según el caso, participar en la administración de las creadas por ley o por convenciones colectivas de trabajo.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "IX.- De las federaciones y confederaciones",
+            "articulo": [
+              {
+                "numero-articulo": 32,
+                "texto": "[[p]]ARTICULO 32.- Las federaciones y confederaciones más representativas, adquirirán personería gremial en las condiciones del artículo 25.[[/p]]"
+              },
+              {
+                "numero-articulo": 33,
+                "texto": "[[p]]ARTICULO 33.- Se considerarán federaciones más representativas, las que estén integradas por asociaciones de primer grado que afilien a la mayor cantidad de los trabajadores contizantes comprendidos en su ámbito.[[/p]][[p]]Se considerarán confederaciones más representativas las que afilien a entidades con personería gremial que cuenten con la mayor cantidad de trabajadores cotizantes.[[/p]]"
+              },
+              {
+                "numero-articulo": 34,
+                "texto": "[[p]]ARTICULO 34.- Las federaciones con personería gremial podrán ejercer los derechos que la presente ley acuerde a las asociaciones de primer grado con personería gremial, con las limitaciones que en relación los respectivos sindicatos y federaciones establezcan los estatutos de las mismas.[[/p]][[p]]Por su parte, las asociaciones de segundo y tercer grado podrán representar a las entidades de grado inferior adheridas a ellas, en toda tramitación de índole administrativa, pudiendo a tal efecto deducir y proseguir los recursos que fuese conveniente interponer y adoptar las medidas que hubiere menester para la mayor defensa de los derechos de las mismas.[[/p]]"
+              },
+              {
+                "numero-articulo": 35,
+                "texto": "[[p]]ARTICULO 35.- Las federaciones con personería gremial podrán asumir la representación de los trabajadores de la actividad o categoría por ellas representadas, en aquellas zonas o empresas donde no actuare una asociación sindical de primer grado con personería gremial.[[/p]]"
+              },
+              {
+                "numero-articulo": 36,
+                "texto": "[[p]]ARTICULO 36.- El máximo órgano deliberativo de las asociaciones sindicales de grado superior podrá disponer la intervención de las de grado inferior solo cuando los estatutos consagren esta facultad y por las causales que dichos estatutos determinen, garantizando el debido proceso. Esta resolución será recurrible ante la Cámara nacional de Apelaciones del Trabajo.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "X.- Del patrimonio de las asociaciones sindicales",
+            "articulo": [
+              {
+                "numero-articulo": 37,
+                "texto": "[[p]]ARTICULO 37.- El patrimonio de las asociaciones sindicales de trabajadores estará constituido por:[[/p]][[p]]a) Las cotizaciones ordinarias y extraordinarias de los afiliados y contribuciones de solidaridad que pacten en los términos de la ley de convenciones colectivas;[[/p]][[p]]b) Los bienes adquiridos y sus frutos;[[/p]][[p]]c) Las donaciones, legados, aportes y recursos no prohibidos por esta.[[/p]]"
+              },
+              {
+                "numero-articulo": 38,
+                "texto": "[[p]]ARTICULO 38.- Los empleadores estarán obligados a actuar como \"agente de retención\" de los importes que, en concepto de cuotas afiliación u otros aportes deban tributar los trabajadores a las asociaciones sindicales de trabajadores con personería gremial.[[/p]][[p]]Para que la obligación indicada sea exigible, deberá mediar una resolución del Ministerio de Trabajo y Seguridad Social de la Nación, disponiendo la retención. Esta resolución se adoptará a solicitud de la asociación sindical interesada. El ministerio citado deberá pronunciarse dentro de los treinta (30) días de recibida la misma. Si así no lo hiciere, se tendrá por tácitamente dispuesta la retención.[[/p]][[p]]El incumplimiento por parte del empleador de la obligación de obrar como agente de retención, o -en su caso- de efectuar en tiempo propio el pago de lo retenido, tornará a aquél en deudor directo.[[/p]][[p]]La mora en tal caso se producirá de pleno derecho.[[/p]]"
+              },
+              {
+                "numero-articulo": 39,
+                "texto": "[[p]]*ARTICULO 39.- Los actos y bienes de las asociaciones sindicales con personería gremial destinados al ejercicio específico de las funciones propias previstas en los artículos 5 y 23, estarán exentos de toda clase, gravamen, contribución o impuesto. La exención es automática y por la sola obtención de dicha personería gremial.[[/p]][[p]]El Poder Ejecutivo Nacional gestionará con los gobiernos provinciales por su intermedio de las municipalidades, que recepten en su régimen fiscal el principio admitido en este artículo[[/p]]",
+                "observado-por": {
+                  "referencia-normativa": {
+                    "cr": "(B.O. 13/06/01) SE ESTABLECE QUE A LOS FINES DE DAR CUMPLIMIENTO A LO DISPUESTO EN EL SEGUNDO PARRAFO DEL PRESENTE ART., SE FACULTA AL MINISTERIO DE TRABAJO, EMPLEO Y FORMACION DE RECURSOS HUMANOS, PARA QUE GESTIONE LA INCORPORACION EN SUS REGIMENES FISCALES DEL PRINCIPIO DE EXENCION A FAVOR DE LAS ASOCIACIONES SINDICALES ADMITIDAS",
+                    "id": "OBSERVADO_POR_0",
+                    "ref": "DEC C 000760 2001 06 11 0000 000 0000 000"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "titulo-particion": "XI.- De la representación sindical en la empresa",
+            "articulo": [
+              {
+                "numero-articulo": 40,
+                "texto": "[[p]]ARTICULO 40.- Los delegados del personal, las comisiones internas y organismos similares, ejercerán en los lugares de trabajo según el caso, en la sede de la empresa o del establecimiento al que estén afectados la siguiente representación:[[/p]][[p]]a) De los trabajadores ante el empleador, la autoridad administrativa del trabajo cuando ésta actúa de oficio en los sitios mencionados y ante la asociación sindical.[[/p]][[p]]b) De la asociación sindical ante el empleador y el trabajador.[[/p]]"
+              },
+              {
+                "numero-articulo": 41,
+                "texto": "[[p]]ARTICULO 41.- Para ejercer las funciones indicadas en el artículo 40 se requiere:[[/p]][[p]]a) Estar afiliado a la respectiva asociación sindical con personería gremial y ser elegido en comicios convocados por éstas, en el lugar donde se presten los servicios o con relación al cual esté afectado y en horas de trabajo, por el voto directo y secreto de los trabajadores cuya representación deberá ejercer.[[/p]][[p]]La autoridad de aplicación podrá autorizar, a pedido de la asociación sindical, la celebración en lugar y horas distintos, cuando existiere circunstancias atendibles que lo justificaran.[[/p]][[p]]Cuando con relación al empleador respecto del cual deberá obrar el representante, no existiera una asociación sindical con personería gremial, la función podrá ser cumplida por afiliados a una simplemente inscripta.[[/p]][[p]]En todos los casos se deberá contar con una antiguedad mínima en la afiliación de un (1) año:[[/p]][[p]]b) Tener dieciocho (18) años de edad como mínimo y revistar al servicio de la empresa durante todo el año aniversario anterior a la elección.[[/p]][[p]]En los establecimientos de reciente instalación no se exigirá contar con na antiguedad mínima en el empleo. Lo mismo ocurrirá cuando por la índole de la actividad en las que presten servicios los trabajadores a representar la relación laboral comience y termine con la realización de la obra, la ejecución del acto o la prestación de servicio para el que fueron contratados o cuando el vínculo configure un contrato de trabajo de temporada.[[/p]]"
+              },
+              {
+                "numero-articulo": 42,
+                "texto": "[[p]]ARTICULO 42.- el mandato de los delegados no podrá exceder de dos (2) años y podrá ser revocado mediante asamblea de sus mandantes convocada por el órgano directivo de la asociación sindical, por propia decisión o a petición del diez por ciento (10%) del total de los representados. Asimismo, en el caso que lo prevean los estatutos el mandato de los delegados podrá ser revocado por determinación votada por los dos tercios de la asamblea o del congreso de la asociación sindical. El delegado cuestionado deberá tener la posibilidad cierta de ejercitar su defensa.[[/p]]"
+              },
+              {
+                "numero-articulo": 43,
+                "texto": "[[p]]ARTICULO 43.- Quienes ejerzan las funciones a que se refiere el artículo 40 de este ley, tendran derecho a:[[/p]][[p]]a) Verificar, la aplicación de las normas legales o convencionales, pudiendo participar en las inspecciones que disponga la autoridad administrativa del trabajo;[[/p]][[p]]b) Reunirse periódicamentecon el empleador o su representante;[[/p]][[p]]c) Presentar ante los empleadores o sus representantes las reclamaciones de los trabajadores en cuyo nombre actúen, previa autorización de la asociación sindical respectiva.[[/p]]"
+              },
+              {
+                "numero-articulo": 44,
+                "texto": "[[p]]ARTICULO 44.- Sin perjuicio de lo acordado en convenciones colectivas de trabajo, los empleadores estarán obligados a:[[/p]][[p]]a) Falicitar un lugar para el desarrollo de las tareas de los delegados del personal en la medida en que, habida cuenta de la cantidad de trabajadores ocupados y la modalidad de la prestación de los servicios, las características del establecimiento lo tornen necesarios;[[/p]][[p]]b) Concretar las reuniones periódicas con esos delegados asistiendo personalmente o haciéndose representar;[[/p]][[p]]c) conceder a cada uno de los delegados del personal, para el ejercicio de sus funciones, un crédito de horas mensuales retribuidas de conformidad con lo que se disponga en la convención colectiva aplicable.[[/p]]"
+              },
+              {
+                "numero-articulo": 45,
+                "texto": "[[p]]ARTICULO 45.- A falta de normas en las convenciones colectivas o en otros acuerdos, el número mínimo de los trabajadores que representen la asociación profesional respectiva en cada establecimiento será:[[/p]][[p]]a) De diez (10) a cincuenta (50) trabajadores, un (1) representante;[[/p]][[p]]b) De cincuenta y uno (51) a cien (100) trabajadores, dos (2) representantes;[[/p]][[p]]c) De ciento uno (101) en adelante, un (1) representante más cada cien (100) trabajadores, que excedan de cien (100) a los que deberán adicionarse los establecidos en el inciso anterior.[[/p]][[p]]En los establecimientos que tengan más de un turno de trabajo habrá un delegado por turno, como mínimo.[[/p]][[p]]Cuando un representante sindical está compuesto por tres o más trabajadores, funcionará como cuerpo colegiado.[[/p]][[p]]Sus decisiones se adoptarán en la forma que determinen los estatutos.[[/p]]"
+              },
+              {
+                "numero-articulo": 46,
+                "texto": "[[p]]ARTICULO 46.- La reglamentación de lo relativo a los delegados del personal deberá posibilitar una adecuada tutela de los intereses y derechos de los trabajadores teniendo en cuenta la diversidad de sectores, turnos y demás circunstancias de hecho que hagan a la organización de la explotación o del servicio.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "XII.- De la tutela sindical",
+            "articulo": [
+              {
+                "referencias-normativas": {
+                  "referencia-normativa": {
+                    "cr": "Código Procesal Civil y Comercial",
+                    "id": "REFERENCIAS_NORMATIVAS_0",
+                    "ref": "CPC C 017454 1981 08 18 0000 000 0000 000"
+                  }
+                },
+                "numero-articulo": 47,
+                "texto": "[[p]]ARTICULO 47.- Todo trabajador o asociación sindical que fuere impedido u obstaculizado en el ejercicio regular de los derechos de la libertad sindical garantizados por la presente ley, podrá recabar el amparo de estos derechos ante el tribunal judicial competente, conforme al procedimiento sumarísimo establecido en el [[r uuid:CT000]]artículo 498 del Código de Procedimientos Civil y Comercia[[/r uuid:CT000]]l de la Nación o equivalente de los códigos procesales civiles provinciales, a fin de que éste disponga, si correspondiere, el cese inmediato del comportamiento antisindical.[[/p]]"
+              },
+              {
+                "numero-articulo": 48,
+                "texto": "[[p]]ARTICULO 48.- Los trabajadores que, por ocupar cargos electivos o representantivos en asociaciones sindicales con personería gremial, en organismos que requieran representación gremial, o en cargos políticos en los poderes públicos, dejarán de prestar servicios, tendrán derecho de gozar de licencia automática sin goce de haberes, a la reserva del puesto y ser reincorporado al finalizar el ejercicio de sus funciones, no pudiendo ser despedidos durante el término de un (1) año a partir de la cesación de sus mandatos, salvo que mediare justa causa de despido.[[/p]][[p]]El tiempo de desempeño de dichas funciones, será considerado período de trabajo a todos los efectos, excepto para determinar promedio de remuneraciones.[[/p]][[p]]Los representantes sindicales en la empresa elegidos de conformidad con lo establecido en el artículo 41 de la presente ley continuarán prestando servicios y no podrán ser suspendidos, modificadas sus condiciones de trabajo, ni despedidos durante el tiempo que dure el ejercicio de su mandato y hasta un año mñas, salvo que mediare justa causa.[[/p]]"
+              },
+              {
+                "numero-articulo": 49,
+                "texto": "[[p]]ARTICULO 49.- Para que surta efecto la garantía antes establecida se deberá observar los siguientes requisitos:[[/p]][[p]]a) Que la designación se haya efectuado cumpliendo con los recaudos legales;[[/p]][[p]]b) Que haya sido comunicada al empleador. La comunicación se probará mediante telegramas o cartas documento u otra forma escrita.[[/p]]"
+              },
+              {
+                "numero-articulo": 50,
+                "texto": "[[p]]ARTICULO 50.- A partir de su postulación para un cargo de representación sindical, cualquiera sea dicha representación, el trabajador no podrá ser suspendido sin justa causa, ni modificadas sus condiciones de trabajo, por el término de seis (6) meses. Esta protección cesará para aquellos trabajadores para cuya postulación no hubiere sido oficializada según el procedimiento electoral aplicable y desde el momento de determinarse definitivamente dicha falta de oficialización. La asociación sindical deberá comunicar al empleador el nombre de los postulantes; lo propio podrán hacer los candidatos.[[/p]]"
+              },
+              {
+                "numero-articulo": 51,
+                "texto": "[[p]]ARTICULO 51.- La estabilidad en el empleo no podrá ser invocada en los casos de cesación de actividades del establecimiento o de suspensión general de las tareas del mismo. Cuando no se trate de una suspensión general de actividades, pero se proceda a reducir personal por vía de suspensiones o despidos y deba atenderse al orden de antiguedades, se excluirá para la determinación de ese orden a los trabajadores que se encuentren amparados por la estabilidad instituida en esta ley.[[/p]]"
+              },
+              {
+                "referencias-normativas": {
+                  "referencia-normativa": {
+                    "cr": "Código Civil",
+                    "id": "REFERENCIAS_NORMATIVAS_0",
+                    "ref": "CCI C 000340 1869 09 25 0666 002 0000 000 A"
+                  }
+                },
+                "numero-articulo": 52,
+                "informacion-vinculada": 10000000000000000000,
+                "texto": "[[p]]ARTICULO 52.- Los trabajadores amparados por las garantías previstas en los artículos 40, 48 y 50 de la presente ley, no podrán ser suspendidos, despedidos ni con relación a ellos podrán modificarse las condiciones de trabajo, si no mediare resolución judicial previa que los excluya de la garantía, conforme al procedimiento establecido en el artículo 47. El juez o tribunal interviniente, a pedido el empleador, dentro del plazo de cinco (5) días podrá disponer la suspensión de la prestación laboral con el carácter de medida cautelar, cuando la permanencia del cuestionado en su puesto o en mantenimiento de las condiciones de trabajo pudiere ocasionar peligro para la seguridad de las personas o bienes de la empresa.[[/p]][[p]]La violación por parte del empleador de las garantías establecidas en los artículos citados en el párrafo anterior, dará derecho al afectado a demandar judicialmente, por vía sumarísima, la reinstalación de su puesto, con más los salarios caídos durante la tramitación judicial, o el restablecimiento de las condiciones de trabajo.[[/p]][[p]]Si se decidiere la reinstalación, el juez podrá aplicar al empleador que no cumpliere con la decisión firme, las disposiciones del [[r uuid:CT000]]artículo 666 bis del Código Civil[[/r uuid:CT000]], durante el período de vigencia de su estabilidad.[[/p]][[p]]El trabajador, salvo que se trate de un candidato no electo, podrá optar por considerar extinguido el vínculo laboral en virtud de la decisión del empleador, colocándose en situación de despido indirecto, en cuyo caso tendrá derecho a percibir, además de indemnizaciones por despido, una suma equivalente al importe de las remuneraciones que le hubieren correspondido durante el tiempo faltante del mandato y el año de estabilidad posterior.[[/p]][[p]]Si el trabajador fuese un candidato no electo tendrá derecho a percibir, además de las indemnizaciones y de las remuneracions imputables al período de estabilidad aún no agotado, el importe de un aÑo más de remuneraciones.[[/p]][[p]]La promoción de las acciones por reinstalación o por restablecimiento de las condiciones de trabajo a las que refieren los párrafos anteriores interrumpe la prescripción de las acciones por cobro de indemnización y salarios caídos allí previstas. El curso de la prescripción comenzará una vez que recayere pronunciamiento firme en cualquiera de los supuestos.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "XIII.- De las prácticas desleales",
+            "articulo": [
+              {
+                "numero-articulo": 53,
+                "texto": "[[p]]ARTICULO 53.- Serán consideradas prácticas desleales y contrarias a la ética de las relaciones profesionales del trabajo por parte de los empleadores, o en su caso, de las asociaciones profesionales que los represente:[[/p]][[p]]a) Subvencionar en forma directa o indirecta a una asociación sindical de trabajadores;[[/p]][[p]]b) Intervenir o interferir en la constitución, funcionamiento o administración de un ente de este tipo;[[/p]][[p]]c) Obstruir, dificultar o impedir la afiliación de los trabajadores a una de las asociaciones por ésta reguladas;[[/p]][[p]]d) Promover o auspiciar la afiliación de los trabajadores a determinada aosicación sindical;[[/p]][[p]]e) Adoptar represalias contra los trabajadores en razón de su participación en medidas legítimas de acción sindical o en otras actividades sindicales o de haber acusado, testimoniado o intervenido en los procedimientos vinculados a juzgamiento de las prácticas desleales;[[/p]][[p]]f) Rehusarse a negociar colectivamente con la asociación sindical capacitada para hacerlo o provocar dilaciones que tiendan a obstruir el proceso de negociación;[[/p]][[p]]g) Despedir, suspender o modificar las condiciones de trabajo de su personal, con el fin de impedir o dificultar el ejercicio de los derechos a que se refiere esta ley;[[/p]][[p]]h) Negare a reservar el empleo o no permitir que el trabajador reanude la prestación de los servicios cuando hubiese terminado de estar en uso de la licencia por desempeño de funciones gremiales;[[/p]][[p]]i) Despedir, suspender o modificar las condiciones de trabajo de los representantes sindicales que gocen de estabilidad de acuerdo con los términos establecidos por este régimen cuando las causas del despido, suspensión o modificación no sean de aplicación general o simultánea a todo el personal;[[/p]][[p]]j) Practicar trato discriminatorio, cualquiera sea su forma, en razón del ejercicio de los derechos sindicales tutelados por este régimen;[[/p]][[p]]k) Negarse a suministrar la nómina del personal a los efectos de la elección de los delegados del mismo en los lugares de trabajo.[[/p]]"
+              },
+              {
+                "numero-articulo": 54,
+                "texto": "[[p]]ARTICULO 54.- La asociación sindical de trabajadores o el damnificado, conjunta o indistintamente, prodrán promover querella por práctica desleal ante el juez o tribunal competente.[[/p]]"
+              },
+              {
+                "referencias-normativas": {
+                  "referencia-normativa": [
+                    {
+                      "cr": null,
+                      "id": "REFERENCIAS_NORMATIVAS_0",
+                      "ref": "LEY C 018694 1970 05 29 0004 000 0000 000"
+                    },
+                    {
+                      "cr": null,
+                      "id": "REFERENCIAS_NORMATIVAS_1",
+                      "ref": "CCI C 000340 1869 09 25 0666 002 0000 000 A"
+                    }
+                  ]
+                },
+                "numero-articulo": 55,
+                "texto": "[[p]]ARTICULO 55.- 1. Las prácticas desleales se sancionarán con multas que serán fijadas de acuerdo con los artículos 4 y siguiente de la [[r uuid:CT000]]ley N. 18.694[[/r uuid:CT000]] de infracciones a las leyes de trabajo, salvo las modificaciones que aquí se establecen.[[/p]][[p]]En el supuesto de prácticas desleales múltiples, o de reincidencia, la multa podrá elevarse hasta el quintuplo del máximo previsto en la ley N. 18.694.[[/p]][[p]]2. Cuando la práctica desleal fuera cometida por entidades representativas de empleadores, la multa será fijada razonablemente por el juez hasta un máximo del equivalente al veinte por ciento de los ingresos provenientes de las cuotas que deban pagar los afiliados en el mes en que se cometió la infracción.[[/p]][[p]]Los importes de las multas serán actualizados a la fecha del efectivo pago, de acuerdo con las disposiciones sobre índice de actualización de los créditos laborales. Cuando la práctica desleal pudiera ser reparada mediante el cese de la medida que la hubiere producido o la realización de los actos que resulten idóneos, conforme a la decisión calificadora, y el infractor mantuviera las medidas o dejare de cumplir los actos tendientes a la cesación de sus efectos, el importe originario se incrementará automáticamente en un diez por ciento por cada cinco días de mora, mientras se mantenga el incumplimiento del empleador o entidad representativa de los empleadores.[[/p]][[p]]Sin perjuicio de ello, el juez, a petición de parte, podrá también aplicar lo dispuesto por el[[r uuid:CT001]] artículo 666 bis del Código Civil,[[/r uuid:CT001]] quedando los importes que así se establezcan en favor del damnificado.[[/p]][[p]]3. El importe de las multas será percibido por la autoridad administrativa del trabajo, e ingresado en una cuenta especial, y será destinado al mejoramiento de los servicios de inspección del trabajo, a cuyo fin la autoridad administrativa tomará intervención en el expediente judicial, previa citación del juez.[[/p]][[p]]4. Cuando la práctica desleal fuese reparada mediante el cese de los actos motivantes, dentro del plazo que al efecto establezca la decisión judicial, el importe de la sanción podrá reducirse hasta el cincuenta por ciento.[[/p]]"
+              }
+            ]
+          },
+          {
+            "titulo-particion": "XIV.- De la autoridad de aplicación",
+            "articulo": [
+              {
+                "numero-articulo": 56,
+                "texto": "[[p]]ARTICULO 56.- El Ministerio de Trabajo y Seguridad Social de la Nación será la autoridad de aplicación de la presente ley y estará facultado para:[[/p]][[p]]1. Inscribir asociaciones, otorgarles personería gremial y llevar los registros respectivos.[[/p]][[p]]2. Requerir a las asociaciones sindicales que dejen sin efecto las medidas que importen:[[/p]][[p]]a) Violación de las disposiciones legales o estatutarias;[[/p]][[p]]b) Incumplimiento a las disposiciones dictadas por la autoridad competente en el ejercicio de facultades legales.[[/p]][[p]]3. Peticionar en sede judicial la suspensión o cancelación de una personería gremial o la intervención de una asociación sindical, en los siguientes supuestos:[[/p]][[p]]a) Incumplimiento de las intimaciones a que se refiere el inciso 2 de este artículo;[[/p]][[p]]b) Cuando haya comprobado que en las asociaciones se ha incurrido en graves irregularidades administrativas.[[/p]][[p]]En el proceso judicial será parte de la asociación sindical afectada. No obstante lo ants prescripto, cuando existiera peligro de serios perjuicios a la asociación sindical o a sus miembros, solicitar judicialmente medidas cautelares a fin que se disponga la suspensión en el ejercicio de sus funciones de quienes integran el órgano de conducción y se designa un funcionario con facultades para ejercer los actos conservatorios y de administración necesarios para subsnar las irregularidades que determinen se adopte esa medida cautelar.[[/p]][[p]]4.- Designar un funcionario con carácter excepcional, en caso de que se produjere un estado de acefalía con relación a la comisión directiva de una asociación sindical de trabajadores o al órgano que tenga asignadas las funciones propias de un cuerpo de conducción, y en tanto en los estatutos de la asociación de que se trate o en los de la federación de la que esta forme parte no se haya previsto el modo de regularizar la situación, para que disponga la convocatoria a elecciones y realice los demás actos tendientes a hacer cesar la situación de acefalía. El funcionario designado deberá cumplir su cometido en un plazo que no podrá exceder de CIENTO VEINTE (120) días hábiles, prorrogables por el mismo plazo en caso de que resulte necesario y se encuentre debidamente fundado.[[/p]]",
+                "modificado-por": {
+                  "referencia-normativa": {
+                    "cr": "(B.O. 21/5/2025) INCISO 4) SUSTITUIDO CON VIGENCIA A PARTIR DEL DIA DE SU PUBLICACION EN EL BOLETIN OFICIAL",
+                    "id": "MODIFICADO_POR_0",
+                    "ref": "DEC C 000342 2025 05 20 0001 000 0000 000"
+                  }
+                }
+              },
+              {
+                "numero-articulo": 57,
+                "texto": "[[p]]ARTICULO 57.- En tanto no se presente alguna de las situaciones antes previstas, la autoridad administrativa del trabajo no podrá intervenir en la dirección y administración de las asociaciones sindicales a que se refiere esta ley, y en especial restrigir el manejo de los fondos sindicales.[[/p]]"
+              },
+              {
+                "numero-articulo": 58,
+                "texto": "[[p]]ARTICULO 58.- El control de las asociaciones sindicales, aunque hubieren obtenido personería jurídica en virtud de las disposiciones del derecho común, estará a cargo exclusivo del Ministerio de Trabajo y Seguridad Social de la Nación.[[/p]]"
+              },
+              {
+                "referencias-normativas": {
+                  "referencia-normativa": {
+                    "cr": null,
+                    "id": "REFERENCIAS_NORMATIVAS_0",
+                    "ref": "LEY C 019549 1972 04 03 0010 000 0000 000"
+                  }
+                },
+                "numero-articulo": 59,
+                "texto": "[[p]]ARTICULO 59.- Para someter las cuestiones de encuadramiento sindical a la autoridad administrativa, las asociaciones interesadas deberán agorar previamente la vía asociacional, mediante el pronunciamiento de la organización gremial de grado superior a la que se encuentren adheridas, o a la que estén adheridas las federaciones que integren.[[/p]][[p]]Si El diferendo no hubiera sido resuelto dentro de los sesenta (60) días hábiles, cualquiera de las asociaciones sindicales en conflicto, podrá someter la cuestión a conocimiento y resolución del Ministerio de Trabajo y Seguridad Social de la Nación, el que deberá pronunciarse dentro de los sesenta (60) días hábiles, rigiendo en caso de silencio lo dispuesto en el [[r uuid:CT000]]Artículo 10 de la Leyn N. 19.549[[/r uuid:CT000]] y su reglamentación. Agotado el procedimiento administrativo, quedará expedita la acción judicial prevista en el Artículo 62, inciso e) de la presente Ley.[[/p]][[p]]La resolución de encuadramiento, emana de la autoridad administrativa del trabajol o de la via asociacional, será directamente recurrible ante la Cámara Nacional de Apelaciones del Trabajo.[[/p]][[p]]La resolución que ponga fin al conflicto de encuadramiento sindical sólo tendrá por efecto determinar la aptitud representativa de la asociación gremial respectiva con relación al ámbito en conflicto.[[/p]]"
+              },
+              {
+                "numero-articulo": 60,
+                "texto": "[[p]]ARTICULO 60.- Son perjuicio de lo que dispongan los estatutos, en los diferendos que puedan plantearse entre los afiliados a una asociación sindical de trabajadores y éstas, o entre una asociación de grado inferior y otra de grado superior será de aplicación lo dispuesto en el artículo anterior.[[/p]]"
+              },
+              {
+                "numero-articulo": 61,
+                "texto": "[[p]]ARTICULO 61.- Todas las resoluciones definitivas de la autoridad administrativa del trabajo en la materia regulada por esta ley, una vez agotada la instancia administrativa, son impugnables ante la justicia, por vías de recurso de apelación o de acción sumaria, según los casos, y en la forma establecida en los artículos 62 y 63 de la presente ley.[[/p]]"
+              },
+              {
+                "referencias-normativas": {
+                  "referencia-normativa": {
+                    "cr": "Código Procesal Civil y Comercial",
+                    "id": "REFERENCIAS_NORMATIVAS_0",
+                    "ref": "CPC C 017454 1981 08 18 0000 000 0000 000"
+                  }
+                },
+                "numero-articulo": 62,
+                "texto": "[[p]]ARTICULO 62.- Será competencia exclusiva de la Cámara Nacional de Apelaciones del Trabajo conocer los siguientes casos:[[/p]][[p]]a) Las acciones que promueva la autoridad administrativa del trabajo;[[/p]][[p]]b) Los recursos contra resoluciones administrativas definitivas que decidan sobre el otorgamiento, de personería gremial, encuadramiento sindical u otros actos administrativos de igual carácter, una vez agotada la instancia administrativa;[[/p]][[p]]c) La demanda por denegatoria tácita de una personería gremial;[[/p]][[p]]d) La demanda por denegatoria tácita de una inscripción;[[/p]][[p]]e) Las acciones de encuadramiento sindical que se promuevan por haber vencido el plazo establecido para que se pronuncie la autoridad administrativa, sin que ésta lo hubiera hecho;[[/p]][[p]]f) Los recursos previstos en el artículo 36 de esta ley.[[/p]][[p]]Las actuaciones de los incisos a), c), d) y e) del párrafo anterior se sustanciarán por las normas del proceso sumario del [[r uuid:CT000]] Código Procesal Civil y Comercial de la Nación.[[/r uuid:CT000]] En este proceso la Cámara podrá ordenar las medidas para mejor proveer que considere convenientes. Asimismo proveerán la producción de las pruebas ofrecidas por las partes que sean conducentes, pudiendo disponer su recepción por el juzgado de primera instancia que corresponda, el que deberá elevar las actuaciones dentro de las cuarenta y ocho (48) horas de finalizada su sustanciación.[[/p]][[p]]Las acciones previstas en los incisos c) y d) de este artículo deberán deducirse dentro de los ciento veinte (120) días hábiles del vencimiento del plazo otorgado a la autoridad administrativa para resolver.[[/p]][[p]]Tratándose de recursos, éstos deberán ser fundados e interponerse ante la autoridad administrativa, dentro de los quince (15) días hábiles de notificada la resolución. Dentro de los diez (10) días hábiles contados desde la interposición del recurso, la autoridad administrativa, deberá remitir a esa Cámara las respectivas actuaciones. Cuando la decisión recurrida afecte los alcances de una personería, radicado el expediente en sede judicial, deberá darse traslado a las asociaciones afectadas, por el término de cinco (5) días.[[/p]]"
+              },
+              {
+                "numero-articulo": 63,
+                "texto": "[[p]]ARTICULO 63.- 1.- Los jueces o tribunales con competencia en lo laboral en las respectivas jurisdicciones conocerán en:[[/p]][[p]]a) Las cuestiones referentes a prácticas desleales;[[/p]][[p]]b) Las acciones previstas en el artículo 52;[[/p]][[p]]c) En las acciones previstas en el artículo 67.[[/p]][[p]]2.- Estas acciones se sustanciarán por el procedimiento sumario previsto en la legislación local.[[/p]]"
+              },
+              {
+                "numero-articulo": 64,
+                "texto": "[[p]]ARTICULO 64.- Las asociaciones sindicales deberán adecuar sus estatutos a las disposiciones de la presente ley, dentro de los ciento ochenta (180) días de publicada su reglamentación, la que deberá ser dictada dentro de los noventa (90) días por el Poder Ejecutivo nacional.[[/p]][[p]]Mientras no se realice la mencionada adecuación y su aprobación por la autoridad administrativa, prevalecerán de pleno derecho las disposiciones de la presente Ley sobre las normas estatutarias, en cuanto pudieren oponerse.[[/p]]"
+              },
+              {
+                "numero-articulo": 65,
+                "texto": "[[p]]ARTICULO 65.- La presente ley entrará en vigencia al día siguiente de su publicación.[[/p]]"
+              },
+              {
+                "numero-articulo": 66,
+                "texto": "[[p]]ARTICULO 66.- Derógase la [[r uuid:DA000]]ley de facto 22.105[[/r uuid:DA000]] y toda otra disposición que se oponga a la presente.[[/p]]",
+                "deroga-a": {
+                  "referencia-normativa": {
+                    "cr": null,
+                    "id": "DEROGA_A_0",
+                    "ref": "LEY C 022105 1979 11 15 0000 000 0000 000"
+                  }
+                }
+              },
+              {
+                "numero-articulo": 67,
+                "texto": "[[p]]ARTICULO 67.- Comuníquese al Poder Ejecutivo.[[/p]]"
+              }
+            ],
+            "firmantes": {
+              "firmantes": "DUHALDE - MARTINEZ - BRAVO - MACRIS"
+            }
+          }
+        ],
+        "id-infojus": "LNS0001881",
+        "fecha-umod": 20251002084850
+      }
+    }
+  },
+  "guid": "123456789-0abc-defg-g18-81000scanyel"
+}

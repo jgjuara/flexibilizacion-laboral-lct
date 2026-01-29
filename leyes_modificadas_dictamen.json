@@ -1,0 +1,1588 @@
+{
+  "leyes_unicas_globales": [
+    "11544",
+    "12713",
+    "12867",
+    "12908",
+    "13839",
+    "14250",
+    "14546",
+    "14786",
+    "14954",
+    "17250",
+    "20657",
+    "20744",
+    "23079",
+    "23472",
+    "23546",
+    "23551",
+    "23759",
+    "24013",
+    "24156",
+    "24241",
+    "24467",
+    "24493",
+    "24714",
+    "25212",
+    "25674",
+    "25877",
+    "26590",
+    "26727",
+    "26844",
+    "27423",
+    "27553",
+    "27555"
+  ],
+  "resumen_por_titulo": {
+    "I": {
+      "total_operaciones": 56,
+      "leyes_unicas": [
+        "17250",
+        "20744",
+        "23551",
+        "24241",
+        "24467",
+        "26590",
+        "27553"
+      ]
+    },
+    "II": {
+      "total_operaciones": 0,
+      "leyes_unicas": []
+    },
+    "III": {
+      "total_operaciones": 11,
+      "leyes_unicas": [
+        "20744",
+        "24156"
+      ]
+    },
+    "IV": {
+      "total_operaciones": 3,
+      "leyes_unicas": [
+        "20744",
+        "27423"
+      ]
+    },
+    "IX": {
+      "total_operaciones": 2,
+      "leyes_unicas": [
+        "12713",
+        "20744",
+        "24013",
+        "25212"
+      ]
+    },
+    "V": {
+      "total_operaciones": 1,
+      "leyes_unicas": [
+        "20744",
+        "24013"
+      ]
+    },
+    "VI": {
+      "total_operaciones": 1,
+      "leyes_unicas": [
+        "11544",
+        "20744"
+      ]
+    },
+    "VII": {
+      "total_operaciones": 1,
+      "leyes_unicas": [
+        "14786",
+        "20744",
+        "25877"
+      ]
+    },
+    "VIII": {
+      "total_operaciones": 2,
+      "leyes_unicas": [
+        "20744",
+        "24013",
+        "24467"
+      ]
+    },
+    "X": {
+      "total_operaciones": 4,
+      "leyes_unicas": [
+        "20744",
+        "26844"
+      ]
+    },
+    "XI": {
+      "total_operaciones": 2,
+      "leyes_unicas": [
+        "20744",
+        "26727"
+      ]
+    },
+    "XII": {
+      "total_operaciones": 5,
+      "leyes_unicas": [
+        "14250",
+        "20744",
+        "23546",
+        "24714",
+        "26727"
+      ]
+    },
+    "XIII": {
+      "total_operaciones": 0,
+      "leyes_unicas": []
+    },
+    "XIV": {
+      "total_operaciones": 7,
+      "leyes_unicas": [
+        "14250",
+        "20744"
+      ]
+    },
+    "XIX": {
+      "total_operaciones": 0,
+      "leyes_unicas": []
+    },
+    "XV": {
+      "total_operaciones": 12,
+      "leyes_unicas": [
+        "20744",
+        "23551",
+        "25212"
+      ]
+    },
+    "XVI": {
+      "total_operaciones": 3,
+      "leyes_unicas": [
+        "14786",
+        "20744",
+        "23546",
+        "25674"
+      ]
+    },
+    "XVII": {
+      "total_operaciones": 1,
+      "leyes_unicas": []
+    },
+    "XVIII": {
+      "total_operaciones": 1,
+      "leyes_unicas": [
+        "20744"
+      ]
+    },
+    "XX": {
+      "total_operaciones": 1,
+      "leyes_unicas": []
+    },
+    "XXI": {
+      "total_operaciones": 1,
+      "leyes_unicas": []
+    },
+    "XXII": {
+      "total_operaciones": 0,
+      "leyes_unicas": []
+    },
+    "XXIII": {
+      "total_operaciones": 1,
+      "leyes_unicas": []
+    },
+    "XXIV": {
+      "total_operaciones": 5,
+      "leyes_unicas": [
+        "20744",
+        "23079"
+      ]
+    },
+    "XXV": {
+      "total_operaciones": 1,
+      "leyes_unicas": []
+    },
+    "XXVI": {
+      "total_operaciones": 13,
+      "leyes_unicas": [
+        "11544",
+        "12867",
+        "12908",
+        "13839",
+        "14250",
+        "14546",
+        "14954",
+        "20657",
+        "20744",
+        "23472",
+        "23759",
+        "24493",
+        "27555"
+      ]
+    }
+  },
+  "detalle_por_titulo": {
+    "I": {
+      "titulo": "I",
+      "total_operaciones": 56,
+      "leyes_unicas": [
+        "17250",
+        "20744",
+        "23551",
+        "24241",
+        "24467",
+        "26590",
+        "27553"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "1",
+          "encabezado": "ARTÍCULO 1- Sustitúyese el artículo 2° de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "2",
+          "encabezado": "ARTÍCULO 2- Sustitúyese el artículo 4° de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "3",
+          "encabezado": "ARTÍCULO 3- Sustitúyese el artículo 9° de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "4",
+          "encabezado": "ARTÍCULO 4- Sustitúyese el artículo 11 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "5",
+          "encabezado": "ARTÍCULO 5- Incorpórase como artículo 11 bis a la Ley de Contrato de",
+          "leyes_encontradas": [],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "6",
+          "encabezado": "ARTÍCULO 6- Sustitúyese el artículo 12 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "7",
+          "encabezado": "ARTÍCULO 7- Sustitúyese el artículo 15 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "8",
+          "encabezado": "ARTÍCULO 8- Sustitúyese el artículo 16 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "9",
+          "encabezado": "ARTÍCULO 9- Sustitúyese el artículo 18 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "10",
+          "encabezado": "ARTÍCULO 10- Sustitúyese el artículo 20 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "11",
+          "encabezado": "ARTÍCULO 11- Sustitúyese el artículo 21 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "12",
+          "encabezado": "ARTÍCULO 12- Sustitúyese el artículo 22 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "13",
+          "encabezado": "ARTÍCULO 13- Sustitúyese el artículo 23 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "14",
+          "encabezado": "ARTÍCULO 14- Sustitúyese el artículo 26 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "15",
+          "encabezado": "ARTÍCULO 15- Sustitúyese el artículo 27 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "16",
+          "encabezado": "ARTÍCULO 16- Sustitúyese el artículo 29 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "17",
+          "encabezado": "ARTÍCULO 17- Sustitúyese el artículo 29 bis de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "18",
+          "encabezado": "ARTÍCULO 18- Sustitúyese el artículo 30 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "19",
+          "encabezado": "ARTÍCULO 19- Sustitúyese el artículo 31 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "20",
+          "encabezado": "ARTÍCULO 20- Sustitúyese el artículo 52 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "21",
+          "encabezado": "ARTÍCULO 21- Sustitúyese el artículo 53 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "22",
+          "encabezado": "ARTÍCULO 22- Sustitúyese el artículo 55 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "23",
+          "encabezado": "ARTÍCULO 23- Sustitúyese el artículo 66 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "24",
+          "encabezado": "ARTÍCULO 24- Sustitúyese el artículo 68 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "25",
+          "encabezado": "ARTÍCULO 25- Sustitúyese el artículo 80 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "26",
+          "encabezado": "ARTÍCULO 26- Derógase el CAPÍTULO VIII de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "27",
+          "encabezado": "ARTÍCULO 27- Sustitúyese el artículo 92 ter de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "28",
+          "encabezado": "ARTÍCULO 28- Sustitúyese el artículo 95 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "29",
+          "encabezado": "ARTÍCULO 29- Sustitúyese el artículo 99 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "30",
+          "encabezado": "ARTÍCULO 30- Sustitúyese el artículo 102 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "31",
+          "encabezado": "ARTÍCULO 31- Sustitúyese el artículo 103 bis de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "32",
+          "encabezado": "ARTÍCULO 32- Sustitúyese el artículo 104 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "33",
+          "encabezado": "ARTÍCULO 33- Incorpórase como artículo 104 bis a la Ley de Contrato",
+          "leyes_encontradas": [],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "34",
+          "encabezado": "ARTÍCULO 34- Sustitúyese el artículo 105 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744",
+            "24241"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "35",
+          "encabezado": "ARTÍCULO 35- Sustitúyese el artículo 124 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "36",
+          "encabezado": "ARTÍCULO 36- Sustitúyese el inciso f) del artículo 132 de la Ley de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "37",
+          "encabezado": "ARTÍCULO 37- Sustitúyese el artículo 133 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "38",
+          "encabezado": "ARTÍCULO 38- Sustitúyese el artículo 139 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "39",
+          "encabezado": "ARTÍCULO 39- Sustitúyese el artículo 140 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "17250",
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "40",
+          "encabezado": "ARTÍCULO 40- Sustitúyese el artículo 143 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "41",
+          "encabezado": "ARTÍCULO 41- Sustitúyese el artículo 154 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "42",
+          "encabezado": "ARTÍCULO 42- Sustitúyese el artículo 197 bis de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "43",
+          "encabezado": "ARTÍCULO 43- Sustitúyese el artículo 198 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "44",
+          "encabezado": "ARTÍCULO 44- Sustitúyese el artículo 210 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744",
+            "27553"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "45",
+          "encabezado": "ARTÍCULO 45- Sustitúyese el artículo 212 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "46",
+          "encabezado": "ARTÍCULO 46- Sustitúyese el artículo 225 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "47",
+          "encabezado": "ARTÍCULO 47- Sustitúyese el artículo 228 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "48",
+          "encabezado": "ARTÍCULO 48- Sustitúyese el inciso b) del artículo 231 de la Ley de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "49",
+          "encabezado": "ARTÍCULO 49- Sustitúyese el artículo 240 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "50",
+          "encabezado": "ARTÍCULO 50- Sustitúyese el artículo 241 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "51",
+          "encabezado": "ARTÍCULO 51- Sustitúyese el artículo 245 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "52",
+          "encabezado": "ARTÍCULO 52- Sustitúyese el artículo 248 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "53",
+          "encabezado": "ARTÍCULO 53- Sustitúyese el artículo 255 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "54",
+          "encabezado": "ARTÍCULO 54- Sustitúyese el artículo 276 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "56",
+          "encabezado": "ARTÍCULO 56- Sustitúyese el artículo 277 de la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744",
+            "24467",
+            "26590"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "57",
+          "encabezado": "ARTÍCULO 57- Incorpórase como artículo 278 a la Ley de Contrato de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "II": {
+      "titulo": "II",
+      "total_operaciones": 0,
+      "leyes_unicas": [],
+      "operaciones_con_leyes": []
+    },
+    "III": {
+      "titulo": "III",
+      "total_operaciones": 11,
+      "leyes_unicas": [
+        "20744",
+        "24156"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "78",
+          "encabezado": "ARTÍCULO 78- Sustitúyese el artículo 18 de la Ley de Organización y",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "79",
+          "encabezado": "ARTÍCULO 79- Sustitúyese el artículo 20 de la Ley de Organización y",
+          "leyes_encontradas": [
+            "20744",
+            "24156"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "80",
+          "encabezado": "ARTÍCULO 80- Sustitúyese el artículo 24 de la Ley de Organización y",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "81",
+          "encabezado": "ARTÍCULO 81- Sustitúyese el artículo 26 de la Ley de Organización y",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "82",
+          "encabezado": "ARTÍCULO 82- Sustitúyese el artículo 46 de la Ley de Organización y",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "84",
+          "encabezado": "ARTÍCULO 84- Incorpórase como inciso 8 al artículo 65 de la Ley de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "85",
+          "encabezado": "ARTÍCULO 85- Sustitúyese el artículo 71 de la Ley de Organización y",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "86",
+          "encabezado": "ARTÍCULO 86- Sustitúyese el artículo 76 de la Ley de Organización y",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "87",
+          "encabezado": "ARTÍCULO 87- Incorpórase como inciso d) al artículo 108 de la Ley de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "88",
+          "encabezado": "ARTÍCULO 88- Sustitúyese el artículo 110 de la Ley de Organización y",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "89",
+          "encabezado": "ARTÍCULO 89- Sustitúyese el artículo 124 de la Ley de Organización y",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "IV": {
+      "titulo": "IV",
+      "total_operaciones": 3,
+      "leyes_unicas": [
+        "20744",
+        "27423"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "92",
+          "encabezado": "ARTÍCULO 92- Sustitúyese el artículo 60 de la Ley de Honorarios",
+          "leyes_encontradas": [
+            "20744",
+            "27423"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "93",
+          "encabezado": "ARTÍCULO 93- Sustitúyese el artículo 61 de la Ley de Honorarios",
+          "leyes_encontradas": [
+            "20744",
+            "27423"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "94",
+          "encabezado": "ARTÍCULO 94- Incorpórase como artículo 61 bis de la Ley de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "IX": {
+      "titulo": "IX",
+      "total_operaciones": 2,
+      "leyes_unicas": [
+        "12713",
+        "20744",
+        "24013",
+        "25212"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "102",
+          "encabezado": "ARTÍCULO 102- Sustitúyese el artículo 6° de la Ley N° 12.713 y su",
+          "leyes_encontradas": [
+            "12713",
+            "20744",
+            "24013"
+          ],
+          "ley_numero_original": "12.713"
+        },
+        {
+          "dictamen_articulo": "103",
+          "encabezado": "ARTÍCULO 103- Sustitúyese el artículo 31 de la Ley N° 12.713 y su",
+          "leyes_encontradas": [
+            "12713",
+            "20744",
+            "25212"
+          ],
+          "ley_numero_original": "12.713"
+        }
+      ]
+    },
+    "V": {
+      "titulo": "V",
+      "total_operaciones": 1,
+      "leyes_unicas": [
+        "20744",
+        "24013"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "95",
+          "encabezado": "ARTÍCULO 95- Sustitúyese el artículo 7º ter de la Ley Nº 24.013 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "24013"
+          ],
+          "ley_numero_original": "24.013"
+        }
+      ]
+    },
+    "VI": {
+      "titulo": "VI",
+      "total_operaciones": 1,
+      "leyes_unicas": [
+        "11544",
+        "20744"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "97",
+          "encabezado": "ARTÍCULO 97- Sustitúyese el artículo 3° de la Ley N° 11.544 y sus",
+          "leyes_encontradas": [
+            "11544",
+            "20744"
+          ],
+          "ley_numero_original": "11.544"
+        }
+      ]
+    },
+    "VII": {
+      "titulo": "VII",
+      "total_operaciones": 1,
+      "leyes_unicas": [
+        "14786",
+        "20744",
+        "25877"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "98",
+          "encabezado": "ARTÍCULO 98- Sustitúyese el artículo 24 de la Ley N° 25.877 y sus",
+          "leyes_encontradas": [
+            "14786",
+            "20744",
+            "25877"
+          ],
+          "ley_numero_original": "25.877"
+        }
+      ]
+    },
+    "VIII": {
+      "titulo": "VIII",
+      "total_operaciones": 2,
+      "leyes_unicas": [
+        "20744",
+        "24013",
+        "24467"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "100",
+          "encabezado": "ARTÍCULO 100- Sustitúyese el artículo 84 de la Ley N° 24.467 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "24013",
+            "24467"
+          ],
+          "ley_numero_original": "24.467"
+        },
+        {
+          "dictamen_articulo": "101",
+          "encabezado": "ARTÍCULO 101- Sustitúyese el artículo 85 de la Ley N° 24.467 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "24013",
+            "24467"
+          ],
+          "ley_numero_original": "24.467"
+        }
+      ]
+    },
+    "X": {
+      "titulo": "X",
+      "total_operaciones": 4,
+      "leyes_unicas": [
+        "20744",
+        "26844"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "104",
+          "encabezado": "ARTÍCULO 104- Sustitúyese el artículo 7° de la Ley N° 26.844 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "26844"
+          ],
+          "ley_numero_original": "26.844"
+        },
+        {
+          "dictamen_articulo": "105",
+          "encabezado": "ARTÍCULO 105- Sustitúyese el artículo 14 de la Ley N° 26.844 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "26844"
+          ],
+          "ley_numero_original": "26.844"
+        },
+        {
+          "dictamen_articulo": "106",
+          "encabezado": "ARTÍCULO 106- Sustitúyese el artículo 20 de la Ley N° 26.844 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "26844"
+          ],
+          "ley_numero_original": "26.844"
+        },
+        {
+          "dictamen_articulo": "107",
+          "encabezado": "ARTÍCULO 107- Sustitúyese el artículo 70 de la Ley N° 26.844 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "26844"
+          ],
+          "ley_numero_original": "26.844"
+        }
+      ]
+    },
+    "XI": {
+      "titulo": "XI",
+      "total_operaciones": 2,
+      "leyes_unicas": [
+        "20744",
+        "26727"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "108",
+          "encabezado": "ARTÍCULO 108- Sustitúyese el artículo 12 de la Ley N° 26.727 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "26727"
+          ],
+          "ley_numero_original": "26.727"
+        },
+        {
+          "dictamen_articulo": "109",
+          "encabezado": "ARTÍCULO 109- Sustitúyese el artículo 16 de la Ley N° 26.727 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "26727"
+          ],
+          "ley_numero_original": "26.727"
+        }
+      ]
+    },
+    "XII": {
+      "titulo": "XII",
+      "total_operaciones": 5,
+      "leyes_unicas": [
+        "14250",
+        "20744",
+        "23546",
+        "24714",
+        "26727"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "110",
+          "encabezado": "ARTÍCULO 110- Sustitúyese el artículo 32 de la Ley N° 26.727 y sus",
+          "leyes_encontradas": [
+            "14250",
+            "20744",
+            "23546",
+            "26727"
+          ],
+          "ley_numero_original": "26.727"
+        },
+        {
+          "dictamen_articulo": "111",
+          "encabezado": "ARTÍCULO 111- Sustitúyese el artículo 34 de la Ley N° 26.727 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "26727"
+          ],
+          "ley_numero_original": "26.727"
+        },
+        {
+          "dictamen_articulo": "111 bis",
+          "encabezado": "ARTÍCULO 111 bis- Incorpórase como artículo 34 bis a la Ley Nª 26.727 y",
+          "leyes_encontradas": [
+            "20744",
+            "24714",
+            "26727"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "112",
+          "encabezado": "ARTÍCULO 112- Sustitúyese el artículo 89 de la Ley N° 26.727 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "26727"
+          ],
+          "ley_numero_original": "26.727"
+        },
+        {
+          "dictamen_articulo": "113",
+          "encabezado": "ARTÍCULO 113- Incorpórase como artículo 106 a la Ley N° 26.727 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "26727"
+          ],
+          "ley_numero_original": "26.727"
+        }
+      ]
+    },
+    "XIII": {
+      "titulo": "XIII",
+      "total_operaciones": 0,
+      "leyes_unicas": [],
+      "operaciones_con_leyes": []
+    },
+    "XIV": {
+      "titulo": "XIV",
+      "total_operaciones": 7,
+      "leyes_unicas": [
+        "14250",
+        "20744"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "125",
+          "encabezado": "ARTÍCULO 125- Sustitúyese el artículo 4° de la Ley N° 14.250 (t.o.",
+          "leyes_encontradas": [
+            "14250",
+            "20744"
+          ],
+          "ley_numero_original": "14.250"
+        },
+        {
+          "dictamen_articulo": "126",
+          "encabezado": "ARTÍCULO 126- Sustitúyese el artículo 6° de la Ley N° 14.250 (t.o.",
+          "leyes_encontradas": [
+            "14250",
+            "20744"
+          ],
+          "ley_numero_original": "14.250"
+        },
+        {
+          "dictamen_articulo": "127",
+          "encabezado": "ARTÍCULO 127- Sustitúyese el artículo 7 de la Ley N° 14.250 (t.o. 2004)",
+          "leyes_encontradas": [
+            "14250",
+            "20744"
+          ],
+          "ley_numero_original": "14.250"
+        },
+        {
+          "dictamen_articulo": "128",
+          "encabezado": "ARTÍCULO 128- Incorpórase como artículo 9° bis a la Ley N° 14.250",
+          "leyes_encontradas": [
+            "14250"
+          ],
+          "ley_numero_original": "14.250"
+        },
+        {
+          "dictamen_articulo": "129",
+          "encabezado": "ARTÍCULO 129- Sustitúyese el artículo 13 de la Ley N° 14.250 (t.o.",
+          "leyes_encontradas": [
+            "14250",
+            "20744"
+          ],
+          "ley_numero_original": "14.250"
+        },
+        {
+          "dictamen_articulo": "130",
+          "encabezado": "ARTÍCULO 130- Sustitúyese el artículo 18 de la Ley N° 14.250 (t.o.",
+          "leyes_encontradas": [
+            "14250",
+            "20744"
+          ],
+          "ley_numero_original": "14.250"
+        },
+        {
+          "dictamen_articulo": "131",
+          "encabezado": "ARTÍCULO 131- Sustitúyese el artículo 19 de la Ley N° 14.250 (t.o.",
+          "leyes_encontradas": [
+            "14250",
+            "20744"
+          ],
+          "ley_numero_original": "14.250"
+        }
+      ]
+    },
+    "XIX": {
+      "titulo": "XIX",
+      "total_operaciones": 0,
+      "leyes_unicas": [],
+      "operaciones_con_leyes": []
+    },
+    "XV": {
+      "titulo": "XV",
+      "total_operaciones": 12,
+      "leyes_unicas": [
+        "20744",
+        "23551",
+        "25212"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "133",
+          "encabezado": "ARTÍCULO 133- Sustitúyese el artículo 20 bis de la Ley N° 23.551 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "134",
+          "encabezado": "ARTÍCULO 134- Sustitúyese el artículo 20 ter de la Ley N° 23.551 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "135",
+          "encabezado": "ARTÍCULO 135- Sustitúyese el artículo 23 de la Ley N° 23.551 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "136",
+          "encabezado": "ARTÍCULO 136- Sustitúyese el artículo 29 de la Ley N° 23.551 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "137",
+          "encabezado": "ARTÍCULO 137- Sustitúyese el artículo 38 de la Ley N° 23.551 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "138",
+          "encabezado": "ARTÍCULO 138- Sustitúyese el inciso c) del artículo 44 de la Ley N°",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "139",
+          "encabezado": "ARTÍCULO 139- Sustitúyese el artículo 50 de la Ley N° 23.551 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "140",
+          "encabezado": "ARTÍCULO 140- Sustitúyese el artículo 52 de la Ley N° 23.551 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "141",
+          "encabezado": "ARTÍCULO 141- Incorpórase como artículo 53 bis a la Ley N° 23.551 y",
+          "leyes_encontradas": [
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "142",
+          "encabezado": "ARTÍCULO 142- Sustitúyese el artículo 54 de la Ley N° 23.551 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "143",
+          "encabezado": "ARTÍCULO 143- Sustitúyese el artículo 55 de la Ley N° 23.551 y sus",
+          "leyes_encontradas": [
+            "20744",
+            "23551",
+            "25212"
+          ],
+          "ley_numero_original": "23.551"
+        },
+        {
+          "dictamen_articulo": "144",
+          "encabezado": "ARTÍCULO 144- Sustitúyese el artículo 59 de la Ley N° 23.551 por el",
+          "leyes_encontradas": [
+            "20744",
+            "23551"
+          ],
+          "ley_numero_original": "23.551"
+        }
+      ]
+    },
+    "XVI": {
+      "titulo": "XVI",
+      "total_operaciones": 3,
+      "leyes_unicas": [
+        "14786",
+        "20744",
+        "23546",
+        "25674"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "145",
+          "encabezado": "ARTÍCULO 145- Sustitúyese el artículo 4º de la Ley N° 23.546 (t.o.",
+          "leyes_encontradas": [
+            "20744",
+            "23546",
+            "25674"
+          ],
+          "ley_numero_original": "23.546"
+        },
+        {
+          "dictamen_articulo": "146",
+          "encabezado": "ARTÍCULO 146- Sustitúyese el artículo 6º de la Ley N° 23.546 (t.o.",
+          "leyes_encontradas": [
+            "20744",
+            "23546"
+          ],
+          "ley_numero_original": "23.546"
+        },
+        {
+          "dictamen_articulo": "147",
+          "encabezado": "ARTÍCULO 147- Sustitúyese el artículo 7º de la Ley N° 23.546 (t.o.",
+          "leyes_encontradas": [
+            "14786",
+            "20744",
+            "23546"
+          ],
+          "ley_numero_original": "23.546"
+        }
+      ]
+    },
+    "XVII": {
+      "titulo": "XVII",
+      "total_operaciones": 1,
+      "leyes_unicas": [],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "148",
+          "encabezado": "ARTÍCULO 148- Créase el Programa de Formación Laboral Básica",
+          "leyes_encontradas": [],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "XVIII": {
+      "titulo": "XVIII",
+      "total_operaciones": 1,
+      "leyes_unicas": [
+        "20744"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "150",
+          "encabezado": "ARTÍCULO 150- Incorpórase como artículo 4° bis de la Ley",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "XX": {
+      "titulo": "XX",
+      "total_operaciones": 1,
+      "leyes_unicas": [],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "152",
+          "encabezado": "ARTÍCULO 152- Créase el RÉGIMEN DE INCENTIVO A LA",
+          "leyes_encontradas": [],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "XXI": {
+      "titulo": "XXI",
+      "total_operaciones": 1,
+      "leyes_unicas": [],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "162",
+          "encabezado": "ARTÍCULO 162- Derógase, con efecto para las contribuciones que se",
+          "leyes_encontradas": [],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "XXII": {
+      "titulo": "XXII",
+      "total_operaciones": 0,
+      "leyes_unicas": [],
+      "operaciones_con_leyes": []
+    },
+    "XXIII": {
+      "titulo": "XXIII",
+      "total_operaciones": 1,
+      "leyes_unicas": [],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "173",
+          "encabezado": "ARTÍCULO 173- Creación del RIMI. Créase el RÉGIMEN DE",
+          "leyes_encontradas": [],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "XXIV": {
+      "titulo": "XXIV",
+      "total_operaciones": 5,
+      "leyes_unicas": [
+        "20744",
+        "23079"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "185",
+          "encabezado": "ARTÍCULO 185- Incorpórase, con efectos a partir del primer día del mes",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "186",
+          "encabezado": "ARTÍCULO 186- Sustitúyese el undécimo párrafo del artículo 25 de la",
+          "leyes_encontradas": [],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "187",
+          "encabezado": "ARTÍCULO 187- Sustitúyese, con efectos para los años fiscales que se",
+          "leyes_encontradas": [],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "188",
+          "encabezado": "ARTÍCULO 188- Sustitúyese el inciso n) del artículo 26 de la Ley de",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "189",
+          "encabezado": "ARTÍCULO 189- Incorpórase, con efectos para los ejercicios fiscales",
+          "leyes_encontradas": [
+            "20744",
+            "23079"
+          ],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "XXV": {
+      "titulo": "XXV",
+      "total_operaciones": 1,
+      "leyes_unicas": [],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "192",
+          "encabezado": "ARTÍCULO 192- Sustitúyese, a partir del primer día del mes inmediato",
+          "leyes_encontradas": [],
+          "ley_numero_original": null
+        }
+      ]
+    },
+    "XXVI": {
+      "titulo": "XXVI",
+      "total_operaciones": 13,
+      "leyes_unicas": [
+        "11544",
+        "12867",
+        "12908",
+        "13839",
+        "14250",
+        "14546",
+        "14954",
+        "20657",
+        "20744",
+        "23472",
+        "23759",
+        "24493",
+        "27555"
+      ],
+      "operaciones_con_leyes": [
+        {
+          "dictamen_articulo": "193",
+          "encabezado": "ARTÍCULO 193- Derógase la Ley 12.908 y sus modificatorias.",
+          "leyes_encontradas": [
+            "12908"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "194",
+          "encabezado": "ARTÍCULO 194- Derógase la Ley 14.546 y sus modificatorias.",
+          "leyes_encontradas": [
+            "14546"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "195",
+          "encabezado": "ARTÍCULO 195- Derógase la Ley 27.555 y su modificatorias.",
+          "leyes_encontradas": [
+            "27555"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "197",
+          "encabezado": "ARTÍCULO 197- Derógase la Ley 23.472.",
+          "leyes_encontradas": [
+            "23472"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "198",
+          "encabezado": "ARTÍCULO 198- Derógase la Ley 23.759.",
+          "leyes_encontradas": [
+            "23759"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "199",
+          "encabezado": "ARTÍCULO 199- Derógase la Ley 24.493.",
+          "leyes_encontradas": [
+            "24493"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "200",
+          "encabezado": "ARTÍCULO 200- Derógase la Ley 20.657.",
+          "leyes_encontradas": [
+            "20657"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "201",
+          "encabezado": "ARTÍCULO 201- Derógase la Ley 12.867.",
+          "leyes_encontradas": [
+            "12867"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "204",
+          "encabezado": "ARTÍCULO 204- Derógase el artículo 6° de la Ley N° 11.544 y sus",
+          "leyes_encontradas": [
+            "11544",
+            "20744"
+          ],
+          "ley_numero_original": "11.544"
+        },
+        {
+          "dictamen_articulo": "206",
+          "encabezado": "ARTÍCULO 206- Derógase el inciso c) del artículo 17 de la Ley N°",
+          "leyes_encontradas": [
+            "20744"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "207",
+          "encabezado": "ARTÍCULO 207- Derógase los artículos 10, 16 y 21 de la Ley N° 14.250",
+          "leyes_encontradas": [
+            "14250",
+            "20744"
+          ],
+          "ley_numero_original": "14.250"
+        },
+        {
+          "dictamen_articulo": "208",
+          "encabezado": "ARTÍCULO 208- Derógase el Decreto Ley 13.839/46 y sus",
+          "leyes_encontradas": [
+            "13839"
+          ],
+          "ley_numero_original": null
+        },
+        {
+          "dictamen_articulo": "209",
+          "encabezado": "ARTÍCULO 209- Derógase el Decreto Ley 14.954/46 y sus",
+          "leyes_encontradas": [
+            "14954"
+          ],
+          "ley_numero_original": null
+        }
+      ]
+    }
+  }
+}

@@ -27,7 +27,7 @@ def extract_article_number_from_header(encabezado: str) -> Optional[str]:
     
     # Para incorporaciones, buscar "como artículo X" o "artículo X" después de incorpórase
     incorporacion_match = re.search(
-        r'incorp[óo]rase\s+como\s+art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
+        r'incorp[óo]rase\s+como\s+art[íi]culo\s+(\d+(?:\s*[°º])?(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
         encabezado,
         re.IGNORECASE
     )
@@ -36,12 +36,12 @@ def extract_article_number_from_header(encabezado: str) -> Optional[str]:
     
     # Fallback: buscar cualquier "artículo X" con sufijos
     match = re.search(
-        r'art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
+        r'art[íi]culo\s+(\d+(?:\s*[°º])?(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
         encabezado,
         re.IGNORECASE
     )
     if match:
-        return match[1].strip()
+        return match.group(1).strip()
     
     return None
 
@@ -51,21 +51,26 @@ def get_destino_articulo(cambio: Dict[str, Any]) -> Optional[str]:
     Obtiene el número de artículo destino desde un cambio del dictamen.
     
     Prioridad:
-    1. Extraer desde encabezado ("Sustitúyese el artículo X")
-    2. Extraer desde texto_nuevo ("ARTÍCULO X")
-    3. destino_articulo explícito (solo si coincide o como último recurso)
+    1. destino_articulo explícito (Fuente de verdad enriquecida)
+    2. Extraer desde encabezado ("Sustitúyese el artículo X")
+    3. Extraer desde texto_nuevo ("ARTÍCULO X")
     
-    Si hay discrepancia, se prioriza lo extraído del encabezado/texto_nuevo.
+    La prioridad se invirtió para respetar el enriquecimiento previo (ej: 29 bis -> 29 002).
     """
+    # Prioridad 1: destino_articulo explícito
+    destino_articulo = cambio.get('destino_articulo')
+    if destino_articulo:
+        return str(destino_articulo).strip()
+
     numero_desde_encabezado = None
     numero_desde_texto = None
     
-    # Prioridad 1: extraer desde encabezado (buscar "Sustitúyese el artículo X")
+    # Prioridad 2: extraer desde encabezado (buscar "Sustitúyese el artículo X" o "Incorpórase como artículo X")
     encabezado = cambio.get('encabezado', '')
     if encabezado:
         # Buscar explícitamente "Sustitúyese el artículo X" o "Incorpórase como artículo X"
         match_sustituye = re.search(
-            r'(?:sustit[úu]yese|der[óo]gase|modif[íi]case)\s+el\s+art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
+            r'(?:sustit[úu]yese|der[óo]gase|modif[íi]case)\s+(?:el|los)\s+art[íi]culo[s]?\s+(\d+(?:\s*[°º])?(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
             encabezado,
             re.IGNORECASE
         )
@@ -74,18 +79,18 @@ def get_destino_articulo(cambio: Dict[str, Any]) -> Optional[str]:
         else:
             # Para incorporaciones
             match_incorpora = re.search(
-                r'incorp[óo]rase\s+como\s+art[íi]culo\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
+                r'incorp[óo]rase\s+como\s+art[íi]culo\s+(\d+(?:\s*[°º])?(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)',
                 encabezado,
                 re.IGNORECASE
             )
             if match_incorpora:
                 numero_desde_encabezado = match_incorpora.group(1).strip()
     
-    # Prioridad 2: extraer desde texto_nuevo (más confiable - es el texto real del artículo)
+    # Prioridad 3: extraer desde texto_nuevo (más confiable - es el texto real del artículo)
     if cambio.get('texto_nuevo'):
         # Acepta tanto guion (-) como punto (.) después del número
         match = re.search(
-            r'ART[ÍI]CULO\s+(\d+(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?[\.-]',
+            r'ART[ÍI]CULO\s+(\d+(?:\s*[°º])?(?:\s*(?:bis|ter|quater|quinquies|sexies|septies|octies|nonies|decies))?)\s*[°º]?[\.-]',
             cambio['texto_nuevo'],
             re.IGNORECASE
         )
@@ -93,23 +98,7 @@ def get_destino_articulo(cambio: Dict[str, Any]) -> Optional[str]:
             numero_desde_texto = match.group(1).strip()
     
     # Usar el número más confiable (encabezado > texto_nuevo)
-    numero_final = numero_desde_encabezado or numero_desde_texto
-    
-    # Validar destino_articulo si existe
-    destino_articulo = cambio.get('destino_articulo')
-    if destino_articulo:
-        destino_articulo = str(destino_articulo).strip()
-        # Si tenemos un número extraído y no coincide con destino_articulo, usar el extraído
-        if numero_final:
-            if normalize_article_number(destino_articulo) != normalize_article_number(numero_final):
-                # destino_articulo está mal, usar el número extraído
-                return numero_final
-        # Si no tenemos número extraído, usar destino_articulo como último recurso
-        if not numero_final:
-            return destino_articulo
-    
-    # Retornar el número final o destino_articulo como último recurso
-    return numero_final or (destino_articulo if destino_articulo else None)
+    return numero_desde_encabezado or numero_desde_texto
 
 
 def normalize_article_number(numero: Any) -> str:
@@ -259,31 +248,31 @@ def parse_article_text(texto: str) -> Dict[str, Any]:
     if match_encabezado:
         # Encontrar dónde termina el título (después del guion, hasta el primer punto seguido de espacio)
         inicio_texto = match_encabezado.end()
-        # Buscar el final del título - generalmente termina con un punto seguido de espacio
-        fin_titulo_match = re.search(r'\.\s+', texto_limpio[inicio_texto:])
-        if fin_titulo_match:
-            # El texto real comienza después del punto y espacio
-            inicio_texto_real = inicio_texto + fin_titulo_match.end()
-            texto_limpio = texto_limpio[inicio_texto_real:]
+        
+        # Estrategia mejorada: 
+        # 1. El título debe ser corto (< 100 caracteres)
+        # 2. El título suele terminar en punto.
+        
+        potential_end = -1
+        
+        # Buscar el primer punto seguido de espacio o newline
+        fin_titulo_match = re.search(r'\.\s+|\.\n', texto_limpio[inicio_texto:])
+        if fin_titulo_match and fin_titulo_match.start() < 100:
+            potential_end = inicio_texto + fin_titulo_match.end()
         else:
-            # Si no hay punto seguido de espacio, buscar solo punto
-            fin_titulo_match = re.search(r'\.', texto_limpio[inicio_texto:])
-            if fin_titulo_match:
-                # El texto real comienza después del punto (puede haber salto de línea)
-                inicio_texto_real = inicio_texto + fin_titulo_match.end()
-                # Saltar espacios y saltos de línea
-                while inicio_texto_real < len(texto_limpio) and texto_limpio[inicio_texto_real] in ' \n':
-                    inicio_texto_real += 1
-                texto_limpio = texto_limpio[inicio_texto_real:]
-            else:
-                # Si no hay punto, buscar salto de línea
-                fin_titulo_match = re.search(r'\n', texto_limpio[inicio_texto:])
-                if fin_titulo_match:
-                    inicio_texto_real = inicio_texto + fin_titulo_match.end()
-                    texto_limpio = texto_limpio[inicio_texto_real:]
-                else:
-                    # Si no hay punto ni salto de línea, remover solo el encabezado
-                    texto_limpio = texto_limpio[inicio_texto:]
+            # Buscar el primer newline
+            fin_newline_match = re.search(r'\n', texto_limpio[inicio_texto:])
+            if fin_newline_match and fin_newline_match.start() < 100:
+                # Verificar si parece un título (no termina en coma o dos puntos)
+                linea = texto_limpio[inicio_texto:inicio_texto + fin_newline_match.start()].strip()
+                if linea and not linea.endswith(':') and not linea.endswith(','):
+                    potential_end = inicio_texto + fin_newline_match.end()
+        
+        if potential_end != -1:
+            texto_limpio = texto_limpio[potential_end:]
+        else:
+            # No se encontró un título claro y corto, solo remover el prefijo "ARTÍCULO X-"
+            texto_limpio = texto_limpio[inicio_texto:]
     
     texto_limpio = texto_limpio.strip()
     
@@ -321,7 +310,7 @@ def parse_article_text(texto: str) -> Dict[str, Any]:
     return result
 
 
-def process_dictamen_changes(dictamen_data: List[Dict[str, Any]]) -> Dict[str, Any]:
+def process_dictamen_changes(dictamen_data: List[Dict[str, Any]], ley_data: Dict[str, Any]) -> Dict[str, Any]:
     """
     Procesa los cambios del dictamen y crea un mapa estructurado.
     
@@ -330,11 +319,13 @@ def process_dictamen_changes(dictamen_data: List[Dict[str, Any]]) -> Dict[str, A
     - incorporaciones: [cambios de incorporación]
     - derogaciones_articulos: Set de números de artículos derogados
     - derogaciones_capitulos: {numero_capitulo: Set de artículos}
+    - derogacion_total: Bool (True si se deroga toda la ley)
     """
     cambios_por_articulo = {}
     incorporaciones = []
     derogaciones_articulos: Set[str] = set()
     derogaciones_capitulos: Dict[str, Set[str]] = {}
+    derogacion_total = False
     
     for cambio in dictamen_data:
         accion = cambio.get('accion', '').lower()
@@ -345,34 +336,68 @@ def process_dictamen_changes(dictamen_data: List[Dict[str, Any]]) -> Dict[str, A
             capitulo_numero = str(destino_capitulo)
             derogaciones_capitulos[capitulo_numero] = set()
             # Los artículos específicos se marcarán cuando se procese la ley
+            continue
         
         # Procesar otros cambios
-        destino_articulo = get_destino_articulo(cambio)
-        if destino_articulo:
-            destino_articulo = normalize_article_number(destino_articulo)
-            
-            if accion in ('incorpórase', 'incorporase'):
-                incorporaciones.append({
-                    'cambio': cambio,
-                    'numero': destino_articulo
-                })
-            elif accion in ('derógase', 'derogase'):
-                derogaciones_articulos.add(destino_articulo)
-                cambios_por_articulo[destino_articulo] = {
-                    'tipo': 'derogacion',
-                    'cambio': cambio
-                }
-            elif accion in ('sustitúyese', 'sustituyese'):
-                cambios_por_articulo[destino_articulo] = {
-                    'tipo': 'sustitucion',
-                    'cambio': cambio
-                }
+        destino_articulo_raw = get_destino_articulo(cambio)
+        if destino_articulo_raw:
+            # Soportar múltiples artículos separados por coma o " y "
+            # Ej: "10, 16 y 21" -> ["10", "16", "21"]
+            targets = []
+            if ',' in destino_articulo_raw or ' y ' in destino_articulo_raw.lower():
+                # Reemplazar " y " por coma y luego splitear
+                temp = re.sub(r'\s+y\s+', ', ', destino_articulo_raw, flags=re.IGNORECASE)
+                targets = [t.strip() for t in temp.split(',') if t.strip()]
+            else:
+                targets = [destino_articulo_raw.strip()]
+
+            for destino_articulo in targets:
+                destino_articulo = normalize_article_number(destino_articulo)
+                
+                # Verificar si el artículo existe en la ley para decidir si es incorporación o sustitución
+                existe = find_article_in_ley(ley_data, destino_articulo) is not None
+                
+                if accion in ('incorpórase', 'incorporase'):
+                    if existe:
+                        # Si ya existe, tratar como sustitución
+                        cambios_por_articulo[destino_articulo] = {
+                            'tipo': 'sustitucion',
+                            'cambio': cambio
+                        }
+                    else:
+                        incorporaciones.append({
+                            'cambio': cambio,
+                            'numero': destino_articulo
+                        })
+                elif accion in ('derógase', 'derogase'):
+                    derogaciones_articulos.add(destino_articulo)
+                    cambios_por_articulo[destino_articulo] = {
+                        'tipo': 'derogacion',
+                        'cambio': cambio
+                    }
+                elif accion in ('sustitúyese', 'sustituyese', 'modifícase', 'modificase'):
+                    if existe:
+                        cambios_por_articulo[destino_articulo] = {
+                            'tipo': 'sustitucion',
+                            'cambio': cambio
+                        }
+                    else:
+                        # Si no existe, tratar como incorporación
+                        incorporaciones.append({
+                            'cambio': cambio,
+                            'numero': destino_articulo
+                        })
+        else:
+            # Si no hay destino_articulo ni destino_capitulo, y es derogación, es TOTAL
+            if accion in ('derógase', 'derogase'):
+                derogacion_total = True
     
     return {
         'cambios_por_articulo': cambios_por_articulo,
         'incorporaciones': incorporaciones,
         'derogaciones_articulos': derogaciones_articulos,
-        'derogaciones_capitulos': derogaciones_capitulos
+        'derogaciones_capitulos': derogaciones_capitulos,
+        'derogacion_total': derogacion_total
     }
 
 
@@ -558,54 +583,66 @@ def process_incorporated_articles(
     return articulos_incorporados
 
 
-def comparar_ley_dictamen(
-    ley_path: str,
-    dictamen_path: str,
-    output_path: str
-) -> None:
+def comparar_ley_dictamen_objects(
+    ley_data: Dict[str, Any],
+    dictamen_data: List[Dict[str, Any]],
+    ley_source_name: str = "unknown",
+    dictamen_source_name: str = "unknown"
+) -> Dict[str, Any]:
     """
-    Función principal que compara una ley con un dictamen y genera un JSON de comparación.
+    Compara objetos de datos de ley y dictamen.
     
     Args:
-        ley_path: Ruta al JSON de la ley
-        dictamen_path: Ruta al JSON del dictamen
-        output_path: Ruta donde guardar el JSON de comparación
+        ley_data: Diccionario con estructura de la ley
+        dictamen_data: Lista de operaciones del dictamen
+        ley_source_name: Nombre del archivo de ley (para metadatos)
+        dictamen_source_name: Nombre del archivo de dictamen (para metadatos)
+        
+    Returns:
+        Diccionario con la comparación
     """
-    # Cargar datos
-    with open(ley_path, 'r', encoding='utf-8') as f:
-        ley_data = json.load(f)
-    
-    with open(dictamen_path, 'r', encoding='utf-8') as f:
-        dictamen_data = json.load(f)
-    
     # Procesar cambios del dictamen
-    cambios = process_dictamen_changes(dictamen_data)
+    cambios = process_dictamen_changes(dictamen_data, ley_data)
     
     # Crear estructura de comparación basada en la ley
     comparacion = {
         'ley': ley_data.get('ley', {}).copy(),
         'metadatos': {
-            'ley_origen': str(Path(ley_path).name),
-            'dictamen_origen': str(Path(dictamen_path).name),
+            'ley_origen': ley_source_name,
+            'dictamen_origen': dictamen_source_name,
             'total_sustituciones': len([c for c in cambios['cambios_por_articulo'].values() if c['tipo'] == 'sustitucion']),
             'total_incorporaciones': len(cambios['incorporaciones']),
             'total_derogaciones': len(cambios['derogaciones_articulos']),
-            'capitulos_derogados': list(cambios['derogaciones_capitulos'].keys())
+            'capitulos_derogados': list(cambios['derogaciones_capitulos'].keys()),
+            'derogacion_total': cambios.get('derogacion_total', False)
         }
     }
+
+    # Marcar ley como derogada si corresponde
+    if cambios.get('derogacion_total', False):
+        comparacion['ley']['estado'] = 'DEROGADA (POR DICTAMEN)'
     
     # Procesar títulos
     comparacion['ley']['titulos'] = []
     
     for titulo in ley_data.get('ley', {}).get('titulos', []):
         titulo_comparado = titulo.copy()
+        
+        if cambios.get('derogacion_total', False):
+            titulo_comparado['estado'] = 'derogado'
+            
         titulo_comparado['articulos'] = []
         titulo_comparado['capitulos'] = []
         
         # Procesar artículos directos del título
         if titulo.get('articulos'):
             for articulo in titulo['articulos']:
-                articulo_comparado = apply_changes_to_article(articulo, cambios)
+                if cambios.get('derogacion_total', False):
+                    articulo_comparado = articulo.copy()
+                    articulo_comparado['estado'] = 'derogado'
+                    articulo_comparado['accion'] = 'derógase (ley completa)'
+                else:
+                    articulo_comparado = apply_changes_to_article(articulo, cambios)
                 titulo_comparado['articulos'].append(articulo_comparado)
         
         # Procesar capítulos
@@ -614,8 +651,18 @@ def comparar_ley_dictamen(
                 capitulo_comparado = capitulo.copy()
                 capitulo_numero = normalize_article_number(capitulo.get('numero'))
                 
+                if cambios.get('derogacion_total', False):
+                    capitulo_comparado['estado'] = 'derogado'
+                    capitulo_comparado['articulos'] = []
+                    if capitulo.get('articulos'):
+                        for articulo in capitulo['articulos']:
+                            articulo_derogado = articulo.copy()
+                            articulo_derogado['estado'] = 'derogado'
+                            articulo_derogado['accion'] = 'derógase (ley completa)'
+                            capitulo_comparado['articulos'].append(articulo_derogado)
+                
                 # Verificar si el capítulo completo fue derogado
-                if capitulo_numero in cambios['derogaciones_capitulos']:
+                elif capitulo_numero in cambios['derogaciones_capitulos']:
                     capitulo_comparado['estado'] = 'derogado'
                     capitulo_comparado['articulos'] = []
                     
@@ -740,6 +787,35 @@ def comparar_ley_dictamen(
                         if capitulo.get('articulos'):
                             capitulo['articulos'].sort(key=sort_key)
     
+    return comparacion
+
+
+def comparar_ley_dictamen(
+    ley_path: str,
+    dictamen_path: str,
+    output_path: str
+) -> None:
+    """
+    Función principal que compara una ley con un dictamen y genera un JSON de comparación.
+    """
+    # Cargar datos
+    with open(ley_path, 'r', encoding='utf-8') as f:
+        ley_data = json.load(f)
+    
+    with open(dictamen_path, 'r', encoding='utf-8') as f:
+        dictamen_data = json.load(f)
+        
+    comparacion = comparar_ley_dictamen_objects(
+        ley_data, 
+        dictamen_data, 
+        ley_source_name=str(Path(ley_path).name),
+        dictamen_source_name=str(Path(dictamen_path).name)
+    )
+    
+    # Extract stats from result for printing
+    cambios = process_dictamen_changes(dictamen_data, ley_data)
+    articulos_incorporados = process_incorporated_articles(cambios['incorporaciones'], ley_data)
+
     # Guardar resultado
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(comparacion, f, ensure_ascii=False, indent=2)

@@ -168,7 +168,12 @@ def parse_saij_json(input_path: str) -> Dict[str, Any]:
     with open(input_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    doc_data = json.loads(data['data'])
+    raw_data = data.get('data')
+    if isinstance(raw_data, str):
+        doc_data = json.loads(raw_data)
+    else:
+        doc_data = raw_data
+
     document = doc_data['document']
     metadata = document['metadata']
     content = document['content']
@@ -205,63 +210,91 @@ def parse_saij_json(input_path: str) -> Dict[str, Any]:
     # Procesar todos los segmentos
     segmentos = content.get('segmento', [])
 
+    # Si hay artículos directos en content (fuera de segmentos), agregarlos a un título genérico
+    if 'articulo' in content:
+        titulo_obj = {
+            "numero": "S/N",
+            "nombre": "Artículos Generales",
+            "capitulos": [],
+            "articulos": []
+        }
+        arts = content['articulo']
+        if not isinstance(arts, list):
+            arts = [arts]
+        for art in arts:
+            art_procesado = procesar_articulo(art)
+            if art_procesado:
+                titulo_obj['articulos'].append(art_procesado)
+        ley_estructurada['ley']['titulos'].append(titulo_obj)
+
     for segmento in segmentos:
         titulo_particion = segmento.get('titulo-particion', '')
         
-        # Detectar TÍTULO
-        match_titulo = re.match(r'TITULO\s+([IVXLCDM]+)[\.\s\-]*(.+)', titulo_particion, re.IGNORECASE)
+        # Detectar TÍTULO con regex más permisivo
+        match_titulo = re.match(r'(?:TITULO|TÍTULO)\s+([IVXLCDM0-9]+|PRELIMINAR|UNICO|ÚNICO)[\.\s\-]*(.*)', titulo_particion, re.IGNORECASE)
+        
         if match_titulo:
             numero_titulo = match_titulo.group(1)
             nombre_titulo = match_titulo.group(2).strip()
-            
-            titulo_obj = {
-                "numero": numero_titulo,
-                "nombre": nombre_titulo,
-                "capitulos": [],
-                "articulos": []
-            }
-            
-            # Procesar artículos directos
-            if 'articulo' in segmento:
-                arts = segmento['articulo']
-                if not isinstance(arts, list):
-                    arts = [arts]
-                for art in arts:
-                    art_procesado = procesar_articulo(art)
-                    if art_procesado:
-                        titulo_obj['articulos'].append(art_procesado)
-            
-            # Procesar sub-segmentos (capítulos)
-            if 'segmento' in segmento:
-                for sub_seg in segmento['segmento']:
-                    cap_titulo = sub_seg.get('titulo-particion', '')
-                    # Múltiples patrones para capítulos (con soporte para asterisco opcional al inicio)
-                    match_cap = (re.match(r'\*?\s*CAPITULO\s+([IVXLCDM]+)[\.\s\-]*(.+)', cap_titulo, re.IGNORECASE) or
-                                re.match(r'\*?\s*Cap[íi]tulo\s+([IVXLCDM]+)[\.\s\-]*(.+)', cap_titulo, re.IGNORECASE) or
-                                re.match(r'\*?\s*Capitulo\s+([IVXLCDM]+)[\.\s\-]*(.+)', cap_titulo, re.IGNORECASE))
-                    
-                    if match_cap:
-                        numero_cap = match_cap.group(1)
-                        nombre_cap = match_cap.group(2).strip()
-                        
-                        capitulo_obj = {
-                            "numero": numero_cap,
-                            "nombre": nombre_cap,
-                            "articulos": []
-                        }
-                        
-                        # Procesar artículos del capítulo
-                        if 'articulo' in sub_seg:
-                            arts = sub_seg['articulo']
-                            if not isinstance(arts, list):
-                                arts = [arts]
-                            for art in arts:
-                                art_procesado = procesar_articulo(art)
-                                if art_procesado:
-                                    capitulo_obj['articulos'].append(art_procesado)
-                        
-                        titulo_obj['capitulos'].append(capitulo_obj)
-            
+        else:
+            # Fallback para segmentos que no son títulos pero tienen artículos
+            # Usar el nombre de partición como nombre de título o "Sección"
+            numero_titulo = "S/N"
+            nombre_titulo = titulo_particion.strip() if titulo_particion else "Sin Título"
+
+        titulo_obj = {
+            "numero": numero_titulo,
+            "nombre": nombre_titulo,
+            "capitulos": [],
+            "articulos": []
+        }
+        
+        # Procesar artículos directos
+        if 'articulo' in segmento:
+            arts = segmento['articulo']
+            if not isinstance(arts, list):
+                arts = [arts]
+            for art in arts:
+                art_procesado = procesar_articulo(art)
+                if art_procesado:
+                    titulo_obj['articulos'].append(art_procesado)
+        
+        # Procesar sub-segmentos (capítulos)
+        if 'segmento' in segmento:
+            for sub_seg in segmento['segmento']:
+                cap_titulo = sub_seg.get('titulo-particion', '')
+                # Múltiples patrones para capítulos
+                match_cap = (re.match(r'\*?\s*(?:CAPITULO|CAPÍTULO)\s+([IVXLCDM0-9]+)[\.\s\-]*(.*)', cap_titulo, re.IGNORECASE))
+                
+                if match_cap:
+                    numero_cap = match_cap.group(1)
+                    nombre_cap = match_cap.group(2).strip()
+                else:
+                    numero_cap = "S/N"
+                    nombre_cap = cap_titulo.strip()
+
+                capitulo_obj = {
+                    "numero": numero_cap,
+                    "nombre": nombre_cap,
+                    "articulos": []
+                }
+                
+                # Procesar artículos del capítulo
+                if 'articulo' in sub_seg:
+                    arts = sub_seg['articulo']
+                    if not isinstance(arts, list):
+                        arts = [arts]
+                    for art in arts:
+                        art_procesado = procesar_articulo(art)
+                        if art_procesado:
+                            capitulo_obj['articulos'].append(art_procesado)
+                
+                # Solo agregar capítulo si tiene artículos o nombre relevante
+                if capitulo_obj['articulos'] or match_cap:
+                    titulo_obj['capitulos'].append(capitulo_obj)
+        
+        # Solo agregar título si tiene contenido
+        if titulo_obj['articulos'] or titulo_obj['capitulos']:
             ley_estructurada['ley']['titulos'].append(titulo_obj)
 
     # Limpiar arrays vacíos
@@ -296,14 +329,15 @@ def main() -> None:
     print("CONVERSIÓN COMPLETA DEL JSON OFICIAL")
     print("=" * 70)
     print(f"Archivo generado: {args.output}")
-    print(f"Total de títulos: {len(ley_estructurada['ley']['titulos'])}")
+    titulos_lista = ley_estructurada['ley'].get('titulos', [])
+    print(f"Total de títulos: {len(titulos_lista)}")
 
     total_articulos = 0
     total_capitulos = 0
     total_incisos = 0
     articulos_con_referencias = 0
 
-    for titulo in ley_estructurada['ley']['titulos']:
+    for titulo in titulos_lista:
         total_articulos += len(titulo.get('articulos', []))
         total_capitulos += len(titulo.get('capitulos', []))
         
@@ -325,7 +359,7 @@ def main() -> None:
     print(f"Artículos con referencias normativas: {articulos_con_referencias}")
     print("=" * 70)
     print("\nEstructura por título:")
-    for titulo in ley_estructurada['ley']['titulos']:
+    for titulo in titulos_lista:
         arts_titulo = len(titulo.get('articulos', []))
         capitulos = titulo.get('capitulos', [])
         

@@ -2,16 +2,47 @@ let comparacionData = null; // JSON de comparación que contiene ley + metadatos
 
 async function init() {
     try {
-        const comparacionResponse = await fetch('data/comparacion_titulo_I.json');
-        comparacionData = await comparacionResponse.json();
+        const lawSelect = document.getElementById('law-select');
+        if (lawSelect) {
+            lawSelect.addEventListener('change', (e) => {
+                loadLaw(e.target.value);
+            });
+            // Cargar ley inicial
+            await loadLaw(lawSelect.value);
+        } else {
+            await loadLaw('20744');
+        }
 
         setupEventListeners();
+    } catch (error) {
+        console.error('Error inicializando aplicación:', error);
+    }
+}
+
+async function loadLaw(numeroLey) {
+    const container = document.getElementById('split-content');
+    const tocContainer = document.getElementById('toc-container');
+    
+    container.innerHTML = '<p class="placeholder">Cargando artículos...</p>';
+    if (tocContainer) tocContainer.innerHTML = '';
+    
+    try {
+        const url = `data/comparacion_global_ley_${numeroLey}.json`;
+        const comparacionResponse = await fetch(url);
+        if (!comparacionResponse.ok) {
+            throw new Error(`No se pudo cargar la ley ${numeroLey}`);
+        }
+        comparacionData = await comparacionResponse.json();
+
         renderTOC();
         renderSplitView();
+        
+        // Scroll to top
+        window.scrollTo(0, 0);
     } catch (error) {
         console.error('Error cargando datos:', error);
-        document.getElementById('split-content').innerHTML = 
-            '<p class="error">Error al cargar los datos. Asegúrese de que el archivo JSON de comparación esté disponible.</p>';
+        container.innerHTML = 
+            `<p class="error">Error al cargar los datos de la ley ${numeroLey}. Asegúrese de que el archivo JSON esté disponible.</p>`;
     }
 }
 
@@ -22,9 +53,15 @@ function setupEventListeners() {
     // TOC toggle button
     const tocToggle = document.getElementById('toc-toggle');
     const tocSidebar = document.getElementById('toc-sidebar');
+    const mainLayout = document.querySelector('.main-split-layout');
+
     if (tocToggle && tocSidebar) {
         tocToggle.addEventListener('click', () => {
-            tocSidebar.classList.toggle('toc-visible');
+            if (window.innerWidth <= 1024) {
+                tocSidebar.classList.toggle('toc-visible');
+            } else if (mainLayout) {
+                mainLayout.classList.toggle('collapsed');
+            }
         });
     }
     
@@ -658,8 +695,9 @@ function renderArticleRow(articulo, titulo, capitulo) {
         }
     }
     
-    // Determinar título a mostrar
-    const tituloDisplay = articulo.titulo_nuevo || articulo.titulo || '';
+    // Determinar títulos a mostrar
+    const tituloOriginal = articulo.titulo || '';
+    const tituloNuevo = articulo.titulo_nuevo || articulo.titulo || '';
     
     // Determinar texto a mostrar en el lado izquierdo (original)
     let textoIzquierdo = '';
@@ -670,6 +708,7 @@ function renderArticleRow(articulo, titulo, capitulo) {
         textoIzquierdo = renderArticleContent({
             ...articulo,
             texto: articulo.texto_original,
+            titulo: tituloOriginal,
             incisos: articulo.incisos_originales || articulo.incisos
         });
     } else {
@@ -692,9 +731,11 @@ function renderArticleRow(articulo, titulo, capitulo) {
         // Mostrar texto nuevo
         const textoNuevo = articulo.texto_nuevo || '';
         const incisosNuevos = articulo.incisos_nuevos || articulo.incisos;
+        
         contenidoDerecho = `
             <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
                 <span class="split-article-number">Art. ${displayNumber}</span>
+                ${tituloNuevo ? `<span class="split-article-title">${tituloNuevo}</span>` : ''}
                 <span class="split-change-badge">${articulo.accion || 'Modificación'}</span>
             </div>
             <div class="split-article-content changed">
@@ -702,7 +743,7 @@ function renderArticleRow(articulo, titulo, capitulo) {
                     renderArticleContent({
                         ...articulo,
                         texto: textoNuevo,
-                        titulo: tituloDisplay,
+                        titulo: tituloNuevo,
                         incisos: incisosNuevos
                     }) : 
                     '<p class="placeholder" style="color: #999; font-style: italic;">Texto no disponible</p>'
@@ -714,6 +755,7 @@ function renderArticleRow(articulo, titulo, capitulo) {
         contenidoDerecho = `
             <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
                 <span class="split-article-number">Art. ${displayNumber}</span>
+                ${tituloNuevo ? `<span class="split-article-title">${tituloNuevo}</span>` : ''}
                 <span class="split-change-badge" style="background: #27ae60;">INCORPÓRASE</span>
             </div>
             <div class="split-article-content changed" style="background: #e8f5e9;">
@@ -725,6 +767,7 @@ function renderArticleRow(articulo, titulo, capitulo) {
         contenidoDerecho = `
             <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
                 <span class="split-article-number">Art. ${displayNumber}</span>
+                ${tituloNuevo ? `<span class="split-article-title">${tituloNuevo}</span>` : ''}
             </div>
             <div class="split-article-content unchanged">
                 ${renderArticleContent(articulo)}
@@ -737,7 +780,7 @@ function renderArticleRow(articulo, titulo, capitulo) {
             <div class="split-article-left">
                 <div class="split-article-header" onclick="toggleArticle('${articulo.numero}')">
                     <span class="split-article-number">Art. ${displayNumber}</span>
-                    ${tituloDisplay ? `<span class="split-article-title">${tituloDisplay}</span>` : ''}
+                    ${tituloOriginal ? `<span class="split-article-title">${tituloOriginal}</span>` : ''}
                 </div>
                 <div class="split-article-content">
                     ${textoIzquierdo}
@@ -751,7 +794,14 @@ function renderArticleRow(articulo, titulo, capitulo) {
 }
 
 function renderArticleContent(articulo) {
-    let html = formatText(articulo.texto || '');
+    let html = '';
+    
+    // Si hay un título, mostrarlo como primer párrafo en negrita
+    if (articulo.titulo) {
+        html += `<p class="article-body-title"><strong>${articulo.titulo}</strong></p>`;
+    }
+    
+    html += formatText(articulo.texto || '');
     
     if (articulo.incisos && articulo.incisos.length > 0) {
         html += '<div class="split-incisos">';

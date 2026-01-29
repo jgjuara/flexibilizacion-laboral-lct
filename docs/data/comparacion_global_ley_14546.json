@@ -1,0 +1,21 @@
+{
+  "ley": {
+    "numero": "14546",
+    "nombre": "ESTATUTO DEL VIAJANTE",
+    "tipo": {
+      "codigo": "LEY",
+      "texto": "Ley"
+    },
+    "estado": "DEROGADA (POR DICTAMEN)",
+    "titulos": []
+  },
+  "metadatos": {
+    "ley_origen": "normalized_ley_14546.json",
+    "dictamen_origen": "aggregated_dictamen",
+    "total_sustituciones": 0,
+    "total_incorporaciones": 0,
+    "total_derogaciones": 0,
+    "capitulos_derogados": [],
+    "derogacion_total": true
+  }
+}
